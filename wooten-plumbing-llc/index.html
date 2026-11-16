@@ -6,11 +6,11 @@
 <title>Wooten Plumbing LLC | Plumber in Tallahassee</title>
 <meta name="description" content="Wooten Plumbing LLC — plumber in Tallahassee. Local plumbing repairs, drains and water heaters across Tallahassee and Leon County. Call (850) 514-7404.">
 <style>
-  :root{--navy:#12395C;--navy-deep:#0C2A45;--accent:#E08A2E;--accent-dark:#B77125;--ink:#16202B;--muted:#5A6B7B;--line:#E2E8EE;--paper:#FFFFFF;--wash:#F5F8FB;--radius:10px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  :root{--navy:#12395C;--navy-deep:#0C2A45;--accent:#E08A2E;--accent-dark:#B77125;--ink:#16202B;--muted:#5A6B7B;--line:#E2E8EE;--paper:#FFFFFF;--wash:#F5F8FB;--radius:10px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--display:var(--sans);--accent-ink:#20160A}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6;font-size:17px}
-  h1,h2,h3,h4{margin:0;line-height:1.15;letter-spacing:-0.02em;color:var(--navy)}
+  h1,h2,h3,h4{margin:0;line-height:1.15;letter-spacing:-0.02em;color:var(--navy);font-family:var(--display)}
   p{margin:0 0 1em} a{color:var(--navy)} .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
   .topbar{background:var(--navy-deep);color:#DCE6EF;font-size:14px}
   .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:42px;flex-wrap:wrap}
@@ -25,7 +25,7 @@
   nav.pages button{font:inherit;font-size:15px;font-weight:600;color:var(--navy);background:none;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
   nav.pages button:hover{background:var(--wash)}
   nav.pages button[aria-current="page"]{background:var(--wash);box-shadow:inset 0 -3px 0 var(--accent)}
-  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:#20160A;text-decoration:none;font-weight:800;padding:12px 18px;border-radius:8px;white-space:nowrap;border-bottom:2px solid var(--accent-dark)}
+  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:800;padding:12px 18px;border-radius:8px;white-space:nowrap;border-bottom:2px solid var(--accent-dark)}
   .callbtn:hover{filter:brightness(1.05)}
   .callbtn small{display:block;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
   .page[hidden]{display:none}
@@ -72,7 +72,7 @@
   .form label{display:block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
   .form input,.form textarea{width:100%;font:inherit;font-size:16px;padding:11px 13px;border:1px solid #CBD6E1;border-radius:8px;margin-bottom:16px;background:#fff;color:var(--ink)}
   .form textarea{min-height:110px;resize:vertical}
-  .form button{font:inherit;font-weight:800;background:var(--accent);color:#20160A;border:0;border-bottom:2px solid var(--accent-dark);padding:13px 20px;border-radius:8px;cursor:pointer;width:100%}
+  .form button{font:inherit;font-weight:800;background:var(--accent);color:var(--accent-ink);border:0;border-bottom:2px solid var(--accent-dark);padding:13px 20px;border-radius:8px;cursor:pointer;width:100%}
   .form .note{font-size:13px;color:var(--muted);margin:12px 0 0}
   .steps{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:22px}
   .steps li{counter-increment:s;position:relative;padding-left:44px;color:var(--muted);font-size:15.5px}
@@ -92,8 +92,34 @@
     section.block{padding:48px 0}
   }
 </style>
+<style>body.th-midnight{--navy:#E9E9F2;--navy-deep:#0C0E1F;--accent:#F2A93B;--accent-dark:#CE8A1F;--ink:#E9E9F2;--muted:#9A9DB4;--line:#2B2F4D;--paper:#12152B;--wash:#1A1E38;--radius:2px;--accent-ink:#181A26;--display:Georgia,"Times New Roman",serif}
+
+body.th-midnight header.site{background:rgba(18,21,43,0.95);border-bottom-color:var(--line)}
+body.th-midnight .topbar{background:#0C0E1F}
+body.th-midnight .brand small{color:var(--muted)}
+body.th-midnight .mark{background:var(--accent);color:var(--accent-ink)}
+body.th-midnight nav.pages button{color:#D6D8E8;border-radius:0}
+body.th-midnight nav.pages button[aria-current="page"]{background:#232850;box-shadow:inset 0 -2px 0 var(--accent)}
+body.th-midnight .hero{background:linear-gradient(155deg,#232A55 0%,#101227 100%)}
+body.th-midnight .hero h1{font-weight:400}
+body.th-midnight .card-quick{background:#191D36;color:var(--ink);box-shadow:0 18px 40px rgba(0,0,0,0.35)}
+body.th-midnight .card-quick h3,body.th-midnight .card-quick dt{color:var(--muted)}
+body.th-midnight .svc{background:var(--line);border-color:var(--line)}
+body.th-midnight .svc article{background:var(--paper)}
+body.th-midnight .svc article p,body.th-midnight details.faq p,body.th-midnight .lede{color:var(--muted)}
+body.th-midnight details.faq{border-top-color:var(--line)}
+body.th-midnight details.faq summary{color:var(--navy)}
+body.th-midnight .form{background:#191D36;border-color:var(--line)}
+body.th-midnight .form input,body.th-midnight .form textarea{background:#101227;color:var(--ink);border-color:#333857}
+body.th-midnight .form label{color:var(--muted)}
+body.th-midnight .band{background:#0C0E1F}
+body.th-midnight .steps li:before{background:#22264A;color:var(--navy)}
+body.th-midnight .facts b{color:var(--navy)}
+body.th-midnight .eyebrow{color:var(--accent)}
+body.th-midnight .ghost{border-color:#D6D8E8;color:#D6D8E8}
+</style>
 </head>
-<body>
+<body class="th-midnight">
 
 <div class="topbar">
   <div class="wrap">
