@@ -3,345 +3,185 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blade Runners Lawn Care | Landscaper in Tallahassee</title>
-<meta name="description" content="Blade Runners Lawn Care — landscaper in Tallahassee. Mowing, edging, cleanup and ongoing maintenance across Tallahassee and Leon County. Call (850) 544-6200.">
-<style>
-  :root{--navy:#14532D;--navy-deep:#0C2A45;--accent:#84A93C;--accent-dark:#6C8A31;--ink:#16202B;--muted:#5A6B7B;--line:#E2E8EE;--paper:#FFFFFF;--wash:#F5F8FB;--radius:10px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--display:var(--sans);--accent-ink:#20160A}
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6;font-size:17px}
-  h1,h2,h3,h4{margin:0;line-height:1.15;letter-spacing:-0.02em;color:var(--navy);font-family:var(--display)}
-  p{margin:0 0 1em} a{color:var(--navy)} .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-  .topbar{background:var(--navy-deep);color:#DCE6EF;font-size:14px}
-  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:42px;flex-wrap:wrap}
-  .topbar span{opacity:.85} .topbar a{color:#fff;text-decoration:none;font-weight:600}
-  header.site{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
-  header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:76px}
-  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
-  .mark{width:42px;height:42px;border-radius:9px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800;font-size:17px}
-  .brand b{display:block;font-size:18px;letter-spacing:-0.01em}
-  .brand small{display:block;font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
-  nav.pages{display:flex;gap:4px;flex-wrap:wrap}
-  nav.pages button{font:inherit;font-size:15px;font-weight:600;color:var(--navy);background:none;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
-  nav.pages button:hover{background:var(--wash)}
-  nav.pages button[aria-current="page"]{background:var(--wash);box-shadow:inset 0 -3px 0 var(--accent)}
-  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:800;padding:12px 18px;border-radius:8px;white-space:nowrap;border-bottom:2px solid var(--accent-dark)}
-  .callbtn:hover{filter:brightness(1.05)}
-  .callbtn small{display:block;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
-  .page[hidden]{display:none}
-  .hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-deep) 100%);color:#EAF1F7;padding:76px 0 68px}
-  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
-  .hero h1{color:#fff;font-size:clamp(32px,4.4vw,54px);max-width:16ch}
-  .hero p{color:#C6D5E3;font-size:18px;max-width:46ch}
-  .creds{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 0;padding:0;list-style:none}
-  .creds li{font-size:13px;font-weight:600;color:#D9E5F0;border:1px solid rgba(255,255,255,.25);padding:7px 12px;border-radius:999px}
-  .hero .actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:28px}
-  .hero .actions .ghost{color:#fff;border-color:rgba(255,255,255,.4)}
-  .card-quick{background:#fff;color:var(--ink);border-radius:var(--radius);padding:26px;box-shadow:0 18px 40px rgba(4,18,32,.28)}
-  .card-quick h3{font-size:16px;letter-spacing:.02em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
-  .card-quick dl{margin:0;display:grid;gap:12px}
-  .card-quick dt{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-  .card-quick dd{margin:2px 0 0;font-weight:600}
-  .card-quick a{text-decoration:none;font-weight:700}
-  section.block{padding:64px 0} section.block.alt{background:var(--wash)}
-  .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-dark);font-weight:800;margin-bottom:12px}
-  h2.sec{font-size:clamp(24px,3vw,34px);max-width:26ch}
-  .lede{color:var(--muted);max-width:60ch;margin-top:14px}
-  .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:38px}
-  .svc article{background:#fff;padding:26px}
-  .svc article h3{font-size:18px;margin-bottom:8px}
-  .svc article p{margin:0;color:var(--muted);font-size:15.5px}
-  .svc .num{font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--accent-dark);display:block;margin-bottom:10px}
-  .cols{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:34px}
-  .facts{margin:0;padding:0;list-style:none;display:grid;gap:16px}
-  .facts li{padding-left:18px;border-left:3px solid var(--accent);font-size:15.5px;color:var(--muted)}
-  .facts b{display:block;color:var(--ink);font-size:16px}
-  details.faq{border-top:1px solid var(--line);padding:18px 0}
-  details.faq summary{cursor:pointer;font-weight:700;color:var(--navy);font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center}
-  details.faq summary::-webkit-details-marker{display:none}
-  details.faq summary:after{content:"+";font-size:22px;color:var(--accent);font-weight:400;line-height:1}
-  details.faq[open] summary:after{content:"–"}
-  details.faq p{margin:12px 0 0;color:var(--muted);max-width:70ch}
-  .band{background:var(--navy);color:#fff;padding:54px 0}
-  .band .wrap{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
-  .band h2{color:#fff;font-size:clamp(22px,2.8vw,30px);max-width:22ch}
-  .band p{color:#C6D5E3;margin:8px 0 0}
-  .ghost{display:inline-flex;align-items:center;border:1.5px solid var(--navy);color:var(--navy);text-decoration:none;font-weight:700;padding:11px 18px;border-radius:8px}
-  .contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:34px}
-  .form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
-  .form label{display:block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
-  .form input,.form textarea{width:100%;font:inherit;font-size:16px;padding:11px 13px;border:1px solid #CBD6E1;border-radius:8px;margin-bottom:16px;background:#fff;color:var(--ink)}
-  .form textarea{min-height:110px;resize:vertical}
-  .form button{font:inherit;font-weight:800;background:var(--accent);color:var(--accent-ink);border:0;border-bottom:2px solid var(--accent-dark);padding:13px 20px;border-radius:8px;cursor:pointer;width:100%}
-  .form .note{font-size:13px;color:var(--muted);margin:12px 0 0}
-  .steps{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:22px}
-  .steps li{counter-increment:s;position:relative;padding-left:44px;color:var(--muted);font-size:15.5px}
-  .steps li:before{content:counter(s);position:absolute;left:0;top:-2px;width:30px;height:30px;border-radius:50%;background:var(--wash);color:var(--navy);display:grid;place-items:center;font-weight:800;font-size:14px}
-  .steps b{display:block;color:var(--ink);font-size:16.5px}
-  footer.site{background:var(--navy-deep);color:#B9C9D8;padding:48px 0 34px;font-size:14.5px}
-  footer.site .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
-  footer.site h4{color:#fff;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
-  footer.site a{color:#DCE6EF;text-decoration:none;display:block;padding:3px 0}
-  footer.site a:hover{color:var(--accent)}
-  footer.site .bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;padding-top:18px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;opacity:.75}
-  @media (max-width:900px){
-    .hero .wrap,.cols,.contactgrid,footer.site .wrap{grid-template-columns:1fr}
-    .hero{padding:52px 0 46px}
-    nav.pages{order:3;width:100%;overflow-x:auto;padding-bottom:6px}
-    header.site .wrap{flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
-    section.block{padding:48px 0}
-  }
-</style>
-<style>body.th-slate{--navy:#1C2024;--navy-deep:#111417;--accent:#F0B429;--accent-dark:#C98F12;--ink:#1C2024;--muted:#64707A;--line:#DCE2E7;--paper:#FFFFFF;--wash:#F2F5F7;--radius:0px;--accent-ink:#16181A;--display:Arial,Helvetica,sans-serif}
-
-body.th-slate h1,body.th-slate h2,body.th-slate h3,body.th-slate h4{text-transform:uppercase;letter-spacing:0;font-weight:800}
-body.th-slate .hero{padding:64px 0 58px;border-bottom:6px solid var(--accent)}
-body.th-slate .hero h1{font-size:clamp(30px,4vw,52px);max-width:20ch}
-body.th-slate .card-quick{border-radius:0;box-shadow:0 0 0 1px rgba(255,255,255,0.18)}
-body.th-slate .mark{border-radius:0}
-body.th-slate nav.pages button{text-transform:uppercase;letter-spacing:0.1em;font-size:12.5px;border-radius:0}
-body.th-slate .svc{border-radius:0}
-body.th-slate .svc article{border-radius:0}
-body.th-slate .callbtn{border-radius:0;border-bottom-width:3px}
-body.th-slate .ghost,body.th-slate .form{border-radius:0}
-body.th-slate .eyebrow{color:#8A6A10;letter-spacing:0.16em}
-</style>
+<title>Lawn Care Services in Tallahassee | Blade Runners</title>
+<meta name="description" content="Keep your yard looking pristine with expert lawn care in Tallahassee. Click here to request a free quote and get your lawn on our schedule today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>:root{--bg:#f2f2f0;--surface:#ffffff;--ink:#101214;--muted:#5b6064;--line:#cfd0cc;--head-bg:#ffffff;--head-ink:#101214;--radius:0px;--radius-lg:0px;--pad-sec:clamp(40px,5.5vw,70px);--lh:1.08;--dw:600;--dt:.01em;--accent:#3f8f2b;--ai:#ffffff;--active-bg:var(--accent);--active-ink:var(--ai);--display:Oswald,"Arial Narrow",sans-serif;--body:"IBM Plex Sans",Arial,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);font-weight:var(--dw);letter-spacing:var(--dt);line-height:var(--lh);margin:0}
+h1{font-size:clamp(2.1rem,1.4rem+3.4vw,3.7rem);max-width:26ch}
+h2{font-size:clamp(1.6rem,1.2rem+1.6vw,2.4rem);max-width:34ch}
+h3{font-size:1.1rem}p{margin:0}a{color:inherit}
+.wrap{width:100%;max-width:1024px;margin:0 auto;padding:0 clamp(18px,5vw,40px)}
+.view[hidden]{display:none!important}
+.sec{padding:var(--pad-sec) 0;border-top:1px solid var(--line)}
+.view .sec:first-child{border-top:0}
+.lede{margin-top:14px;max-width:54ch;color:var(--muted);font-size:1.02rem}
+.body{margin-top:12px;max-width:62ch;color:var(--muted);font-size:.95rem}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;padding:11px 18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);color:inherit;font:inherit;font-size:.9rem;font-weight:600;cursor:pointer;text-decoration:none}
+.btn-solid{background:var(--accent);border-color:var(--accent);color:var(--ai)}
+.head{position:sticky;top:0;z-index:9;background:var(--head-bg);color:var(--head-ink);border-bottom:1px solid var(--line)}
+.head-in{display:flex;align-items:center;gap:12px;max-width:1024px;min-height:64px;margin:0 auto;padding:8px clamp(18px,5vw,40px)}
+.brand{margin-right:auto;font-family:var(--display);font-weight:var(--dw);letter-spacing:var(--dt);font-size:1rem;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.head-call{display:inline-flex;align-items:center;height:34px;padding:0 13px;border:1px solid var(--accent);border-radius:var(--radius);color:var(--accent);font-size:.8rem;font-weight:600;text-decoration:none;white-space:nowrap}
+.nav{display:flex;flex-wrap:wrap;gap:2px}
+.nav button{border:0;background:none;font:inherit;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:inherit;opacity:.72;padding:8px 10px;border-radius:var(--radius);cursor:pointer}
+.nav button.is-active{opacity:1;color:var(--active-ink);background:var(--active-bg)}
+.grid{display:grid;gap:1px;margin-top:28px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.grid article{background:var(--surface);padding:22px}
+.num{font-size:.64rem;letter-spacing:.2em;color:var(--accent);font-weight:700}
+.grid h3{margin-top:9px}
+.grid p{margin-top:6px;color:var(--muted);font-size:.9rem}
+.split{display:grid;gap:clamp(18px,4vw,40px);grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+.split .lead{color:var(--ink);font-size:1.04rem;max-width:46ch}
+.faq{margin-top:24px;border-top:1px solid var(--line)}
+.faq>div{padding:16px 0;border-bottom:1px solid var(--line)}
+.faq h3{font-size:1rem}
+.faq p{margin-top:6px;max-width:72ch;color:var(--muted);font-size:.92rem}
+.cta{background:var(--accent);color:var(--ai);padding:clamp(32px,5vw,52px) 0}
+.cta-in{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
+.cta h2{color:var(--ai);max-width:32ch}
+.cta p{margin-top:8px;font-size:.93rem;opacity:.88}
+.cta .actions{margin-top:0}
+.cta .btn-ink{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.cta .btn-ghost{background:transparent;color:inherit}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:clamp(18px,3vw,26px)}
+.details{display:grid;gap:12px;margin-top:22px}
+.details dt{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.details dd{margin:3px 0 0;font-size:.95rem}
+.foot{border-top:1px solid var(--line);padding:30px 0 36px;color:var(--muted);font-size:.84rem}
+.foot-in{display:grid;gap:4px}
+.foot-brand{font-family:var(--display);font-weight:var(--dw);color:var(--ink);font-size:.96rem}
+@media(max-width:860px){.split{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:640px){.head-in{flex-wrap:wrap;min-height:0;padding:8px clamp(18px,5vw,40px) 0}.nav{order:3;flex-basis:100%;justify-content:space-between;gap:0;border-top:1px solid var(--line);margin-top:6px}.nav button{padding:9px 0;font-size:.68rem}}
+.hero-box{border:3px solid var(--ink);border-radius:var(--radius-lg);padding:clamp(22px,4vw,44px)}
+h1,h2,h3,.brand,.nav button{text-transform:uppercase}.head{border-top:5px solid var(--ink);border-bottom:5px solid var(--ink)}.nav button{letter-spacing:.12em}.head-call{border-color:var(--ink);color:var(--ink)}.hero-box{border:4px solid var(--ink);box-shadow:8px 8px 0 var(--accent)}.grid{border-top:4px solid var(--ink);border-bottom:4px solid var(--ink)}.grid article{padding:20px}.num{color:var(--ink)}.cta{border-top:5px solid var(--ink);border-bottom:5px solid var(--ink)}</style>
 </head>
-<body class="th-slate">
-
-<div class="topbar">
-  <div class="wrap">
-    <span>Tallahassee and Leon County</span>
-    <span>Lawn care · <a href="tel:+18505446200">(850) 544-6200</a></span>
-  </div>
+<body data-design="industrial">
+<header class="head"><div class="head-in">
+<a class="brand" href="#home" data-view="home">Blade Runners Lawn Care</a>
+<a class="head-call" href="tel:8505446200">Call</a>
+<nav class="nav" aria-label="Pages"><button type="button" data-view="home">Home</button><button type="button" data-view="services">Services</button><button type="button" data-view="about">About</button><button type="button" data-view="contact">Contact</button></nav>
+</div></header>
+<main>
+<div class="view" data-view="home" data-title="Lawn Care Services in Tallahassee | Blade Runners" hidden>
+<section class="sec hero hero-boxed"><div class="wrap"><div class="hero-box">
+<h1>Expert Lawn Care Services in Tallahassee</h1>
+<p class="lede">Get a lush, healthy yard today. Tap the button below to message us.</p>
+<p class="body">We provide professional landscaping and maintenance for residential properties throughout Tallahassee. Our team focuses on consistency and quality, ensuring your yard remains a beautiful, functional space for your family to enjoy all year.</p>
+<div class="actions"><a class="btn btn-solid" href="tel:8505446200">Call (850) 544-6200</a><button class="btn btn-ghost" type="button" data-view="contact">Send an enquiry</button></div>
+</div></div></section>
+<section class="sec"><div class="wrap">
+<h2>Why choose Blade Runners for your lawn?</h2>
+<p class="lede">Experience professional care designed for your specific yard requirements.</p>
+<p class="body">Our approach focuses on consistent, reliable maintenance for homeowners who value a tidy outdoor space. We treat every Tallahassee lawn with the care it deserves, ensuring clear communication and exceptional results every time.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>What lawn services do we provide?</h2>
+<p class="lede">High-quality maintenance solutions to keep your Tallahassee landscape thriving in every season.</p>
+<div class="grid"><article><span class="num">01</span><h3>Weekly Lawn Mowing</h3><p>Keep your grass at the perfect height with our reliable weekly mowing service.</p></article><article><span class="num">02</span><h3>Edging and Trimming</h3><p>Create sharp, clean lines around your walkways and flower beds for maximum curb.</p></article><article><span class="num">03</span><h3>Seasonal Debris Cleanup</h3><p>We remove fallen leaves and yard debris to keep your lawn looking tidy.</p></article><article><span class="num">04</span><h3>Landscape Bed Maintenance</h3><p>We pull weeds and clear garden beds to maintain a professional appearance daily.</p></article></div>
+<p class="body">We specialize in essential lawn maintenance tasks that improve the health and aesthetic appeal of your home exterior. Each service is performed with precision, using equipment maintained for optimal lawn care performance.</p>
+</div></section>
+<section class="cta"><div class="wrap cta-in">
+<div><h2>Ready to transform your yard today?</h2><p>Call us at (850) 544-6200 or message us to get started.</p></div>
+<div class="actions"><a class="btn btn-ink" href="tel:8505446200">Call (850) 544-6200</a><button class="btn btn-ghost" type="button" data-view="contact">Send an enquiry</button></div>
+</div></section>
 </div>
-
-<header class="site">
-  <div class="wrap">
-    <a class="brand" href="#" data-nav="home">
-      <span class="mark">BR</span>
-      <span><b>Blade Runners Lawn Care</b><small>Tallahassee</small></span>
-    </a>
-    <nav class="pages" aria-label="Pages">
-      <button type="button" data-nav="home" aria-current="page">Home</button>
-      <button type="button" data-nav="services">Services</button>
-      <button type="button" data-nav="about">About</button>
-      <button type="button" data-nav="contact">Contact</button>
-    </nav>
-    <a class="callbtn" href="tel:+18505446200"><span><small>Call now</small>(850) 544-6200</span></a>
-  </div>
-</header>
-
-<div class="page" data-page="home">
-  <section class="hero">
-    <div class="wrap">
-      <div>
-        <h1>Lawn care in Tallahassee, on a schedule that holds.</h1>
-        <p>Mowing, edging, cleanup and ongoing maintenance across Tallahassee and Leon County. Call and we will tell you what your yard needs and what it costs.</p>
-        <div class="actions">
-          <a class="callbtn" href="tel:+18505446200"><span><small>Call now</small>(850) 544-6200</span></a>
-          <a class="ghost" href="#" data-nav="contact">Send a message</a>
-        </div>
-        <ul class="creds">
-          <li>Locally owned</li>
-          <li>Price before work</li>
-          <li>Tallahassee based</li>
-        </ul>
-      </div>
-      <aside class="card-quick">
-        <h3>Get in touch</h3>
-        <dl>
-          <dt>Phone</dt><dd><a href="tel:+18505446200">(850) 544-6200</a></dd>
-          
-          
-          <dt>Service area</dt>
-          <dd>Tallahassee and Leon County</dd>
-        </dl>
-      </aside>
-    </div>
-  </section>
-
-  <section class="block">
-    <div class="wrap">
-      <div class="eyebrow">Why call us</div>
-      <h2 class="sec">A yard looks after itself for about two weeks. Then it does not.</h2>
-      <p class="lede">Florida grass grows fast and the difference between a lawn that looks maintained and one that does not is mostly whether someone turns up on the same day each fortnight. We run fixed routes, so your day stays your day, and we tell you what the yard actually needs instead of selling you work it does not.</p>
-    </div>
-  </section>
-
-  <section class="block alt">
-    <div class="wrap">
-      <div class="eyebrow">What we take on</div>
-      <h2 class="sec">Lawn and yard work for houses and rental properties.</h2>
-      <div class="svc"><article><span class="num">01</span><h3>Mowing and edging</h3><p>Cut, edged and blown off on a fixed schedule, with the clippings dealt with.</p></article><article><span class="num">02</span><h3>Hedge and shrub trimming</h3><p>Shaped and cut back properly, with the offcuts taken away.</p></article><article><span class="num">03</span><h3>Seasonal cleanup</h3><p>Leaf, storm and overgrowth cleanup for yards that have got away from their owners.</p></article><article><span class="num">04</span><h3>Sod and re-seeding</h3><p>Bare and patchy areas prepared and re-covered so the lawn comes back evenly.</p></article><article><span class="num">05</span><h3>Irrigation checks</h3><p>Sprinkler and drip systems checked, adjusted and repaired so watering is not guesswork.</p></article><article><span class="num">06</span><h3>Ongoing maintenance</h3><p>A standing schedule covering the whole yard, so you are not chasing a mow every fortnight.</p></article></div>
-    </div>
-  </section>
-
-  <section class="block">
-    <div class="wrap">
-      <div class="eyebrow">Questions we get asked</div>
-      <h2 class="sec">Straight answers before you book anything.</h2>
-      <div style="margin-top:26px;max-width:820px"><details class="faq" open><summary>How often do you come?</summary><p>Most yards are on a fortnightly schedule. Overgrown or commercial properties can be weekly, and cleanups are one-off.</p></details><details class="faq"><summary>Do you take the clippings away?</summary><p>Yes. Green waste is removed unless you would rather it was left in a pile for your own bin.</p></details><details class="faq"><summary>What does it cost?</summary><p>Price depends on the size of the yard and how often you want it done. Call and describe it, and we will give you a number.</p></details></div>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <div><h2>Need your yard sorted in Tallahassee?</h2><p>Call and tell us the size of the yard and what is bothering you. We will tell you what it takes.</p></div>
-      <a class="callbtn" href="tel:+18505446200"><span><small>Call now</small>(850) 544-6200</span></a>
-    </div>
-  </section>
+<div class="view" data-view="services" data-title="Landscaping and Lawn Services in Tallahassee | Blade Runners" hidden>
+<section class="sec"><div class="wrap">
+<h2>How do we maintain your lawn?</h2>
+<p class="lede">Comprehensive maintenance plans designed for the unique needs of Tallahassee homeowners.</p>
+<p class="body">We offer a variety of essential services to keep your property in excellent condition. Our team manages the technical details, so you can enjoy a beautiful, green lawn without the hard work.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>Which specific tasks do we handle?</h2>
+<p class="lede">Professional yard care focusing on detail, consistency, and the health of your turf.</p>
+<div class="grid"><article><span class="num">01</span><h3>Precision Grass Mowing</h3><p>We cut grass at the ideal height to promote strong and healthy growth.</p></article><article><span class="num">02</span><h3>Clean Sidewalk Edging</h3><p>We define your pathways and driveways with clean, straight edges every single visit.</p></article><article><span class="num">03</span><h3>Leaf and Debris Removal</h3><p>We clear away unwanted yard waste to ensure a healthy and tidy lawn.</p></article><article><span class="num">04</span><h3>Detailed Garden Bed Weeding</h3><p>We remove intrusive weeds from your planting areas to protect your valuable shrubs.</p></article></div>
+<p class="body">Our routine maintenance plans are built to keep your Tallahassee property looking perfectly manicured throughout the growing season. We focus on the details that make a visible difference in your home landscape.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>Why trust our maintenance process?</h2>
+<p class="lede">We prioritize reliability, professional equipment, and clear communication with every Tallahassee client.</p>
+<div class="grid"><article><span class="num">01</span><h3>Scheduled Arrival Times</h3><p>We provide predictable service days so you know exactly when we will arrive.</p></article><article><span class="num">02</span><h3>Maintained Professional Equipment</h3><p>Sharp blades and well-serviced mowers ensure a clean cut for your green grass.</p></article><article><span class="num">03</span><h3>Clear Communication Channels</h3><p>You can reach us easily by phone or message for any service updates.</p></article><article><span class="num">04</span><h3>Consistent Quality Standards</h3><p>Our team follows a strict checklist to guarantee every yard meets our standards.</p></article></div>
+<p class="body">Our workflow is designed to minimize disruption to your day while ensuring the highest standards of lawn care. We respect your property and keep our equipment clean for every job.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>What should you know before booking?</h2>
+<p class="lede">Frequently asked questions regarding our service area, visit frequency, and general maintenance approach.</p>
+<div class="faq"><div><h3>What areas do you serve?</h3><p>We provide professional lawn care services throughout the entire Tallahassee and Leon County area.</p></div><div><h3>Can you offer one-time cleanups?</h3><p>We specialize in recurring maintenance plans to ensure your lawn stays consistently healthy throughout.</p></div><div><h3>What happens during our visit?</h3><p>Our team arrives on your scheduled day, performs all requested services, and cleans up.</p></div></div>
+<p class="body">We want our clients to be fully informed about our maintenance services in Tallahassee. Here are the answers to the most common questions we receive about our professional lawn care.</p>
+</div></section>
+<section class="cta"><div class="wrap cta-in">
+<div><h2>Get your lawn care quote today.</h2><p>Call (850) 544-6200 or send us your details using our simple contact form.</p></div>
+<div class="actions"><a class="btn btn-ink" href="tel:8505446200">Call (850) 544-6200</a><button class="btn btn-ghost" type="button" data-view="contact">Send an enquiry</button></div>
+</div></section>
 </div>
-
-<div class="page" data-page="services" hidden>
-  <section class="block">
-    <div class="wrap">
-      <div class="eyebrow">Services</div>
-      <h2 class="sec">Lawn care in Tallahassee.</h2>
-      <p class="lede">Florida grass grows fast and the difference between a lawn that looks maintained and one that does not is mostly whether someone turns up on the same day each fortnight. We run fixed routes, so your day stays your day, and we tell you what the yard actually needs instead of selling you work it does not.</p>
-      <div class="svc"><article><span class="num">01</span><h3>Mowing and edging</h3><p>Cut, edged and blown off on a fixed schedule, with the clippings dealt with.</p></article><article><span class="num">02</span><h3>Hedge and shrub trimming</h3><p>Shaped and cut back properly, with the offcuts taken away.</p></article><article><span class="num">03</span><h3>Seasonal cleanup</h3><p>Leaf, storm and overgrowth cleanup for yards that have got away from their owners.</p></article><article><span class="num">04</span><h3>Sod and re-seeding</h3><p>Bare and patchy areas prepared and re-covered so the lawn comes back evenly.</p></article><article><span class="num">05</span><h3>Irrigation checks</h3><p>Sprinkler and drip systems checked, adjusted and repaired so watering is not guesswork.</p></article><article><span class="num">06</span><h3>Ongoing maintenance</h3><p>A standing schedule covering the whole yard, so you are not chasing a mow every fortnight.</p></article></div>
-    </div>
-  </section>
-
-  <section class="block alt">
-    <div class="wrap cols">
-      <div>
-        <div class="eyebrow">How we work</div>
-        <h2 class="sec">A yard looks after itself for about two weeks. Then it does not.</h2>
-        <p class="lede">Call and tell us the size of the yard and what is bothering you. We will tell you what it takes.</p>
-      </div>
-      <ul class="facts"><li><b>Fixed schedule</b>You get the same day each visit, not a window you have to wait in for.</li><li><b>Price before work</b>The cost is agreed up front, per visit or per job.</li><li><b>Local route</b>We work the same areas every week, so getting to you is quick and the price stays sane.</li><li><b>Green waste removed</b>Clippings and cuttings taken away, not left on the kerb.</li></ul>
-    </div>
-  </section>
-
-  <section class="block">
-    <div class="wrap">
-      <div class="eyebrow">Frequently asked</div>
-      <h2 class="sec">The things people want to know before they call.</h2>
-      <div style="margin-top:26px;max-width:820px"><details class="faq" open><summary>How often do you come?</summary><p>Most yards are on a fortnightly schedule. Overgrown or commercial properties can be weekly, and cleanups are one-off.</p></details><details class="faq"><summary>Do you take the clippings away?</summary><p>Yes. Green waste is removed unless you would rather it was left in a pile for your own bin.</p></details><details class="faq"><summary>What does it cost?</summary><p>Price depends on the size of the yard and how often you want it done. Call and describe it, and we will give you a number.</p></details></div>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <div><h2>Tell us what needs doing.</h2><p>Call for a straight answer and a price.</p></div>
-      <a class="callbtn" href="tel:+18505446200"><span><small>Call now</small>(850) 544-6200</span></a>
-    </div>
-  </section>
+<div class="view" data-view="about" data-title="About Blade Runners Lawn Care | Tallahassee Landscapers" hidden>
+<section class="sec sec-muted"><div class="wrap split">
+<h2>Who is behind Blade Runners?</h2>
+<div><p class="lead">Local professionals dedicated to providing high-quality lawn care for our Tallahassee community.</p><p class="body">Blade Runners is a local business focused on delivering reliable lawn maintenance for residential homeowners. We understand the Tallahassee landscape and work hard to keep every lawn healthy, green, and inviting.</p></div>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>What defines our business approach?</h2>
+<p class="lede">We believe that professional landscaping should be simple, effective, and centered on you.</p>
+<div class="grid"><article><span class="num">01</span><h3>Personalized Lawn Care</h3><p>We adapt our maintenance techniques to meet the specific needs of your grass.</p></article><article><span class="num">02</span><h3>Local Tallahassee Focus</h3><p>We live and work here, serving our local neighbors with pride and care.</p></article><article><span class="num">03</span><h3>Reliable Scheduling</h3><p>We show up when promised, ensuring your yard maintenance never falls behind schedule.</p></article><article><span class="num">04</span><h3>Friendly Communication</h3><p>We are always available to answer your questions and discuss your yard health.</p></article></div>
+<p class="body">Our business philosophy is built on three core pillars: consistency, quality, and respect. We treat every lawn as if it were our own, ensuring meticulous attention to detail at every turn.</p>
+</div></section>
+<section class="cta"><div class="wrap cta-in">
+<div><h2>Ready to join our client family?</h2><p>Call us at (850) 544-6200 or message us to get your service started.</p></div>
+<div class="actions"><a class="btn btn-ink" href="tel:8505446200">Call (850) 544-6200</a><button class="btn btn-ghost" type="button" data-view="contact">Send an enquiry</button></div>
+</div></section>
 </div>
-
-<div class="page" data-page="about" hidden>
-  <section class="block">
-    <div class="wrap cols">
-      <div>
-        <div class="eyebrow">About us</div>
-        <h2 class="sec">A local Tallahassee lawn care crew.</h2>
-        <p class="lede">Blade Runners Lawn Care is a landscaper based in Tallahassee, working across Tallahassee and Leon County.</p>
-        <p class="lede">We look after lawns and yards for homeowners and landlords who want the work done on a schedule without having to chase anyone. Most of our customers start with a cleanup and then move onto a regular visit, because a yard kept on top of takes less work and looks better all year than one that gets rescued twice a year.</p>
-      </div>
-      <ul class="facts"><li><b>Turns up when agreed</b>A fixed day and route, and a call if the weather moves it.</li><li><b>Straight pricing</b>Per visit or per job, agreed before we start.</li><li><b>Neat finish</b>Edges cut, paths blown clean, waste removed.</li><li><b>Reachable by phone</b>You can call and speak to us directly, not a booking line.</li></ul>
-    </div>
-  </section>
-
-  <section class="block alt">
-    <div class="wrap">
-      <div class="eyebrow">Where we work</div>
-      <h2 class="sec">Tallahassee and Leon County.</h2>
-      <p class="lede">Tallahassee and Leon County</p>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <div><h2>Talk to someone local.</h2><p>No call centre, no script.</p></div>
-      <a class="callbtn" href="tel:+18505446200"><span><small>Call now</small>(850) 544-6200</span></a>
-    </div>
-  </section>
+<div class="view" data-view="contact" data-title="Contact Blade Runners Lawn Care in Tallahassee" hidden>
+<section class="sec"><div class="wrap">
+<h2>How can we help your lawn?</h2>
+<p class="lede">Get in touch for a free estimate on your residential lawn care maintenance.</p>
+<p class="body">We are ready to provide professional lawn care for your Tallahassee home. Please complete the form below or call us directly. We respond to all inquiries as quickly as possible.</p>
+</div></section>
+<section class="sec"><div class="wrap split">
+<div>
+<h2>Send us your request today.</h2>
+<p class="lede">We aim to respond to all new messages within one business day.</p>
+<p class="body">Please provide your name, phone number, and a brief message regarding your property size. A team member will review your request and contact you to discuss the next steps.</p>
+<dl class="details"><div><dt>Phone</dt><dd><a href="tel:8505446200">(850) 544-6200</a></dd></div><div><dt>Service area</dt><dd>Tallahassee and Leon County</dd></div></dl>
 </div>
-
-<div class="page" data-page="contact" hidden>
-  <section class="block">
-    <div class="wrap">
-      <div class="eyebrow">Contact</div>
-      <h2 class="sec">Get in touch.</h2>
-      <p class="lede">The fastest way to reach us is the phone.</p>
-      <div class="contactgrid">
-        <form class="form" onsubmit="event.preventDefault();this.querySelector('.note').textContent='Thanks — your message is on its way. We will call you back on the number you gave us.';this.reset();">
-          <label for="n">Your name</label>
-          <input id="n" name="name" autocomplete="name" required>
-          <label for="p">Best number to call</label>
-          <input id="p" name="phone" inputmode="tel" autocomplete="tel" required>
-          <label for="m">What needs doing?</label>
-          <textarea id="m" name="message" required></textarea>
-          <button type="submit">Send message</button>
-          <p class="note">We reply the same working day.</p>
-        </form>
-        <div>
-          <ul class="steps"><li><b>You describe the job</b>We ask what you are seeing and when it started, so we can tell you how urgent it is.</li><li><b>We look at it</b>We come out, find the cause and explain what needs doing.</li><li><b>You get a price first</b>The cost is agreed before any work starts, and the work is done to fix the cause.</li></ul>
-          <ul class="facts" style="margin-top:32px">
-            <li><b>Phone</b><a href="tel:+18505446200">(850) 544-6200</a></li>
-            
-            
-            <li><b>Service area</b>Tallahassee and Leon County</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <div><h2>(850) 544-6200</h2><p>Call and tell us the size of the yard and what is bothering you. We will tell you what it takes.</p></div>
-      <a class="callbtn" href="tel:+18505446200"><span><small>Call now</small>(850) 544-6200</span></a>
-    </div>
-  </section>
+<aside class="card">
+<h3>Talk to us</h3>
+<p class="body">Call us and we will talk through what you need.</p>
+<div class="actions"><a class="btn btn-solid" href="tel:8505446200">Call (850) 544-6200</a></div>
+</aside>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>What else should you know?</h2>
+<p class="lede">Quick answers regarding our communication, business hours, and service process in the local area.</p>
+<div class="faq"><div><h3>How quickly do you reply?</h3><p>We aim to respond to all inquiries within one business day via phone call.</p></div><div><h3>What are your hours?</h3><p>Our office is open Monday through Friday from 8:00 AM until 5:00 PM.</p></div><div><h3>Do you offer quotes?</h3><p>Yes, we provide free estimates based on your specific property size and service needs.</p></div></div>
+<p class="body">Before you reach out, here are some common answers about working with our team. We aim for transparency and ease of contact for all our current and future clients.</p>
+</div></section>
 </div>
-
-<footer class="site">
-  <div class="wrap">
-    <div>
-      <h4>Blade Runners Lawn Care</h4>
-      <p style="margin:0 0 10px;color:#B9C9D8">Mowing, edging, cleanup and ongoing maintenance across Tallahassee and Leon County.</p>
-      <a href="tel:+18505446200">(850) 544-6200</a>
-      
-    </div>
-    <div>
-      <h4>Pages</h4>
-      <a href="#" data-nav="home">Home</a>
-      <a href="#" data-nav="services">Services</a>
-      <a href="#" data-nav="about">About</a>
-      <a href="#" data-nav="contact">Contact</a>
-    </div>
-    <div><h4>Service area</h4><span style="display:block;padding:3px 0">Tallahassee and Leon County</span></div>
-  </div>
-  <div class="wrap"><div class="bottom"><span>© 2026 Blade Runners Lawn Care · Tallahassee</span><span>Concept site prepared by LSDigitalsAI</span></div></div>
-</footer>
-
-<script>
-  (function(){
-    var pages = document.querySelectorAll('.page');
-    var navBtns = document.querySelectorAll('[data-nav]');
-    var name = "Blade Runners Lawn Care";
-    var city = "Tallahassee";
-    var titles = {
-      home: name + ' | ' + city,
-      services: 'Services | ' + name,
-      about: 'About | ' + name,
-      contact: 'Contact | ' + name
-    };
-    function show(key){
-      pages.forEach(function(p){ p.hidden = p.getAttribute('data-page') !== key; });
-      navBtns.forEach(function(b){
-        if(b.tagName === 'BUTTON'){
-          if(b.getAttribute('data-nav') === key) b.setAttribute('aria-current','page');
-          else b.removeAttribute('aria-current');
-        }
-      });
-      if(titles[key]) document.title = titles[key];
-      window.scrollTo({top:0,behavior:'instant'});
-    }
-    navBtns.forEach(function(b){ b.addEventListener('click', function(e){ e.preventDefault(); show(b.getAttribute('data-nav')); }); });
-  })();
-</script>
+</main>
+<footer class="foot"><div class="wrap foot-in">
+<p class="foot-brand">Blade Runners Lawn Care</p>
+<p>landscaper · Tallahassee · Tallahassee and Leon County</p>
+<p>(850) 544-6200</p>
+</div></footer>
+<script>(function(){
+var views=[].slice.call(document.querySelectorAll(".view")),titles={};
+views.forEach(function(v){titles[v.dataset.view]=v.dataset.title||document.title});
+function show(key,push){
+if(!titles[key])key=Object.keys(titles)[0];
+views.forEach(function(v){v.hidden=v.dataset.view!==key});
+var links=document.querySelectorAll("[data-view]");
+for(var i=0;i<links.length;i++){var on=links[i].dataset.view===key;links[i].classList.toggle("is-active",on);if(links[i].tagName==="BUTTON")links[i].setAttribute("aria-current",on?"page":"false")}
+document.title=titles[key];
+if(push){if(location.hash.slice(1)!==key)history.pushState({view:key},"","#"+key);window.scrollTo(0,0)}
+}
+document.addEventListener("click",function(e){var el=e.target.closest?e.target.closest("[data-view]"):null;if(!el)return;e.preventDefault();show(el.dataset.view,true)});
+window.addEventListener("popstate",function(){show(location.hash.slice(1)||"home",false)});
+show(location.hash.slice(1)||"home",false)})();</script>
 </body>
 </html>
