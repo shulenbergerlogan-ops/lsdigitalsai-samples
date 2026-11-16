@@ -6,11 +6,11 @@
 <title>Joe Boone Plumbing LLC | Plumber in Tallahassee</title>
 <meta name="description" content="Joe Boone Plumbing LLC — plumber in Tallahassee. Local plumbing repairs, drains and water heaters across Tallahassee and Leon County. Call (850) 562-0264.">
 <style>
-  :root{--navy:#12395C;--navy-deep:#0C2A45;--accent:#E08A2E;--accent-dark:#B77125;--ink:#16202B;--muted:#5A6B7B;--line:#E2E8EE;--paper:#FFFFFF;--wash:#F5F8FB;--radius:10px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  :root{--navy:#12395C;--navy-deep:#0C2A45;--accent:#E08A2E;--accent-dark:#B77125;--ink:#16202B;--muted:#5A6B7B;--line:#E2E8EE;--paper:#FFFFFF;--wash:#F5F8FB;--radius:10px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--display:var(--sans);--accent-ink:#20160A}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6;font-size:17px}
-  h1,h2,h3,h4{margin:0;line-height:1.15;letter-spacing:-0.02em;color:var(--navy)}
+  h1,h2,h3,h4{margin:0;line-height:1.15;letter-spacing:-0.02em;color:var(--navy);font-family:var(--display)}
   p{margin:0 0 1em} a{color:var(--navy)} .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
   .topbar{background:var(--navy-deep);color:#DCE6EF;font-size:14px}
   .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:42px;flex-wrap:wrap}
@@ -25,7 +25,7 @@
   nav.pages button{font:inherit;font-size:15px;font-weight:600;color:var(--navy);background:none;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
   nav.pages button:hover{background:var(--wash)}
   nav.pages button[aria-current="page"]{background:var(--wash);box-shadow:inset 0 -3px 0 var(--accent)}
-  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:#20160A;text-decoration:none;font-weight:800;padding:12px 18px;border-radius:8px;white-space:nowrap;border-bottom:2px solid var(--accent-dark)}
+  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:800;padding:12px 18px;border-radius:8px;white-space:nowrap;border-bottom:2px solid var(--accent-dark)}
   .callbtn:hover{filter:brightness(1.05)}
   .callbtn small{display:block;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
   .page[hidden]{display:none}
@@ -72,7 +72,7 @@
   .form label{display:block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
   .form input,.form textarea{width:100%;font:inherit;font-size:16px;padding:11px 13px;border:1px solid #CBD6E1;border-radius:8px;margin-bottom:16px;background:#fff;color:var(--ink)}
   .form textarea{min-height:110px;resize:vertical}
-  .form button{font:inherit;font-weight:800;background:var(--accent);color:#20160A;border:0;border-bottom:2px solid var(--accent-dark);padding:13px 20px;border-radius:8px;cursor:pointer;width:100%}
+  .form button{font:inherit;font-weight:800;background:var(--accent);color:var(--accent-ink);border:0;border-bottom:2px solid var(--accent-dark);padding:13px 20px;border-radius:8px;cursor:pointer;width:100%}
   .form .note{font-size:13px;color:var(--muted);margin:12px 0 0}
   .steps{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:22px}
   .steps li{counter-increment:s;position:relative;padding-left:44px;color:var(--muted);font-size:15.5px}
@@ -92,8 +92,40 @@
     section.block{padding:48px 0}
   }
 </style>
+<style>body.th-editorial{--navy:#1A1A14;--navy-deep:#111110;--accent:#C4462B;--accent-dark:#9E3520;--ink:#171712;--muted:#6B6A5E;--line:#DEDACE;--paper:#F8F6EF;--wash:#F1EDE2;--radius:0px;--accent-ink:#FFF8F3;--sans:Georgia,"Times New Roman",serif;--display:Georgia,"Times New Roman",serif}
+body.th-editorial .hero h1{color:var(--ink)}
+body.th-editorial .hero p{color:var(--muted)}
+body.th-editorial .creds li{color:var(--ink);border-color:var(--line)}
+body.th-editorial .hero .actions .ghost{color:var(--ink);border-color:var(--ink)}
+
+body.th-editorial h1,body.th-editorial h2,body.th-editorial h3,body.th-editorial h4{font-weight:400;letter-spacing:-0.025em}
+body.th-editorial .hero{background:var(--paper);padding:98px 0 86px}
+body.th-editorial .hero h1{font-size:clamp(40px,6vw,74px);letter-spacing:-0.035em;max-width:18ch;font-weight:400;line-height:1.02}
+body.th-editorial .creds li{border-color:var(--line);color:var(--ink)}
+body.th-editorial .card-quick{box-shadow:none;border:1px solid var(--line);border-radius:0;background:transparent}
+body.th-editorial .mark{background:var(--ink);color:var(--paper)}
+body.th-editorial nav.pages button{border-radius:0;padding:10px 0 8px;margin-right:24px;background:none;box-shadow:none;border-bottom:2px solid transparent}
+body.th-editorial nav.pages button[aria-current="page"]{background:none;box-shadow:none;border-bottom-color:var(--accent)}
+body.th-editorial .eyebrow{letter-spacing:0.2em;color:var(--accent);font-size:11px}
+body.th-editorial .svc{background:none;border:0;border-radius:0;gap:36px;overflow:visible}
+body.th-editorial .svc article{padding:20px 0 0;border-top:2px solid var(--ink);background:transparent}
+body.th-editorial .svc .num{color:var(--accent)}
+body.th-editorial .band{background:var(--ink)}
+body.th-editorial .callbtn{border-radius:0;border-bottom-width:0}
+body.th-editorial .ghost,body.th-editorial .form{border-radius:0}
+body.th-editorial footer.site{background:#111110}
+
+
+body.th-editorial.var-b .hero .wrap{grid-template-columns:1fr;justify-items:start;text-align:left;gap:34px}
+body.th-editorial.var-b .hero h1{max-width:28ch}
+body.th-editorial.var-b .creds{justify-content:flex-start}
+body.th-editorial.var-b .card-quick{max-width:760px;width:100%;text-align:left}
+body.th-editorial.var-b nav.pages button{text-transform:uppercase;letter-spacing:0.09em;font-size:12.5px;border-radius:0}
+body.th-editorial.var-b .svc{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px;background:none;border:0;overflow:visible}
+body.th-editorial.var-b .svc article{border-left:3px solid var(--accent);padding-left:20px}
+</style>
 </head>
-<body>
+<body class="th-editorial var-b">
 
 <div class="topbar">
   <div class="wrap">
