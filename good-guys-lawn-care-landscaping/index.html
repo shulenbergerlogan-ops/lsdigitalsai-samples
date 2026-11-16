@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lawn Care & Landscaping in Gainesville, FL | Good Guys Lawn Care & Landscaping</title>
+<meta name="description" content="Lawn care and landscaping in Gainesville, FL. Mowing, edging, yard cleanups, mulch, sod and ongoing maintenance from an owner-operated local crew. Call (352) 514-2996.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#f4f6f1; --ink:#11241a; --ink-2:#25412f; --muted:#5b6b60;
+  --line:#d5ddce; --surface:#ffffff; --accent:#b7e04a; --accent-ink:#11241a;
+  --radius:4px; --pad:clamp(54px,7vw,96px);
+  --display:'Archivo Black',Impact,sans-serif; --body:'Archivo',Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.62 var(--body);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1.02;letter-spacing:-.02em}
+h1{font-size:clamp(2.2rem,1.3rem+4vw,4.1rem)}
+h2{font-size:clamp(1.6rem,1.2rem+1.9vw,2.6rem)}
+h3{font-size:1.05rem;line-height:1.25}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(18px,5vw,40px)}
+.view[hidden]{display:none!important}
+.sec{padding:var(--pad) 0;border-top:2px solid var(--line)}
+.view .sec:first-child{border-top:0}
+.lede{margin-top:16px;max-width:56ch;color:var(--muted);font-size:1.03rem}
+.body{margin-top:12px;max-width:64ch;color:var(--muted);font-size:.96rem}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--ink-2);margin-bottom:18px}
+.eyebrow i{width:9px;height:9px;background:var(--accent);display:inline-block;border-radius:2px;font-style:normal}
+.head{position:sticky;top:0;z-index:20;background:var(--ink);color:#fff;border-bottom:3px solid var(--accent)}
+.head-in{display:flex;align-items:center;gap:14px;max-width:1080px;min-height:70px;margin:0 auto;padding:10px clamp(18px,5vw,40px)}
+.brand{display:flex;align-items:center;gap:10px;margin-right:auto;text-decoration:none;font-family:var(--display);font-size:.95rem;letter-spacing:-.01em;line-height:1.05}
+.brand span.mark{width:30px;height:30px;background:var(--accent);border-radius:3px;display:grid;place-items:center;color:var(--ink);font-size:.9rem}
+.nav{display:flex;flex-wrap:wrap;gap:4px}
+.nav button{border:0;background:none;font:inherit;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#cfd9c9;padding:9px 11px;border-radius:3px;cursor:pointer}
+.nav button.is-active{background:var(--accent);color:var(--accent-ink)}
+.head-call{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 16px;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:.82rem;text-decoration:none;border-radius:3px;white-space:nowrap}
+.hero{background:var(--ink);color:#fff;padding:clamp(46px,6vw,84px) 0 0}
+.hero h1{color:#fff;max-width:20ch}
+.hero .lede{color:#b9c7b3;max-width:48ch}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,52px);align-items:end}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border:2px solid var(--accent);border-radius:3px;background:var(--accent);color:var(--accent-ink);font:inherit;font-weight:700;font-size:.9rem;text-decoration:none;cursor:pointer}
+.btn-ghost{background:transparent;color:#fff;border-color:#3d5a48}
+.btn-ink{background:var(--ink);border-color:var(--ink);color:#fff}
+.statbar{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:1px;background:#2b4636;margin-top:clamp(30px,4vw,50px);border-top:1px solid #2b4636}
+.stat{background:var(--ink);padding:22px 0}
+.stat b{display:block;font-family:var(--display);font-size:1.5rem;color:var(--accent);letter-spacing:-.02em}
+.stat span{display:block;margin-top:4px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#9fb195}
+.rows{margin-top:34px;border-top:2px solid var(--line)}
+.rows article{display:grid;grid-template-columns:56px minmax(0,1fr) minmax(0,1.1fr);gap:clamp(12px,3vw,30px);align-items:start;padding:22px 0;border-bottom:2px solid var(--line)}
+.rows .num{font-family:var(--display);font-size:.9rem;color:var(--ink);background:var(--accent);width:38px;height:38px;display:grid;place-items:center;border-radius:3px;font-size:.78rem}
+.rows p{color:var(--muted);font-size:.95rem}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px;margin-top:30px}
+.tiles article{background:var(--surface);border:2px solid var(--line);border-radius:var(--radius);padding:22px}
+.tiles h3{color:var(--ink)}
+.tiles p{margin-top:8px;color:var(--muted);font-size:.93rem}
+.band{background:var(--accent);color:var(--accent-ink);padding:clamp(40px,5vw,66px) 0}
+.band .in{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.band h2{max-width:28ch}
+.band .body{color:#2c4526}
+.quote{border-left:5px solid var(--accent);padding:4px 0 4px 22px;margin-top:26px;max-width:60ch}
+.quote p{font-size:1.12rem;color:var(--ink-2);line-height:1.5}
+.quote span{display:block;margin-top:10px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:clamp(22px,4vw,48px);align-items:start}
+.card{background:var(--surface);border:2px solid var(--line);border-radius:var(--radius);padding:24px}
+.details{display:grid;gap:14px;margin:22px 0 0}
+.details dt{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.details dd{margin:4px 0 0;font-size:.98rem}
+.details dd a{text-decoration:none;border-bottom:2px solid var(--accent)}
+.faq{margin-top:26px;border-top:2px solid var(--line)}
+.faq>div{padding:18px 0;border-bottom:2px solid var(--line)}
+.faq h3{font-size:.98rem;font-family:var(--body);font-weight:700;letter-spacing:0}
+.faq p{margin-top:7px;color:var(--muted);font-size:.93rem;max-width:74ch}
+.foot{background:var(--ink);color:#9fb195;padding:34px 0 40px;font-size:.85rem}
+.foot-in{display:grid;gap:5px}
+.foot b{font-family:var(--display);color:#fff;font-weight:400}
+@media(max-width:820px){.hero-grid,.split{grid-template-columns:minmax(0,1fr)}.rows article{grid-template-columns:44px minmax(0,1fr)}.rows article p{grid-column:2}}
+</style>
+</head>
+<body>
+<header class="head"><div class="head-in">
+<a class="brand" href="#home" data-view="home"><span class="mark">GG</span>Good Guys Lawn Care & Landscaping</a>
+<nav class="nav">
+<button data-view="home">Home</button>
+<button data-view="services">Services</button>
+<button data-view="about">About</button>
+<button data-view="contact">Contact</button>
+</nav>
+<a class="head-call" href="tel:3525142996">Call (352) 514-2996</a>
+</div></header>
+<main>
+<section class="view" data-view="home" data-title="Lawn Care & Landscaping in Gainesville, FL | Good Guys Lawn Care & Landscaping">
+<div class="hero"><div class="wrap">
+<div class="hero-grid">
+<div>
+<div class="eyebrow"><i></i>Gainesville, Florida · Owner-operated</div>
+<h1>A lawn that looks after itself, because someone actually shows up.</h1>
+<p class="lede">Mowing, edging, cleanups and planting across Gainesville and Alachua County. One crew, one owner who answers the phone, and a standing schedule you can stop thinking about.</p>
+<div class="actions">
+<a class="btn" href="tel:3525142996">Call (352) 514-2996</a>
+<a class="btn btn-ghost" href="mailto:goodguyslawncare@yahoo.com">Email a photo of the yard</a>
+</div>
+</div>
+<div>
+<p class="body" style="color:#b9c7b3">Send a photo of the property and you will get a straight price back, not a runaround. No contracts to sign, no surprise line items.</p>
+<div class="actions"><a class="btn btn-ghost" href="#services" data-view="services">See what we do</a></div>
+</div>
+</div>
+<div class="statbar">
+<div class="stat"><div class="wrap"><b>Gainesville</b><span>Local crew</span></div></div>
+<div class="stat"><div class="wrap"><b>Weekly</b><span>Or biweekly cuts</span></div></div>
+<div class="stat"><div class="wrap"><b>Lic. L20000315002</b><span>State licence on file</span></div></div>
+<div class="stat"><div class="wrap"><b>Mike</b><span>Owner, on every quote</span></div></div>
+</div>
+</div></div>
+<div class="sec"><div class="wrap">
+<div class="eyebrow"><i></i>The work</div>
+<h2>What we actually do each visit</h2>
+<p class="lede">A maintenance visit is not just a mow. Cutting height, edges, beds and blow-down are all part of a visit, because a half-finished yard still looks half-finished.</p>
+<div class="rows">
+<article><div class="num">01</div><h3>Mowing & Edging</h3><p>Weekly or biweekly cuts with crisp edges and a blown-clean drive and walk. The baseline that keeps a yard looking kept.</p></article><article><div class="num">02</div><h3>Yard Cleanups</h3><p>One-off clear-outs for overgrowth, storm debris and end-of-season mess, hauled away so you are not left with a pile.</p></article><article><div class="num">03</div><h3>Mulch & Bed Refresh</h3><p>Old mulch pulled back, beds re-edged, fresh material laid so the planting areas read sharp instead of tired.</p></article>
+</div>
+<div class="actions"><a class="btn btn-ink" href="#services" data-view="services">All six services</a></div>
+</div></div>
+<div class="band"><div class="wrap in">
+<div><h2>Get a price this week</h2><p class="body">Text or email a few photos of the front and back yard. You will get a number and a start date.</p></div>
+<div class="actions" style="margin:0"><a class="btn btn-ink" href="tel:3525142996">Call (352) 514-2996</a></div>
+</div></div>
+<div class="sec"><div class="wrap">
+<div class="eyebrow"><i></i>Why the good guys</div>
+<h2>Three things owners tell us they were missing</h2>
+<div class="tiles">
+<article><h3>Someone answers</h3><p>The phone goes to the owner, not a call centre three states away. If something looks wrong after a visit, you tell the person who can fix it.</p></article>
+<article><h3>The same crew</h3><p>You are not training a new person every fortnight. The same people learn your gate, your dog and how tight you like the edges.</p></article>
+<article><h3>A real schedule</h3><p>You know which day we come. If weather pushes it, you hear from us rather than wondering where the truck went.</p></article>
+</div>
+</div></div>
+</section>
+<section class="view" data-view="services" hidden data-title="Services | Good Guys Lawn Care & Landscaping">
+<div class="sec"><div class="wrap">
+<div class="eyebrow"><i></i>Services</div>
+<h2>Every job we take on</h2>
+<p class="lede">All work is priced per property. There is no hourly meter running while the truck sits in the driveway.</p>
+<div class="rows">
+<article><div class="num">01</div><h3>Mowing & Edging</h3><p>Weekly or biweekly cuts with crisp edges and a blown-clean drive and walk. The baseline that keeps a yard looking kept.</p></article><article><div class="num">02</div><h3>Yard Cleanups</h3><p>One-off clear-outs for overgrowth, storm debris and end-of-season mess, hauled away so you are not left with a pile.</p></article><article><div class="num">03</div><h3>Mulch & Bed Refresh</h3><p>Old mulch pulled back, beds re-edged, fresh material laid so the planting areas read sharp instead of tired.</p></article><article><div class="num">04</div><h3>Hedge & Shrub Trimming</h3><p>Shaped hedges and shrubs trimmed to the right height for the plant, not just buzzed flat.</p></article><article><div class="num">05</div><h3>Sod & Planting</h3><p>Bare patches replaced with sod, and beds planted with material that suits Florida heat and sun.</p></article><article><div class="num">06</div><h3>Ongoing Maintenance</h3><p>A standing schedule covering mow, edge, trim, weed and blow so the yard stays consistent all year.</p></article>
+</div>
+</div></div>
+<div class="sec"><div class="wrap split">
+<div>
+<div class="eyebrow"><i></i>How it works</div>
+<h2>From first call to cut grass</h2>
+<p class="lede">Three steps, and you are on the schedule.</p>
+<div class="rows">
+<article><div class="num">01</div><h3>Send photos</h3><p>Text or email the front and back yard. No visit needed for most quotes.</p></article>
+<article><div class="num">02</div><h3>Get a price</h3><p>A flat number for the visit and a start date. If you want a walkthrough first, we will come out.</p></article>
+<article><div class="num">03</div><h3>We keep it up</h3><p>Same day, same crew, every week or two. Skip a visit for a trip and just tell us.</p></article>
+</div>
+</div>
+<aside class="card">
+<h3>Not sure what you need?</h3>
+<p class="body">Describe the yard and we will tell you whether it is a one-off cleanup or a maintenance plan.</p>
+<div class="actions"><a class="btn" href="tel:3525142996">Call (352) 514-2996</a></div>
+</aside>
+</div></div>
+<div class="sec"><div class="wrap">
+<div class="eyebrow"><i></i>Yard cleanups</div>
+<h2>One-off work, no schedule attached</h2>
+<p class="lede">Plenty of customers start with a single cleanup before deciding on maintenance. That is fine by us.</p>
+<div class="tiles">
+<article><h3>Overgrowth</h3><p>Grass that got away from you, cut back to a workable height and cleared.</p></article>
+<article><h3>Storm debris</h3><p>Branches, fronds and limbs collected and hauled off the property.</p></article>
+<article><h3>Beds and mulch</h3><p>Beds cleaned of weeds and old mulch, edged, then topped with fresh material so the front of the house reads deliberate instead of overgrown.</p></article>
+</div>
+</div></div>
+</section>
+<section class="view" data-view="about" hidden data-title="About Good Guys Lawn Care | Gainesville, FL">
+<div class="sec"><div class="wrap split">
+<div>
+<div class="eyebrow"><i></i>About us</div>
+<h2>A Gainesville crew run by the guy whose name is on it</h2>
+<p class="lede">Good Guys Lawn Care & Landscaping is an owner-operated lawn care and landscaping business working out of 4624 NW 30th Ave, Gainesville, FL 32606.</p>
+<p class="body">Mike runs the quotes and the schedule himself. That means the person who prices the job is the person accountable for it. It is also why the crew stays small: enough trucks to keep promises, not so many that nobody knows your yard.</p>
+<p class="body">Most of the work is repeat maintenance in Gainesville and around Alachua County, with cleanups, mulch refreshes and planting jobs layered in through the year. State landscape contractor licence L20000315002 is on file.</p>
+<div class="quote"><p>Local, owner-operated and licensed. No franchise, no call centre, no rotating cast of subcontractors.</p><span>How we work</span></div>
+</div>
+<aside class="card">
+<h3>At a glance</h3>
+<dl class="details">
+<div><dt>Owner</dt><dd>Mike</dd></div>
+<div><dt>Based in</dt><dd>Gainesville, FL</dd></div>
+<div><dt>Service area</dt><dd>Gainesville and Alachua County</dd></div>
+<div><dt>Licence</dt><dd>L20000315002</dd></div>
+<div><dt>Phone</dt><dd><a href="tel:3525142996">(352) 514-2996</a></dd></div>
+</dl>
+</aside>
+</div></div>
+<div class="sec"><div class="wrap">
+<div class="eyebrow"><i></i>What to expect</div>
+<h2>The unglamorous promises</h2>
+<div class="tiles">
+<article><h3>Show up when scheduled</h3><p>If rain pushes the visit, you get a message rather than a silent no-show.</p></article>
+<article><h3>Clean up after ourselves</h3><p>Clippings blown off the drive, walk and porch. Debris from cleanups leaves with us.</p></article>
+<article><h3>Price before work</h3><p>You agree the number before anyone starts. Extra work gets asked about first.</p></article>
+</div>
+<div class="actions"><a class="btn btn-ink" href="#contact" data-view="contact">Get in touch</a></div>
+</div></div>
+</section>
+<section class="view" data-view="contact" hidden data-title="Contact Good Guys Lawn Care | (352) 514-2996">
+<div class="sec"><div class="wrap split">
+<div>
+<div class="eyebrow"><i></i>Contact</div>
+<h2>Tell us about the yard</h2>
+<p class="lede">Call, or send photos and a rough address. You will get a price and the next available start date.</p>
+<dl class="details">
+<div><dt>Phone</dt><dd><a href="tel:3525142996">(352) 514-2996</a></dd></div>
+<div><dt>Email</dt><dd><a href="mailto:goodguyslawncare@yahoo.com">goodguyslawncare@yahoo.com</a></dd></div>
+<div><dt>Address</dt><dd>4624 NW 30th Ave, Gainesville, FL 32606</dd></div>
+<div><dt>Service area</dt><dd>Gainesville and Alachua County</dd></div>
+</dl>
+<div class="actions">
+<a class="btn" href="tel:3525142996">Call (352) 514-2996</a>
+<a class="btn btn-ink" href="mailto:goodguyslawncare@yahoo.com">Email us</a>
+</div>
+</div>
+<aside class="card">
+<h3>Faster quote</h3>
+<p class="body">Two photos of the grass, plus your address. That is usually enough to price a maintenance visit without anyone driving out first.</p>
+<p class="body">For cleanups, add a photo of the worst part so the quote is honest the first time.</p>
+</aside>
+</div></div>
+<div class="sec"><div class="wrap">
+<div class="eyebrow"><i></i>Questions</div>
+<h2>Before you call</h2>
+<div class="faq">
+<div><h3>How often do you mow?</h3><p>Most Gainesville yards are on a weekly schedule through the growing season and every other week when growth slows. We set the cadence when we first walk the property.</p></div><div><h3>Do you take away the clippings and debris?</h3><p>Yes. Cleanup work and hedge trims include hauling the debris off site.</p></div><div><h3>Which parts of town do you cover?</h3><p>We work across Gainesville and the wider Alachua County area. Call and we will confirm your address is on our route.</p></div><div><h3>Do I need to be home?</h3><p>No. As long as we can reach the yard, we can work. We will let you know before the first visit so you know what to expect.</p></div>
+</div>
+</div></div>
+</section>
+<footer class="foot"><div class="wrap foot-in">
+<p><b>Good Guys Lawn Care & Landscaping</b></p>
+<p>Lawn care & landscaping · Gainesville, FL · Alachua County</p>
+<p>(352) 514-2996 · <a href="mailto:goodguyslawncare@yahoo.com" style="color:#cfd9c9">goodguyslawncare@yahoo.com</a></p>
+</div></footer>
+<script>(function(){
+var views=[].slice.call(document.querySelectorAll(".view")),titles={};
+views.forEach(function(v){titles[v.dataset.view]=v.dataset.title||document.title});
+function show(key,push){
+if(!titles[key])key=Object.keys(titles)[0];
+views.forEach(function(v){v.hidden=v.dataset.view!==key});
+var links=document.querySelectorAll("[data-view]");
+for(var i=0;i<links.length;i++){var on=links[i].dataset.view===key;links[i].classList.toggle("is-active",on);if(links[i].tagName==="BUTTON")links[i].setAttribute("aria-current",on?"page":"false")}
+document.title=titles[key];
+if(push){if(location.hash.slice(1)!==key)history.pushState({view:key},"","#"+key);window.scrollTo(0,0)}
+}
+document.addEventListener("click",function(e){var el=e.target.closest?e.target.closest("[data-view]"):null;if(!el)return;e.preventDefault();show(el.dataset.view,true)});
+window.addEventListener("popstate",function(){show(location.hash.slice(1)||"home",false)});
+show(location.hash.slice(1)||"home",false)})();</script>
+</body>
+</html>
