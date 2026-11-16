@@ -6,11 +6,11 @@
 <title>Reid Worrell Plumbing LLC | Plumber in Tallahassee</title>
 <meta name="description" content="Reid Worrell Plumbing LLC — plumber in Tallahassee. Local plumbing repairs, drains and water heaters across Tallahassee and Leon County. Call (850) 877-7659.">
 <style>
-  :root{--navy:#12395C;--navy-deep:#0C2A45;--accent:#E08A2E;--accent-dark:#B77125;--ink:#16202B;--muted:#5A6B7B;--line:#E2E8EE;--paper:#FFFFFF;--wash:#F5F8FB;--radius:10px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  :root{--navy:#12395C;--navy-deep:#0C2A45;--accent:#E08A2E;--accent-dark:#B77125;--ink:#16202B;--muted:#5A6B7B;--line:#E2E8EE;--paper:#FFFFFF;--wash:#F5F8FB;--radius:10px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--display:var(--sans);--accent-ink:#20160A}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6;font-size:17px}
-  h1,h2,h3,h4{margin:0;line-height:1.15;letter-spacing:-0.02em;color:var(--navy)}
+  h1,h2,h3,h4{margin:0;line-height:1.15;letter-spacing:-0.02em;color:var(--navy);font-family:var(--display)}
   p{margin:0 0 1em} a{color:var(--navy)} .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
   .topbar{background:var(--navy-deep);color:#DCE6EF;font-size:14px}
   .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:42px;flex-wrap:wrap}
@@ -25,7 +25,7 @@
   nav.pages button{font:inherit;font-size:15px;font-weight:600;color:var(--navy);background:none;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
   nav.pages button:hover{background:var(--wash)}
   nav.pages button[aria-current="page"]{background:var(--wash);box-shadow:inset 0 -3px 0 var(--accent)}
-  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:#20160A;text-decoration:none;font-weight:800;padding:12px 18px;border-radius:8px;white-space:nowrap;border-bottom:2px solid var(--accent-dark)}
+  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:800;padding:12px 18px;border-radius:8px;white-space:nowrap;border-bottom:2px solid var(--accent-dark)}
   .callbtn:hover{filter:brightness(1.05)}
   .callbtn small{display:block;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
   .page[hidden]{display:none}
@@ -72,7 +72,7 @@
   .form label{display:block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
   .form input,.form textarea{width:100%;font:inherit;font-size:16px;padding:11px 13px;border:1px solid #CBD6E1;border-radius:8px;margin-bottom:16px;background:#fff;color:var(--ink)}
   .form textarea{min-height:110px;resize:vertical}
-  .form button{font:inherit;font-weight:800;background:var(--accent);color:#20160A;border:0;border-bottom:2px solid var(--accent-dark);padding:13px 20px;border-radius:8px;cursor:pointer;width:100%}
+  .form button{font:inherit;font-weight:800;background:var(--accent);color:var(--accent-ink);border:0;border-bottom:2px solid var(--accent-dark);padding:13px 20px;border-radius:8px;cursor:pointer;width:100%}
   .form .note{font-size:13px;color:var(--muted);margin:12px 0 0}
   .steps{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:22px}
   .steps li{counter-increment:s;position:relative;padding-left:44px;color:var(--muted);font-size:15.5px}
@@ -92,8 +92,24 @@
     section.block{padding:48px 0}
   }
 </style>
+<style>body.th-forest{--navy:#1F3D2B;--navy-deep:#152A1E;--accent:#6E8B3D;--accent-dark:#54702A;--ink:#1B2A20;--muted:#5F7264;--line:#DDE4D6;--paper:#F7F8F2;--wash:#EDF1E4;--radius:6px;--accent-ink:#12200F;--display:Georgia,"Times New Roman",serif}
+body.th-forest .hero h1{color:var(--ink)}
+body.th-forest .hero p{color:var(--muted)}
+body.th-forest .creds li{color:var(--ink);border-color:var(--line)}
+body.th-forest .hero .actions .ghost{color:var(--ink);border-color:var(--ink)}
+
+body.th-forest .hero{background:linear-gradient(160deg,#F7F8F2 0%,#EDF1E4 100%);padding:84px 0 78px}
+body.th-forest .hero h1{font-weight:400;font-size:clamp(34px,4.6vw,58px)}
+body.th-forest .creds li{border-color:#C9D4BE;color:var(--ink)}
+body.th-forest .card-quick{box-shadow:0 14px 34px rgba(31,61,43,0.10);border:1px solid var(--line)}
+body.th-forest .svc{background:none;border:0;gap:2px;overflow:visible}
+body.th-forest .svc article{border-top:3px solid var(--accent);border-radius:0;background:var(--paper);box-shadow:0 1px 0 var(--line)}
+body.th-forest nav.pages button{border-radius:0}
+body.th-forest nav.pages button[aria-current="page"]{background:var(--wash);box-shadow:inset 0 -3px 0 var(--accent)}
+body.th-forest .eyebrow{color:var(--accent-dark)}
+</style>
 </head>
-<body>
+<body class="th-forest">
 
 <div class="topbar">
   <div class="wrap">
