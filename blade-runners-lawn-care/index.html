@@ -6,11 +6,11 @@
 <title>Blade Runners Lawn Care | Landscaper in Tallahassee</title>
 <meta name="description" content="Blade Runners Lawn Care — landscaper in Tallahassee. Mowing, edging, cleanup and ongoing maintenance across Tallahassee and Leon County. Call (850) 544-6200.">
 <style>
-  :root{--navy:#14532D;--navy-deep:#0C2A45;--accent:#84A93C;--accent-dark:#6C8A31;--ink:#16202B;--muted:#5A6B7B;--line:#E2E8EE;--paper:#FFFFFF;--wash:#F5F8FB;--radius:10px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  :root{--navy:#14532D;--navy-deep:#0C2A45;--accent:#84A93C;--accent-dark:#6C8A31;--ink:#16202B;--muted:#5A6B7B;--line:#E2E8EE;--paper:#FFFFFF;--wash:#F5F8FB;--radius:10px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--display:var(--sans);--accent-ink:#20160A}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6;font-size:17px}
-  h1,h2,h3,h4{margin:0;line-height:1.15;letter-spacing:-0.02em;color:var(--navy)}
+  h1,h2,h3,h4{margin:0;line-height:1.15;letter-spacing:-0.02em;color:var(--navy);font-family:var(--display)}
   p{margin:0 0 1em} a{color:var(--navy)} .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
   .topbar{background:var(--navy-deep);color:#DCE6EF;font-size:14px}
   .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:42px;flex-wrap:wrap}
@@ -25,7 +25,7 @@
   nav.pages button{font:inherit;font-size:15px;font-weight:600;color:var(--navy);background:none;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
   nav.pages button:hover{background:var(--wash)}
   nav.pages button[aria-current="page"]{background:var(--wash);box-shadow:inset 0 -3px 0 var(--accent)}
-  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:#20160A;text-decoration:none;font-weight:800;padding:12px 18px;border-radius:8px;white-space:nowrap;border-bottom:2px solid var(--accent-dark)}
+  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:800;padding:12px 18px;border-radius:8px;white-space:nowrap;border-bottom:2px solid var(--accent-dark)}
   .callbtn:hover{filter:brightness(1.05)}
   .callbtn small{display:block;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
   .page[hidden]{display:none}
@@ -72,7 +72,7 @@
   .form label{display:block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
   .form input,.form textarea{width:100%;font:inherit;font-size:16px;padding:11px 13px;border:1px solid #CBD6E1;border-radius:8px;margin-bottom:16px;background:#fff;color:var(--ink)}
   .form textarea{min-height:110px;resize:vertical}
-  .form button{font:inherit;font-weight:800;background:var(--accent);color:#20160A;border:0;border-bottom:2px solid var(--accent-dark);padding:13px 20px;border-radius:8px;cursor:pointer;width:100%}
+  .form button{font:inherit;font-weight:800;background:var(--accent);color:var(--accent-ink);border:0;border-bottom:2px solid var(--accent-dark);padding:13px 20px;border-radius:8px;cursor:pointer;width:100%}
   .form .note{font-size:13px;color:var(--muted);margin:12px 0 0}
   .steps{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:22px}
   .steps li{counter-increment:s;position:relative;padding-left:44px;color:var(--muted);font-size:15.5px}
@@ -92,8 +92,22 @@
     section.block{padding:48px 0}
   }
 </style>
+<style>body.th-slate{--navy:#1C2024;--navy-deep:#111417;--accent:#F0B429;--accent-dark:#C98F12;--ink:#1C2024;--muted:#64707A;--line:#DCE2E7;--paper:#FFFFFF;--wash:#F2F5F7;--radius:0px;--accent-ink:#16181A;--display:Arial,Helvetica,sans-serif}
+
+body.th-slate h1,body.th-slate h2,body.th-slate h3,body.th-slate h4{text-transform:uppercase;letter-spacing:0;font-weight:800}
+body.th-slate .hero{padding:64px 0 58px;border-bottom:6px solid var(--accent)}
+body.th-slate .hero h1{font-size:clamp(30px,4vw,52px);max-width:20ch}
+body.th-slate .card-quick{border-radius:0;box-shadow:0 0 0 1px rgba(255,255,255,0.18)}
+body.th-slate .mark{border-radius:0}
+body.th-slate nav.pages button{text-transform:uppercase;letter-spacing:0.1em;font-size:12.5px;border-radius:0}
+body.th-slate .svc{border-radius:0}
+body.th-slate .svc article{border-radius:0}
+body.th-slate .callbtn{border-radius:0;border-bottom-width:3px}
+body.th-slate .ghost,body.th-slate .form{border-radius:0}
+body.th-slate .eyebrow{color:#8A6A10;letter-spacing:0.16em}
+</style>
 </head>
-<body>
+<body class="th-slate">
 
 <div class="topbar">
   <div class="wrap">
@@ -139,7 +153,7 @@
         <dl>
           <dt>Phone</dt><dd><a href="tel:+18505446200">(850) 544-6200</a></dd>
           
-          <dt>Hours</dt><dd>Mon–Fri 8am–5pm</dd>
+          
           <dt>Service area</dt>
           <dd>Tallahassee and Leon County</dd>
         </dl>
@@ -233,7 +247,7 @@
     <div class="wrap">
       <div class="eyebrow">Where we work</div>
       <h2 class="sec">Tallahassee and Leon County.</h2>
-      <p class="lede">Mon–Fri 8am–5pm</p>
+      <p class="lede">Tallahassee and Leon County</p>
     </div>
   </section>
 
@@ -267,7 +281,7 @@
           <ul class="facts" style="margin-top:32px">
             <li><b>Phone</b><a href="tel:+18505446200">(850) 544-6200</a></li>
             
-            <li><b>Hours</b>Mon–Fri 8am–5pm</li>
+            
             <li><b>Service area</b>Tallahassee and Leon County</li>
           </ul>
         </div>
@@ -298,7 +312,7 @@
       <a href="#" data-nav="about">About</a>
       <a href="#" data-nav="contact">Contact</a>
     </div>
-    <div><h4>Hours</h4><span style="display:block;padding:3px 0">Mon–Fri 8am–5pm</span></div>
+    <div><h4>Service area</h4><span style="display:block;padding:3px 0">Tallahassee and Leon County</span></div>
   </div>
   <div class="wrap"><div class="bottom"><span>© 2026 Blade Runners Lawn Care · Tallahassee</span><span>Concept site prepared by LSDigitalsAI</span></div></div>
 </footer>
