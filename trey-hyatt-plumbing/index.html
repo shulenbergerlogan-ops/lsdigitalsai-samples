@@ -3,363 +3,185 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trey Hyatt Plumbing | Plumber in Tallahassee</title>
-<meta name="description" content="Trey Hyatt Plumbing — plumber in Tallahassee. Local plumbing repairs, drains and water heaters across Tallahassee and Leon County. Call (850) 222-0061.">
-<style>
-  :root{--navy:#12395C;--navy-deep:#0C2A45;--accent:#E08A2E;--accent-dark:#B77125;--ink:#16202B;--muted:#5A6B7B;--line:#E2E8EE;--paper:#FFFFFF;--wash:#F5F8FB;--radius:10px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--display:var(--sans);--accent-ink:#20160A}
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6;font-size:17px}
-  h1,h2,h3,h4{margin:0;line-height:1.15;letter-spacing:-0.02em;color:var(--navy);font-family:var(--display)}
-  p{margin:0 0 1em} a{color:var(--navy)} .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-  .topbar{background:var(--navy-deep);color:#DCE6EF;font-size:14px}
-  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:42px;flex-wrap:wrap}
-  .topbar span{opacity:.85} .topbar a{color:#fff;text-decoration:none;font-weight:600}
-  header.site{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
-  header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:76px}
-  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
-  .mark{width:42px;height:42px;border-radius:9px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800;font-size:17px}
-  .brand b{display:block;font-size:18px;letter-spacing:-0.01em}
-  .brand small{display:block;font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
-  nav.pages{display:flex;gap:4px;flex-wrap:wrap}
-  nav.pages button{font:inherit;font-size:15px;font-weight:600;color:var(--navy);background:none;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
-  nav.pages button:hover{background:var(--wash)}
-  nav.pages button[aria-current="page"]{background:var(--wash);box-shadow:inset 0 -3px 0 var(--accent)}
-  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:800;padding:12px 18px;border-radius:8px;white-space:nowrap;border-bottom:2px solid var(--accent-dark)}
-  .callbtn:hover{filter:brightness(1.05)}
-  .callbtn small{display:block;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
-  .page[hidden]{display:none}
-  .hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-deep) 100%);color:#EAF1F7;padding:76px 0 68px}
-  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
-  .hero h1{color:#fff;font-size:clamp(32px,4.4vw,54px);max-width:16ch}
-  .hero p{color:#C6D5E3;font-size:18px;max-width:46ch}
-  .creds{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 0;padding:0;list-style:none}
-  .creds li{font-size:13px;font-weight:600;color:#D9E5F0;border:1px solid rgba(255,255,255,.25);padding:7px 12px;border-radius:999px}
-  .hero .actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:28px}
-  .hero .actions .ghost{color:#fff;border-color:rgba(255,255,255,.4)}
-  .card-quick{background:#fff;color:var(--ink);border-radius:var(--radius);padding:26px;box-shadow:0 18px 40px rgba(4,18,32,.28)}
-  .card-quick h3{font-size:16px;letter-spacing:.02em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
-  .card-quick dl{margin:0;display:grid;gap:12px}
-  .card-quick dt{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-  .card-quick dd{margin:2px 0 0;font-weight:600}
-  .card-quick a{text-decoration:none;font-weight:700}
-  section.block{padding:64px 0} section.block.alt{background:var(--wash)}
-  .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-dark);font-weight:800;margin-bottom:12px}
-  h2.sec{font-size:clamp(24px,3vw,34px);max-width:26ch}
-  .lede{color:var(--muted);max-width:60ch;margin-top:14px}
-  .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:38px}
-  .svc article{background:#fff;padding:26px}
-  .svc article h3{font-size:18px;margin-bottom:8px}
-  .svc article p{margin:0;color:var(--muted);font-size:15.5px}
-  .svc .num{font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--accent-dark);display:block;margin-bottom:10px}
-  .cols{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:34px}
-  .facts{margin:0;padding:0;list-style:none;display:grid;gap:16px}
-  .facts li{padding-left:18px;border-left:3px solid var(--accent);font-size:15.5px;color:var(--muted)}
-  .facts b{display:block;color:var(--ink);font-size:16px}
-  details.faq{border-top:1px solid var(--line);padding:18px 0}
-  details.faq summary{cursor:pointer;font-weight:700;color:var(--navy);font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center}
-  details.faq summary::-webkit-details-marker{display:none}
-  details.faq summary:after{content:"+";font-size:22px;color:var(--accent);font-weight:400;line-height:1}
-  details.faq[open] summary:after{content:"–"}
-  details.faq p{margin:12px 0 0;color:var(--muted);max-width:70ch}
-  .band{background:var(--navy);color:#fff;padding:54px 0}
-  .band .wrap{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
-  .band h2{color:#fff;font-size:clamp(22px,2.8vw,30px);max-width:22ch}
-  .band p{color:#C6D5E3;margin:8px 0 0}
-  .ghost{display:inline-flex;align-items:center;border:1.5px solid var(--navy);color:var(--navy);text-decoration:none;font-weight:700;padding:11px 18px;border-radius:8px}
-  .contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:34px}
-  .form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
-  .form label{display:block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
-  .form input,.form textarea{width:100%;font:inherit;font-size:16px;padding:11px 13px;border:1px solid #CBD6E1;border-radius:8px;margin-bottom:16px;background:#fff;color:var(--ink)}
-  .form textarea{min-height:110px;resize:vertical}
-  .form button{font:inherit;font-weight:800;background:var(--accent);color:var(--accent-ink);border:0;border-bottom:2px solid var(--accent-dark);padding:13px 20px;border-radius:8px;cursor:pointer;width:100%}
-  .form .note{font-size:13px;color:var(--muted);margin:12px 0 0}
-  .steps{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:22px}
-  .steps li{counter-increment:s;position:relative;padding-left:44px;color:var(--muted);font-size:15.5px}
-  .steps li:before{content:counter(s);position:absolute;left:0;top:-2px;width:30px;height:30px;border-radius:50%;background:var(--wash);color:var(--navy);display:grid;place-items:center;font-weight:800;font-size:14px}
-  .steps b{display:block;color:var(--ink);font-size:16.5px}
-  footer.site{background:var(--navy-deep);color:#B9C9D8;padding:48px 0 34px;font-size:14.5px}
-  footer.site .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
-  footer.site h4{color:#fff;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
-  footer.site a{color:#DCE6EF;text-decoration:none;display:block;padding:3px 0}
-  footer.site a:hover{color:var(--accent)}
-  footer.site .bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;padding-top:18px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;opacity:.75}
-  @media (max-width:900px){
-    .hero .wrap,.cols,.contactgrid,footer.site .wrap{grid-template-columns:1fr}
-    .hero{padding:52px 0 46px}
-    nav.pages{order:3;width:100%;overflow-x:auto;padding-bottom:6px}
-    header.site .wrap{flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
-    section.block{padding:48px 0}
-  }
-</style>
-<style>body.th-hivis{--navy:#F2F4EE;--navy-deep:#050607;--accent:#C6F24E;--accent-dark:#9CD231;--ink:#E8EBE4;--muted:#9AA39B;--line:#26292B;--paper:#0E1012;--wash:#15181A;--radius:4px;--accent-ink:#0E1012;--display:"Helvetica Neue",Arial,sans-serif}
-
-body.th-hivis h1,body.th-hivis h2,body.th-hivis h3{text-transform:uppercase;letter-spacing:-0.01em;font-weight:900}
-body.th-hivis header.site{background:rgba(14,16,18,0.95);border-bottom-color:var(--line)}
-body.th-hivis .topbar{background:#050607}
-body.th-hivis .brand small{color:var(--muted)}
-body.th-hivis .mark{background:var(--accent);color:var(--accent-ink)}
-body.th-hivis nav.pages button{color:#DADFD8;border-radius:0}
-body.th-hivis nav.pages button:hover{background:#1A1E20}
-body.th-hivis nav.pages button[aria-current="page"]{background:#1A1E20;box-shadow:inset 0 -2px 0 var(--accent)}
-body.th-hivis .hero{background:linear-gradient(150deg,#171B1D 0%,#08090A 100%)}
-body.th-hivis .hero p{color:#A9B2A8}
-body.th-hivis .creds li{color:#D7DED4;border-color:rgba(198,242,78,0.35)}
-body.th-hivis .card-quick{background:#15181A;color:var(--ink);box-shadow:0 18px 40px rgba(0,0,0,0.45)}
-body.th-hivis .card-quick h3,body.th-hivis .card-quick dt{color:var(--muted)}
-body.th-hivis .card-quick a{color:var(--accent)}
-body.th-hivis .svc{background:var(--line);border-color:var(--line)}
-body.th-hivis .svc article{background:var(--paper)}
-body.th-hivis .svc article p,body.th-hivis details.faq p,body.th-hivis .lede{color:var(--muted)}
-body.th-hivis details.faq{border-top-color:var(--line)}
-body.th-hivis details.faq summary{color:var(--navy)}
-body.th-hivis .form{background:#15181A;border-color:var(--line)}
-body.th-hivis .form input,body.th-hivis .form textarea{background:#0E1012;color:var(--ink);border-color:#2C3133}
-body.th-hivis .form label{color:var(--muted)}
-body.th-hivis .band{background:var(--accent);color:#0E1012}
-body.th-hivis .band h2{color:#0E1012}
-body.th-hivis .band p{color:rgba(14,16,18,0.72)}
-body.th-hivis .steps li:before{background:#1C2124;color:var(--ink)}
-body.th-hivis .facts b{color:var(--navy)}
-body.th-hivis .eyebrow{color:var(--accent)}
-body.th-hivis .ghost{border-color:#DADFD8;color:#DADFD8}
-</style>
+<title>Professional Plumber in Tallahassee | Trey Hyatt Plumbing</title>
+<meta name="description" content="Need a reliable plumber in Tallahassee? Trey Hyatt Plumbing provides expert home repair services. Call (850) 222-0061 to schedule your appointment today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;600&display=swap">
+<style>:root{--bg:#f6efe6;--surface:#fffaf4;--ink:#3a2b22;--muted:#7a6659;--line:#e6d8c9;--head-bg:rgba(246,239,230,.94);--head-ink:#3a2b22;--radius:999px;--radius-lg:18px;--pad-sec:clamp(52px,7vw,92px);--lh:1.1;--dw:500;--dt:-.01em;--accent:#c1653f;--ai:#ffffff;--active-bg:var(--accent);--active-ink:var(--ai);--display:Fraunces,Georgia,serif;--body:Karla,Arial,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);font-weight:var(--dw);letter-spacing:var(--dt);line-height:var(--lh);margin:0}
+h1{font-size:clamp(2.1rem,1.4rem+3.4vw,3.7rem);max-width:26ch}
+h2{font-size:clamp(1.6rem,1.2rem+1.6vw,2.4rem);max-width:34ch}
+h3{font-size:1.1rem}p{margin:0}a{color:inherit}
+.wrap{width:100%;max-width:1024px;margin:0 auto;padding:0 clamp(18px,5vw,40px)}
+.view[hidden]{display:none!important}
+.sec{padding:var(--pad-sec) 0;border-top:1px solid var(--line)}
+.view .sec:first-child{border-top:0}
+.lede{margin-top:14px;max-width:54ch;color:var(--muted);font-size:1.02rem}
+.body{margin-top:12px;max-width:62ch;color:var(--muted);font-size:.95rem}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;padding:11px 18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);color:inherit;font:inherit;font-size:.9rem;font-weight:600;cursor:pointer;text-decoration:none}
+.btn-solid{background:var(--accent);border-color:var(--accent);color:var(--ai)}
+.head{position:sticky;top:0;z-index:9;background:var(--head-bg);color:var(--head-ink);border-bottom:1px solid var(--line)}
+.head-in{display:flex;align-items:center;gap:12px;max-width:1024px;min-height:64px;margin:0 auto;padding:8px clamp(18px,5vw,40px)}
+.brand{margin-right:auto;font-family:var(--display);font-weight:var(--dw);letter-spacing:var(--dt);font-size:1rem;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.head-call{display:inline-flex;align-items:center;height:34px;padding:0 13px;border:1px solid var(--accent);border-radius:var(--radius);color:var(--accent);font-size:.8rem;font-weight:600;text-decoration:none;white-space:nowrap}
+.nav{display:flex;flex-wrap:wrap;gap:2px}
+.nav button{border:0;background:none;font:inherit;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:inherit;opacity:.72;padding:8px 10px;border-radius:var(--radius);cursor:pointer}
+.nav button.is-active{opacity:1;color:var(--active-ink);background:var(--active-bg)}
+.grid{display:grid;gap:1px;margin-top:28px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.grid article{background:var(--surface);padding:22px}
+.num{font-size:.64rem;letter-spacing:.2em;color:var(--accent);font-weight:700}
+.grid h3{margin-top:9px}
+.grid p{margin-top:6px;color:var(--muted);font-size:.9rem}
+.split{display:grid;gap:clamp(18px,4vw,40px);grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+.split .lead{color:var(--ink);font-size:1.04rem;max-width:46ch}
+.faq{margin-top:24px;border-top:1px solid var(--line)}
+.faq>div{padding:16px 0;border-bottom:1px solid var(--line)}
+.faq h3{font-size:1rem}
+.faq p{margin-top:6px;max-width:72ch;color:var(--muted);font-size:.92rem}
+.cta{background:var(--accent);color:var(--ai);padding:clamp(32px,5vw,52px) 0}
+.cta-in{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
+.cta h2{color:var(--ai);max-width:32ch}
+.cta p{margin-top:8px;font-size:.93rem;opacity:.88}
+.cta .actions{margin-top:0}
+.cta .btn-ink{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.cta .btn-ghost{background:transparent;color:inherit}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:clamp(18px,3vw,26px)}
+.details{display:grid;gap:12px;margin-top:22px}
+.details dt{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.details dd{margin:3px 0 0;font-size:.95rem}
+.foot{border-top:1px solid var(--line);padding:30px 0 36px;color:var(--muted);font-size:.84rem}
+.foot-in{display:grid;gap:4px}
+.foot-brand{font-family:var(--display);font-weight:var(--dw);color:var(--ink);font-size:.96rem}
+@media(max-width:860px){.split{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:640px){.head-in{flex-wrap:wrap;min-height:0;padding:8px clamp(18px,5vw,40px) 0}.nav{order:3;flex-basis:100%;justify-content:space-between;gap:0;border-top:1px solid var(--line);margin-top:6px}.nav button{padding:9px 0;font-size:.68rem}}
+.hero-center{text-align:center}.hero-center .wrap{display:grid;justify-items:center}.hero-center .lede,.hero-center .body{margin-left:auto;margin-right:auto}.hero-center .actions{justify-content:center}
+.nav{gap:6px}.nav button{text-transform:none;letter-spacing:.02em;opacity:1;background:var(--surface);padding:8px 14px;font-size:.82rem}.nav button.is-active{background:var(--ink);color:var(--bg)}.head-call{border-color:var(--line)}.grid{background:transparent;border:0;gap:18px;overflow:visible}.grid article{border:1px solid var(--line);border-radius:var(--radius-lg);background:var(--surface);box-shadow:0 16px 34px -26px rgba(58,43,34,.55);padding:24px}.num{color:var(--muted)}.card{box-shadow:0 18px 36px -28px rgba(58,43,34,.45)}.faq{border-top:0}.faq>div{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:16px 18px;margin-bottom:10px}</style>
 </head>
-<body class="th-hivis">
-
-<div class="topbar">
-  <div class="wrap">
-    <span>Tallahassee and Leon County</span>
-    <span>Plumbing · <a href="tel:+18502220061">(850) 222-0061</a></span>
-  </div>
+<body data-design="warm-sand">
+<header class="head"><div class="head-in">
+<a class="brand" href="#home" data-view="home">Trey Hyatt Plumbing</a>
+<a class="head-call" href="tel:8502220061">Call</a>
+<nav class="nav" aria-label="Pages"><button type="button" data-view="home">Home</button><button type="button" data-view="services">Services</button><button type="button" data-view="about">About</button><button type="button" data-view="contact">Contact</button></nav>
+</div></header>
+<main>
+<div class="view" data-view="home" data-title="Professional Plumber in Tallahassee | Trey Hyatt Plumbing" hidden>
+<section class="sec hero hero-center"><div class="wrap">
+<h1>Expert Plumbing Repairs in Tallahassee</h1>
+<p class="lede">Professional, local plumbing services for your home. Call (850) 222-0061 to get help.</p>
+<p class="body">Trey Hyatt Plumbing brings honest, personal service to every job in Leon County. Whether you have a leaky faucet or a complex pipe issue, we arrive ready to solve your plumbing problems.</p>
+<div class="actions"><a class="btn btn-solid" href="tel:8502220061">Call (850) 222-0061</a><button class="btn btn-ghost" type="button" data-view="contact">Send an enquiry</button></div>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>Why trust Trey Hyatt Plumbing?</h2>
+<p class="lede">We prioritize your home comfort with careful, professional work every single day.</p>
+<p class="body">When you face a plumbing issue, you need someone who listens and acts quickly. I handle all residential plumbing tasks with a focus on doing the job right the first time.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>What plumbing services do we provide?</h2>
+<p class="lede">We offer a range of essential repairs to keep your home running smoothly.</p>
+<div class="grid"><article><span class="num">01</span><h3>Pipe Leak Repair</h3><p>Finding and fixing hidden leaks to prevent water damage in your Tallahassee home.</p></article><article><span class="num">02</span><h3>Drain Cleaning Services</h3><p>Clearing stubborn blockages to restore proper flow to your kitchen and bathroom sinks.</p></article><article><span class="num">03</span><h3>Fixture Installation Help</h3><p>Installing new toilets, faucets, and showerheads with precision to ensure leak-free daily operation.</p></article><article><span class="num">04</span><h3>Water Heater Care</h3><p>Diagnosing and repairing water heater issues so you always have reliable hot water access.</p></article></div>
+<p class="body">Our focus is on solving everyday plumbing headaches for Tallahassee residents. We manage everything from minor repairs to urgent pipe issues, ensuring your home systems remain in perfect working order daily.</p>
+</div></section>
+<section class="cta"><div class="wrap cta-in">
+<div><h2>Ready to fix your plumbing today?</h2><p>Contact Trey Hyatt Plumbing at (850) 222-0061 to discuss your home repair needs.</p></div>
+<div class="actions"><a class="btn btn-ink" href="tel:8502220061">Call (850) 222-0061</a><button class="btn btn-ghost" type="button" data-view="contact">Send an enquiry</button></div>
+</div></section>
 </div>
-
-<header class="site">
-  <div class="wrap">
-    <a class="brand" href="#" data-nav="home">
-      <span class="mark">TH</span>
-      <span><b>Trey Hyatt Plumbing</b><small>Tallahassee</small></span>
-    </a>
-    <nav class="pages" aria-label="Pages">
-      <button type="button" data-nav="home" aria-current="page">Home</button>
-      <button type="button" data-nav="services">Services</button>
-      <button type="button" data-nav="about">About</button>
-      <button type="button" data-nav="contact">Contact</button>
-    </nav>
-    <a class="callbtn" href="tel:+18502220061"><span><small>Call now</small>(850) 222-0061</span></a>
-  </div>
-</header>
-
-<div class="page" data-page="home">
-  <section class="hero">
-    <div class="wrap">
-      <div>
-        <h1>Plumbing repairs in Tallahassee, done properly.</h1>
-        <p>Local plumbing repairs, drains and water heaters across Tallahassee and Leon County. Call and describe the problem, and we will tell you what it takes to fix it.</p>
-        <div class="actions">
-          <a class="callbtn" href="tel:+18502220061"><span><small>Call now</small>(850) 222-0061</span></a>
-          <a class="ghost" href="#" data-nav="contact">Send a message</a>
-        </div>
-        <ul class="creds">
-          <li>Locally owned</li>
-          <li>Price before work</li>
-          <li>Tallahassee based</li>
-        </ul>
-      </div>
-      <aside class="card-quick">
-        <h3>Get in touch</h3>
-        <dl>
-          <dt>Phone</dt><dd><a href="tel:+18502220061">(850) 222-0061</a></dd>
-          
-          
-          <dt>Service area</dt>
-          <dd>Tallahassee and Leon County</dd>
-        </dl>
-      </aside>
-    </div>
-  </section>
-
-  <section class="block">
-    <div class="wrap">
-      <div class="eyebrow">Why call us</div>
-      <h2 class="sec">You get someone who can be at your door quickly, and a straight answer about the job.</h2>
-      <p class="lede">Plumbing problems get more expensive the longer they sit. A slow leak under a sink or a water heater that has stopped heating is a small repair today and a flooring or ceiling job next week. We work in the same neighbourhoods every day, so we can tell you honestly what a job needs before anyone picks up a tool.</p>
-    </div>
-  </section>
-
-  <section class="block alt">
-    <div class="wrap">
-      <div class="eyebrow">What we take on</div>
-      <h2 class="sec">Plumbing work for houses and small rental properties.</h2>
-      <div class="svc"><article><span class="num">01</span><h3>Emergency repair</h3><p>Burst pipes, overflowing fixtures and sudden leaks. Call and describe what is happening.</p></article><article><span class="num">02</span><h3>Drain cleaning</h3><p>Slow sinks, backed-up tubs and recurring blockages cleared, with a look at why it keeps happening.</p></article><article><span class="num">03</span><h3>Water heaters</h3><p>No hot water, inconsistent temperature, or a unit at the end of its life. Repair first where it makes sense.</p></article><article><span class="num">04</span><h3>Leak detection</h3><p>Finding the source behind a wall, under a slab or around a fixture before it damages more of the house.</p></article><article><span class="num">05</span><h3>Repiping</h3><p>Failing galvanised or corroded runs replaced, planned to keep the water off for as short a time as possible.</p></article><article><span class="num">06</span><h3>Kitchen &amp; bathroom</h3><p>Fixture swaps, new taps and toilets, and plumbing for work you are having done.</p></article></div>
-    </div>
-  </section>
-
-  <section class="block">
-    <div class="wrap">
-      <div class="eyebrow">Questions we get asked</div>
-      <h2 class="sec">Straight answers before you book anything.</h2>
-      <div style="margin-top:26px;max-width:820px"><details class="faq" open><summary>How quickly can you get out?</summary><p>Call us and we will tell you honestly what the day looks like. Water going where it should not is treated as a priority.</p></details><details class="faq"><summary>Will you tell me the price first?</summary><p>Yes. We look at the job, explain what needs doing and give you the price before the work starts.</p></details><details class="faq"><summary>What areas do you cover?</summary><p>Tallahassee and Leon County.</p></details></div>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <div><h2>Need a plumber in Tallahassee today?</h2><p>Call and tell us what the problem is. We will tell you what it takes to fix it.</p></div>
-      <a class="callbtn" href="tel:+18502220061"><span><small>Call now</small>(850) 222-0061</span></a>
-    </div>
-  </section>
+<div class="view" data-view="services" data-title="Professional Plumbing Services in Tallahassee | Trey Hyatt" hidden>
+<section class="sec"><div class="wrap">
+<h2>Our Plumbing Services in Tallahassee</h2>
+<p class="lede">Dedicated residential plumbing support to keep your home systems functioning at their best.</p>
+<p class="body">We specialize in targeted repairs that address the specific needs of Tallahassee properties. From small drip fixes to major blockages, we bring the tools and knowledge required to handle every task.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>Which plumbing issues do we solve?</h2>
+<p class="lede">We handle common residential plumbing challenges with efficiency and clear communication for every client.</p>
+<div class="grid"><article><span class="num">01</span><h3>Emergency Leak Detection</h3><p>Locating hidden pipe leaks to stop water waste and damage to your home.</p></article><article><span class="num">02</span><h3>Professional Drain Clearing</h3><p>Removing deep clogs in your pipes to ensure fast drainage throughout your house.</p></article><article><span class="num">03</span><h3>Toilet Repair Services</h3><p>Fixing running toilets and flushing issues to restore essential functionality to your bathroom.</p></article><article><span class="num">04</span><h3>Faucet and Valve Work</h3><p>Repairing or replacing worn faucets and shut-off valves for better water control management.</p></article></div>
+<p class="body">Whether you are dealing with an annoying leak or a full drain backup, our services are designed to bring relief. We focus on durable fixes that keep your home running smoothly.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>Why choose our plumbing services?</h2>
+<p class="lede">We believe in honest, straightforward work that puts your needs at the very center.</p>
+<div class="grid"><article><span class="num">01</span><h3>Personalized Service Approach</h3><p>Every job is handled with individual attention to ensure your unique plumbing needs.</p></article><article><span class="num">02</span><h3>Clean Work Spaces</h3><p>We leave your home as clean as we found it after every repair.</p></article><article><span class="num">03</span><h3>Clear Communication Styles</h3><p>You will always understand the plumbing problem and the repair steps involved fully.</p></article><article><span class="num">04</span><h3>Local Tallahassee Focus</h3><p>We serve Leon County exclusively, allowing us to respond quickly to your calls.</p></article></div>
+<p class="body">You deserve a plumber who communicates clearly and respects your property. We focus on providing a personal experience where you know exactly what is happening during every single visit.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>Frequently asked plumbing questions</h2>
+<p class="lede">Common questions about our repair process and what you can expect during our visit.</p>
+<div class="faq"><div><h3>What does a first visit include?</h3><p>I will inspect your plumbing issue, explain the cause, and propose a specific solution.</p></div><div><h3>How do you handle quotes?</h3><p>I provide a clear assessment of the repair needed before beginning any physical work.</p></div><div><h3>Do you cover all Tallahassee?</h3><p>Yes, we provide full plumbing service coverage throughout Tallahassee and the surrounding Leon County.</p></div></div>
+<p class="body">Here are the answers to the questions we hear most often from local homeowners.</p>
+</div></section>
+<section class="cta"><div class="wrap cta-in">
+<div><h2>Book your plumbing service today</h2><p>Call (850) 222-0061 to speak with Trey Hyatt Plumbing about your home needs.</p></div>
+<div class="actions"><a class="btn btn-ink" href="tel:8502220061">Call (850) 222-0061</a><button class="btn btn-ghost" type="button" data-view="contact">Send an enquiry</button></div>
+</div></section>
 </div>
-
-<div class="page" data-page="services" hidden>
-  <section class="block">
-    <div class="wrap">
-      <div class="eyebrow">Services</div>
-      <h2 class="sec">Plumbing services in Tallahassee.</h2>
-      <p class="lede">Plumbing problems get more expensive the longer they sit. A slow leak under a sink or a water heater that has stopped heating is a small repair today and a flooring or ceiling job next week. We work in the same neighbourhoods every day, so we can tell you honestly what a job needs before anyone picks up a tool.</p>
-      <div class="svc"><article><span class="num">01</span><h3>Emergency repair</h3><p>Burst pipes, overflowing fixtures and sudden leaks. Call and describe what is happening.</p></article><article><span class="num">02</span><h3>Drain cleaning</h3><p>Slow sinks, backed-up tubs and recurring blockages cleared, with a look at why it keeps happening.</p></article><article><span class="num">03</span><h3>Water heaters</h3><p>No hot water, inconsistent temperature, or a unit at the end of its life. Repair first where it makes sense.</p></article><article><span class="num">04</span><h3>Leak detection</h3><p>Finding the source behind a wall, under a slab or around a fixture before it damages more of the house.</p></article><article><span class="num">05</span><h3>Repiping</h3><p>Failing galvanised or corroded runs replaced, planned to keep the water off for as short a time as possible.</p></article><article><span class="num">06</span><h3>Kitchen &amp; bathroom</h3><p>Fixture swaps, new taps and toilets, and plumbing for work you are having done.</p></article></div>
-    </div>
-  </section>
-
-  <section class="block alt">
-    <div class="wrap cols">
-      <div>
-        <div class="eyebrow">How we work</div>
-        <h2 class="sec">You get someone who can be at your door quickly, and a straight answer about the job.</h2>
-        <p class="lede">Call and tell us what the problem is. We will tell you what it takes to fix it.</p>
-      </div>
-      <ul class="facts"><li><b>Price before work</b>You hear the cost before anything is taken apart, so there is no surprise at the end.</li><li><b>Local to Tallahassee</b>We work in the city and across the county, so travel time is short and we know what local homes are built with.</li><li><b>Straight answers</b>If a repair is not worth doing, we say so rather than billing for a fix that will not hold.</li><li><b>Left tidy</b>Work areas covered and cleaned up, with the old parts taken away.</li></ul>
-    </div>
-  </section>
-
-  <section class="block">
-    <div class="wrap">
-      <div class="eyebrow">Frequently asked</div>
-      <h2 class="sec">The things people want to know before they call.</h2>
-      <div style="margin-top:26px;max-width:820px"><details class="faq" open><summary>How quickly can you get out?</summary><p>Call us and we will tell you honestly what the day looks like. Water going where it should not is treated as a priority.</p></details><details class="faq"><summary>Will you tell me the price first?</summary><p>Yes. We look at the job, explain what needs doing and give you the price before the work starts.</p></details><details class="faq"><summary>What areas do you cover?</summary><p>Tallahassee and Leon County.</p></details></div>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <div><h2>Tell us what needs doing.</h2><p>Call for a straight answer and a price.</p></div>
-      <a class="callbtn" href="tel:+18502220061"><span><small>Call now</small>(850) 222-0061</span></a>
-    </div>
-  </section>
+<div class="view" data-view="about" data-title="About Trey Hyatt Plumbing | Local Tallahassee Plumber" hidden>
+<section class="sec sec-muted"><div class="wrap split">
+<h2>About Trey Hyatt Plumbing</h2>
+<div><p class="lead">Personal, local plumbing services dedicated to keeping your Tallahassee home in top condition.</p><p class="body">I am Trey Hyatt. My goal is to provide plumbing services that feel personal and reliable. I handle every repair with care, ensuring that your home&#39;s plumbing functions perfectly for you.</p></div>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>What defines our plumbing work?</h2>
+<p class="lede">We prioritize clarity, reliability, and respect for your home during every plumbing service call.</p>
+<div class="grid"><article><span class="num">01</span><h3>Customer-First Philosophy</h3><p>Your satisfaction is the primary goal for every single plumbing project we undertake.</p></article><article><span class="num">02</span><h3>Detailed Repair Assessments</h3><p>I take time to show you the issue before starting any repair work.</p></article><article><span class="num">03</span><h3>Reliable Local Presence</h3><p>Being a Tallahassee plumber means providing consistent care to our local community neighbors.</p></article><article><span class="num">04</span><h3>Honest Work Ethic</h3><p>We promise transparent advice and straightforward labor for all your home plumbing repairs.</p></article></div>
+<p class="body">Our process is simple and direct. I believe that good plumbing comes down to listening to the customer and working with patience to ensure every pipe and fixture is sound.</p>
+</div></section>
+<section class="cta"><div class="wrap cta-in">
+<div><h2>Need a plumber you can trust?</h2><p>Call (850) 222-0061 to get Trey Hyatt Plumbing working on your home today.</p></div>
+<div class="actions"><a class="btn btn-ink" href="tel:8502220061">Call (850) 222-0061</a><button class="btn btn-ghost" type="button" data-view="contact">Send an enquiry</button></div>
+</div></section>
 </div>
-
-<div class="page" data-page="about" hidden>
-  <section class="block">
-    <div class="wrap cols">
-      <div>
-        <div class="eyebrow">About us</div>
-        <h2 class="sec">A Tallahassee plumbing company, not a call centre.</h2>
-        <p class="lede">Trey Hyatt Plumbing is a plumber based in Tallahassee, working across Tallahassee and Leon County.</p>
-        <p class="lede">When you call, you are speaking to the people who will be doing the work, which is why the answers you get are about your actual job rather than a script. Most of our work comes from homeowners and landlords who want a repair done once, properly, and who would rather have a clear price than an open-ended hourly bill.</p>
-      </div>
-      <ul class="facts"><li><b>The real cause</b>We would rather spend longer finding why something failed than replace the same part twice.</li><li><b>Honest recommendations</b>If a repair will hold, we repair it. If it will not, we say so and price the replacement instead.</li><li><b>Your home respected</b>Floors covered, work area cleaned, old parts taken away.</li><li><b>Reachable by phone</b>You can call and speak to us about a job in progress, not wait on an email reply.</li></ul>
-    </div>
-  </section>
-
-  <section class="block alt">
-    <div class="wrap">
-      <div class="eyebrow">Where we work</div>
-      <h2 class="sec">Tallahassee and Leon County.</h2>
-      <p class="lede">Tallahassee and Leon County</p>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <div><h2>Talk to someone local.</h2><p>No call centre, no script.</p></div>
-      <a class="callbtn" href="tel:+18502220061"><span><small>Call now</small>(850) 222-0061</span></a>
-    </div>
-  </section>
+<div class="view" data-view="contact" data-title="Contact Trey Hyatt Plumbing in Tallahassee" hidden>
+<section class="sec"><div class="wrap">
+<h2>How can we help you?</h2>
+<p class="lede">Reach out to discuss your plumbing concerns and get them resolved with local expertise.</p>
+<p class="body">I am happy to talk through your plumbing issues. Please use the contact options below to get in touch, and I will get back to you as soon as possible.</p>
+</div></section>
+<section class="sec"><div class="wrap split">
+<div>
+<h2>Send us a message</h2>
+<p class="lede">Fill out this form, and I will contact you within one business day.</p>
+<p class="body">I personally review every enquiry that comes through. Please provide your name, phone number, and a brief description of the plumbing work needed so I can assist you better.</p>
+<dl class="details"><div><dt>Phone</dt><dd><a href="tel:8502220061">(850) 222-0061</a></dd></div><div><dt>Service area</dt><dd>Tallahassee and Leon County</dd></div></dl>
 </div>
-
-<div class="page" data-page="contact" hidden>
-  <section class="block">
-    <div class="wrap">
-      <div class="eyebrow">Contact</div>
-      <h2 class="sec">Get in touch.</h2>
-      <p class="lede">The fastest way to reach us is the phone. Ask for Trey.</p>
-      <div class="contactgrid">
-        <form class="form" onsubmit="event.preventDefault();this.querySelector('.note').textContent='Thanks — your message is on its way. We will call you back on the number you gave us.';this.reset();">
-          <label for="n">Your name</label>
-          <input id="n" name="name" autocomplete="name" required>
-          <label for="p">Best number to call</label>
-          <input id="p" name="phone" inputmode="tel" autocomplete="tel" required>
-          <label for="m">What needs doing?</label>
-          <textarea id="m" name="message" required></textarea>
-          <button type="submit">Send message</button>
-          <p class="note">We reply the same working day.</p>
-        </form>
-        <div>
-          <ul class="steps"><li><b>You describe the job</b>We ask what you are seeing and when it started, so we can tell you how urgent it is.</li><li><b>We look at it</b>We come out, find the cause and explain what needs doing.</li><li><b>You get a price first</b>The cost is agreed before any work starts, and the work is done to fix the cause.</li></ul>
-          <ul class="facts" style="margin-top:32px">
-            <li><b>Phone</b><a href="tel:+18502220061">(850) 222-0061</a></li>
-            
-            
-            <li><b>Service area</b>Tallahassee and Leon County</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <div><h2>(850) 222-0061</h2><p>Call and tell us what the problem is. We will tell you what it takes to fix it.</p></div>
-      <a class="callbtn" href="tel:+18502220061"><span><small>Call now</small>(850) 222-0061</span></a>
-    </div>
-  </section>
+<aside class="card">
+<h3>Talk to us</h3>
+<p class="body">Ask for Trey Hyatt. Call and we will talk through what you need.</p>
+<div class="actions"><a class="btn btn-solid" href="tel:8502220061">Call (850) 222-0061</a></div>
+</aside>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>Frequently asked contact questions</h2>
+<p class="lede">Find out the best way to connect with our team for your repair needs.</p>
+<div class="faq"><div><h3>What is the response time?</h3><p>I personally respond to all messages and calls within one business day at most.</p></div><div><h3>Can I call instead?</h3><p>Yes, please call (850) 222-0061 directly if your plumbing issue requires immediate personal attention.</p></div><div><h3>Do you offer emergency help?</h3><p>Please call my number directly for urgent plumbing needs so we can talk immediately.</p></div></div>
+<p class="body">Here is how to reach us and what you can expect after you call.</p>
+</div></section>
 </div>
-
-<footer class="site">
-  <div class="wrap">
-    <div>
-      <h4>Trey Hyatt Plumbing</h4>
-      <p style="margin:0 0 10px;color:#B9C9D8">Local plumbing repairs, drains and water heaters across Tallahassee and Leon County.</p>
-      <a href="tel:+18502220061">(850) 222-0061</a>
-      
-    </div>
-    <div>
-      <h4>Pages</h4>
-      <a href="#" data-nav="home">Home</a>
-      <a href="#" data-nav="services">Services</a>
-      <a href="#" data-nav="about">About</a>
-      <a href="#" data-nav="contact">Contact</a>
-    </div>
-    <div><h4>Service area</h4><span style="display:block;padding:3px 0">Tallahassee and Leon County</span></div>
-  </div>
-  <div class="wrap"><div class="bottom"><span>© 2026 Trey Hyatt Plumbing · Tallahassee</span><span>Concept site prepared by LSDigitalsAI</span></div></div>
-</footer>
-
-<script>
-  (function(){
-    var pages = document.querySelectorAll('.page');
-    var navBtns = document.querySelectorAll('[data-nav]');
-    var name = "Trey Hyatt Plumbing";
-    var city = "Tallahassee";
-    var titles = {
-      home: name + ' | ' + city,
-      services: 'Services | ' + name,
-      about: 'About | ' + name,
-      contact: 'Contact | ' + name
-    };
-    function show(key){
-      pages.forEach(function(p){ p.hidden = p.getAttribute('data-page') !== key; });
-      navBtns.forEach(function(b){
-        if(b.tagName === 'BUTTON'){
-          if(b.getAttribute('data-nav') === key) b.setAttribute('aria-current','page');
-          else b.removeAttribute('aria-current');
-        }
-      });
-      if(titles[key]) document.title = titles[key];
-      window.scrollTo({top:0,behavior:'instant'});
-    }
-    navBtns.forEach(function(b){ b.addEventListener('click', function(e){ e.preventDefault(); show(b.getAttribute('data-nav')); }); });
-  })();
-</script>
+</main>
+<footer class="foot"><div class="wrap foot-in">
+<p class="foot-brand">Trey Hyatt Plumbing</p>
+<p>plumber · Tallahassee · Tallahassee and Leon County</p>
+<p>(850) 222-0061</p>
+</div></footer>
+<script>(function(){
+var views=[].slice.call(document.querySelectorAll(".view")),titles={};
+views.forEach(function(v){titles[v.dataset.view]=v.dataset.title||document.title});
+function show(key,push){
+if(!titles[key])key=Object.keys(titles)[0];
+views.forEach(function(v){v.hidden=v.dataset.view!==key});
+var links=document.querySelectorAll("[data-view]");
+for(var i=0;i<links.length;i++){var on=links[i].dataset.view===key;links[i].classList.toggle("is-active",on);if(links[i].tagName==="BUTTON")links[i].setAttribute("aria-current",on?"page":"false")}
+document.title=titles[key];
+if(push){if(location.hash.slice(1)!==key)history.pushState({view:key},"","#"+key);window.scrollTo(0,0)}
+}
+document.addEventListener("click",function(e){var el=e.target.closest?e.target.closest("[data-view]"):null;if(!el)return;e.preventDefault();show(el.dataset.view,true)});
+window.addEventListener("popstate",function(){show(location.hash.slice(1)||"home",false)});
+show(location.hash.slice(1)||"home",false)})();</script>
 </body>
 </html>
