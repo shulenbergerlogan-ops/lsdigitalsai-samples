@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hair Salon in Perry, FL | The Hair Loft</title>
+<meta name="description" content="The Hair Loft is a hair salon in Perry, Florida. Cuts, colour, highlights, blowouts and treatments. Call (850) 584-2424 to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap">
+<style>
+:root{
+  --bg:#fbf5f1; --surface:#fffdfb; --ink:#35242a; --ink-2:#5c4048; --muted:#8a6f76;
+  --line:#ead9d1; --accent:#b0605c; --accent-soft:#f3e0da;
+  --display:'Playfair Display',Georgia,serif; --body:'Jost',Helvetica,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.68 var(--body);font-weight:400;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1.14;letter-spacing:-.01em}
+h1{font-size:clamp(2.3rem,1.5rem+3.6vw,4rem)}
+h2{font-size:clamp(1.7rem,1.3rem+1.7vw,2.5rem)}
+h3{font-size:1.24rem}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding:0 clamp(20px,6vw,44px)}
+.view[hidden]{display:none!important}
+.sec{padding:clamp(52px,7vw,92px) 0}
+.sec+.sec{border-top:1px solid var(--line)}
+.center{text-align:center}
+.center .lede,.center .body{margin-left:auto;margin-right:auto}
+.lede{margin-top:18px;max-width:52ch;color:var(--muted);font-size:1.04rem;font-weight:300}
+.body{margin-top:14px;max-width:60ch;color:var(--muted);font-size:.96rem;font-weight:300}
+.label{display:block;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:20px}
+.head{position:sticky;top:0;z-index:20;background:rgba(251,245,241,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.head-in{display:flex;align-items:center;gap:16px;max-width:1000px;min-height:74px;margin:0 auto;padding:10px clamp(20px,6vw,44px)}
+.brand{margin-right:auto;text-decoration:none;font-family:var(--display);font-size:1.16rem;letter-spacing:.02em;line-height:1.05}
+.brand em{display:block;font-style:normal;font-family:var(--body);font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.nav{display:flex;flex-wrap:wrap;gap:2px}
+.nav button{border:0;background:none;font:inherit;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);opacity:.75;padding:9px 12px;border-radius:999px;cursor:pointer}
+.nav button.is-active{opacity:1;background:var(--accent-soft);color:var(--ink)}
+.head-call{display:inline-flex;align-items:center;height:38px;padding:0 18px;border:1px solid var(--accent);color:var(--accent);border-radius:999px;font-size:.78rem;letter-spacing:.06em;text-decoration:none;white-space:nowrap}
+.hero{padding:clamp(56px,8vw,104px) 0 0;text-align:center}
+.hero .rule{width:52px;height:1px;background:var(--accent);margin:26px auto 0}
+.hero-visual{margin-top:clamp(30px,5vw,52px);height:clamp(180px,26vw,300px);border-radius:200px 200px 6px 6px;background:
+  radial-gradient(120% 90% at 20% 10%,#f6ddd6 0%,transparent 60%),
+  radial-gradient(120% 90% at 82% 24%,#e9cfd3 0%,transparent 62%),
+  linear-gradient(160deg,#f4e3dc 0%,#ecd3cd 52%,#e2c3bd 100%);
+  border:1px solid var(--line);position:relative;overflow:hidden}
+.hero-visual:after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.34) 0 2px,transparent 2px 16px)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;justify-content:center}
+.actions.left{justify-content:flex-start}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 26px;border-radius:999px;background:var(--accent);color:#fff;border:1px solid var(--accent);font:inherit;font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:pointer}
+.btn-line{background:transparent;color:var(--ink-2);border-color:var(--line)}
+.list{margin-top:clamp(34px,5vw,56px);text-align:left;border-top:1px solid var(--line)}
+.list article{display:grid;grid-template-columns:minmax(0,.42fr) minmax(0,1fr);gap:clamp(14px,4vw,42px);padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.list h3{color:var(--ink)}
+.list p{color:var(--muted);font-size:.95rem;font-weight:300}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:18px;margin-top:36px;text-align:left}
+.cards article{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:26px 24px}
+.cards p{margin-top:10px;color:var(--muted);font-size:.93rem;font-weight:300}
+.band{background:var(--accent-soft);padding:clamp(44px,6vw,74px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.band .in{display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between}
+.band h2{max-width:26ch}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:clamp(24px,4vw,54px);align-items:start}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:clamp(22px,3vw,32px)}
+.details{display:grid;gap:16px;margin:24px 0 0}
+.details dt{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);font-weight:500}
+.details dd{margin:5px 0 0;font-size:1rem;font-weight:300}
+.details dd a{text-decoration:none;border-bottom:1px solid var(--line)}
+.faq{margin-top:30px;border-top:1px solid var(--line);text-align:left}
+.faq>div{padding:20px 0;border-bottom:1px solid var(--line)}
+.faq h3{font-size:1.06rem}
+.faq p{margin-top:8px;color:var(--muted);font-size:.94rem;font-weight:300;max-width:70ch}
+.foot{background:var(--ink);color:#e2cbc5;padding:36px 0 42px;font-size:.86rem;font-weight:300}
+.foot-in{display:grid;gap:6px}
+.foot b{font-family:var(--display);font-weight:400;color:#fff;font-size:1.04rem}
+@media(max-width:780px){.split{grid-template-columns:minmax(0,1fr)}.list article{grid-template-columns:minmax(0,1fr);gap:8px}}
+</style>
+</head>
+<body>
+<header class="head"><div class="head-in">
+<a class="brand" href="#home" data-view="home">The Hair Loft<em>Perry, Florida</em></a>
+<nav class="nav">
+<button data-view="home">Home</button>
+<button data-view="services">Services</button>
+<button data-view="about">The salon</button>
+<button data-view="contact">Contact</button>
+</nav>
+<a class="head-call" href="tel:8505842424">(850) 584-2424</a>
+</div></header>
+<main>
+<section class="view" data-view="home" data-title="Hair Salon in Perry, FL | The Hair Loft">
+<div class="hero"><div class="wrap">
+<span class="label">Perry, Florida</span>
+<h1>Hair that suits you, in a chair that feels like home.</h1>
+<p class="lede">A small salon on South Washington Street. Cuts, colour and styling, done one client at a time, with a proper conversation before anything gets cut.</p>
+<div class="actions">
+<a class="btn" href="tel:8505842424">Call (850) 584-2424</a>
+<a class="btn btn-line" href="#services" data-view="services">See services</a>
+</div>
+<div class="hero-visual"></div>
+<div class="rule"></div>
+</div></div>
+<div class="sec"><div class="wrap center">
+<span class="label">The work</span>
+<h2>Six things we do well</h2>
+<p class="lede">Everything from a trim to a full colour change, plus the finishing work that makes it last.</p>
+<div class="list">
+<article><h3>Cuts</h3><p>A consultation first, then a cut shaped around your hair type, growth pattern and how much time you actually want to spend on it at home.</p></article><article><h3>Colour</h3><p>Full colour, root touch-ups and grey coverage, mixed and applied in the chair so the tone is right for your skin, not just the swatch book.</p></article><article><h3>Highlights & balayage</h3><p>Hand-painted or foil work for dimension that grows out softly instead of leaving a hard line after six weeks.</p></article><article><h3>Blowouts & styling</h3><p>Round-brush finishing for a smooth blow-dry, or soft waves for an event. Wash and style, no cut required.</p></article>
+</div>
+<div class="actions"><a class="btn btn-line" href="#services" data-view="services">All services</a></div>
+</div></div>
+<div class="band"><div class="wrap in">
+<div><h2>Ready for a change?</h2><p class="body">Call the salon and we will find you a time.</p></div>
+<div class="actions" style="margin:0"><a class="btn" href="tel:8505842424">Call (850) 584-2424</a></div>
+</div></div>
+<div class="sec"><div class="wrap center">
+<span class="label">Why clients stay</span>
+<h2>No rush, no guesswork</h2>
+<div class="cards">
+<article><h3>A real consultation</h3><p>Every appointment starts with what you want and what your hair will actually do. If an idea will not work, you will hear that before the scissors come out.</p></article>
+<article><h3>Styling you can repeat</h3><p>You leave knowing how to get the same result at home, with product you can actually buy here in town.</p></article>
+<article><h3>One client at a time</h3><p>A small salon means your appointment is yours. Nobody is juggling three heads of foils and a colour timer.</p></article>
+</div>
+</div></div>
+</section>
+<section class="view" data-view="services" hidden data-title="Services | The Hair Loft, Perry FL">
+<div class="sec"><div class="wrap center">
+<span class="label">Services</span>
+<h2>What we do</h2>
+<p class="lede">Pricing depends on hair length, density and how much colour is involved, so we quote in the chair before we start.</p>
+<div class="list">
+<article><h3>Cuts</h3><p>A consultation first, then a cut shaped around your hair type, growth pattern and how much time you actually want to spend on it at home.</p></article><article><h3>Colour</h3><p>Full colour, root touch-ups and grey coverage, mixed and applied in the chair so the tone is right for your skin, not just the swatch book.</p></article><article><h3>Highlights & balayage</h3><p>Hand-painted or foil work for dimension that grows out softly instead of leaving a hard line after six weeks.</p></article><article><h3>Blowouts & styling</h3><p>Round-brush finishing for a smooth blow-dry, or soft waves for an event. Wash and style, no cut required.</p></article><article><h3>Treatments</h3><p>Deep conditioning for dry, over-processed or sun-damaged hair, and honest advice about what to change at home.</p></article><article><h3>Special occasion</h3><p>Weddings, photos and events. We will talk through the plan and do a trial if you want one.</p></article>
+</div>
+</div></div>
+<div class="sec"><div class="wrap split">
+<div>
+<span class="label">In the chair</span>
+<h2>How an appointment runs</h2>
+<p class="lede">No mystery, no upsell.</p>
+<div class="list">
+<article><h3>Talk</h3><p>What you want, what you have done before, and how much upkeep you are willing to keep up with.</p></article>
+<article><h3>Plan</h3><p>We agree the shape and the tone, and you get a price before anything starts.</p></article>
+<article><h3>Work</h3><p>The cut or colour itself, with a check in the mirror before we finish rather than after.</p></article>
+</div>
+</div>
+<div class="panel">
+<h3>Not sure what to book?</h3>
+<p class="body">Call and describe your hair. We will tell you whether you need a cut, a colour appointment, or both, and roughly how long to set aside.</p>
+<div class="actions left"><a class="btn" href="tel:8505842424">Call (850) 584-2424</a></div>
+</div>
+</div></div>
+</section>
+<section class="view" data-view="about" hidden data-title="The salon | The Hair Loft, Perry FL">
+<div class="sec"><div class="wrap split">
+<div>
+<span class="label">The salon</span>
+<h2>A small salon in Perry, Florida</h2>
+<p class="lede">The Hair Loft works out of 801 S Washington St, Perry, FL 32347, doing cuts, colour and styling for Perry and the surrounding Taylor County area.</p>
+<p class="body">It is a salon built around conversation. You get asked what you want before anything happens, told honestly what will and will not work with your hair, and given a plan for how to keep the shape between visits.</p>
+<p class="body">That is the whole idea: fewer chairs, more attention, and a result you can maintain yourself on a normal Tuesday morning.</p>
+</div>
+<div class="panel">
+<h3>Details</h3>
+<dl class="details">
+<div><dt>Address</dt><dd>801 S Washington St, Perry, FL 32347</dd></div>
+<div><dt>Phone</dt><dd><a href="tel:8505842424">(850) 584-2424</a></dd></div>
+<div><dt>Email</dt><dd><a href="mailto:thehairloft801@hotmail.com">thehairloft801@hotmail.com</a></dd></div>
+<div><dt>Hours</dt><dd>Call for current hours</dd></div>
+</dl>
+</div>
+</div></div>
+<div class="sec"><div class="wrap center">
+<span class="label">What matters here</span>
+<h2>Three simple standards</h2>
+<div class="cards">
+<article><h3>Honest advice</h3><p>If a colour will damage hair that is already fragile, or a cut will not sit the way you pictured, you will be told straight.</p></article>
+<article><h3>Time to do it properly</h3><p>Colour gets the time it needs. Appointments are spaced so nobody is rushed through a rinse.</p></article>
+<article><h3>Products that work</h3><p>Recommendations based on your hair, not on what is sitting on the shelf.</p></article>
+</div>
+<div class="actions"><a class="btn btn-line" href="#contact" data-view="contact">Find the salon</a></div>
+</div></div>
+</section>
+<section class="view" data-view="contact" hidden data-title="Contact The Hair Loft | (850) 584-2424">
+<div class="sec"><div class="wrap split">
+<div>
+<span class="label">Contact</span>
+<h2>Book a chair</h2>
+<p class="lede">Call the salon to book, or email if you would rather ask a question first.</p>
+<dl class="details">
+<div><dt>Phone</dt><dd><a href="tel:8505842424">(850) 584-2424</a></dd></div>
+<div><dt>Email</dt><dd><a href="mailto:thehairloft801@hotmail.com">thehairloft801@hotmail.com</a></dd></div>
+<div><dt>Address</dt><dd>801 S Washington St, Perry, FL 32347</dd></div>
+<div><dt>Hours</dt><dd>Call for current hours</dd></div>
+</dl>
+<div class="actions left">
+<a class="btn" href="tel:8505842424">Call (850) 584-2424</a>
+<a class="btn btn-line" href="mailto:thehairloft801@hotmail.com">Email</a>
+</div>
+</div>
+<div class="panel">
+<h3>Booking notes</h3>
+<p class="body">Colour appointments take longer than cuts, so mention colour when you call and we will block out the right amount of time.</p>
+<p class="body">If you are coming in for a correction or a big change, a photo helps. Bring one on your phone.</p>
+</div>
+</div></div>
+<div class="sec"><div class="wrap center">
+<span class="label">Questions</span>
+<h2>Good to know</h2>
+<div class="faq">
+<div><h3>Do I need an appointment?</h3><p>Booking ahead is the safest way to get the time you want. Call the salon and we will find a slot that fits.</p></div><div><h3>How do I know what cut suits me?</h3><p>That is what the consultation at the start of the appointment is for. Bring a photo or two and we will be straight with you about what will work with your hair.</p></div><div><h3>What should I bring to a colour appointment?</h3><p>A photo of the tone you are after, and a rough idea of how often you want to come back. Both change what we recommend.</p></div><div><h3>Can you fix a colour I am not happy with?</h3><p>Often, yes. Call and describe what happened, and we will tell you honestly what can be done in one appointment and what needs two.</p></div>
+</div>
+</div></div>
+</section>
+<footer class="foot"><div class="wrap foot-in">
+<p><b>The Hair Loft</b></p>
+<p>Hair salon · 801 S Washington St, Perry, FL 32347</p>
+<p>(850) 584-2424 · <a href="mailto:thehairloft801@hotmail.com" style="color:#f0d9d3">thehairloft801@hotmail.com</a></p>
+</div></footer>
+<script>(function(){
+var views=[].slice.call(document.querySelectorAll(".view")),titles={};
+views.forEach(function(v){titles[v.dataset.view]=v.dataset.title||document.title});
+function show(key,push){
+if(!titles[key])key=Object.keys(titles)[0];
+views.forEach(function(v){v.hidden=v.dataset.view!==key});
+var links=document.querySelectorAll("[data-view]");
+for(var i=0;i<links.length;i++){var on=links[i].dataset.view===key;links[i].classList.toggle("is-active",on);if(links[i].tagName==="BUTTON")links[i].setAttribute("aria-current",on?"page":"false")}
+document.title=titles[key];
+if(push){if(location.hash.slice(1)!==key)history.pushState({view:key},"","#"+key);window.scrollTo(0,0)}
+}
+document.addEventListener("click",function(e){var el=e.target.closest?e.target.closest("[data-view]"):null;if(!el)return;e.preventDefault();show(el.dataset.view,true)});
+window.addEventListener("popstate",function(){show(location.hash.slice(1)||"home",false)});
+show(location.hash.slice(1)||"home",false)})();</script>
+</body>
+</html>
