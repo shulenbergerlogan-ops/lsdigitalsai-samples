@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto Repair in Monticello | Curtis Morgan&#39;s Garage Inc.</title>
+<meta name="description" content="Looking for a reliable mechanic in Monticello? Curtis Morgan&#39;s Garage provides expert car care for Jefferson County. Call us today to book your appointment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>:root{--bg:#faf6ee;--surface:#fffdf7;--ink:#1b1715;--muted:#6a5f58;--line:rgba(27,23,21,.18);--head-bg:#faf6ee;--head-ink:#1b1715;--radius:0px;--radius-lg:0px;--pad-sec:clamp(48px,7vw,90px);--lh:1.06;--dw:700;--dt:-.01em;--accent:#8c2f24;--ai:#ffffff;--active-bg:var(--accent);--active-ink:var(--ai);--display:"Playfair Display",Georgia,serif;--body:"Source Serif 4",Georgia,serif}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);font-weight:var(--dw);letter-spacing:var(--dt);line-height:var(--lh);margin:0}
+h1{font-size:clamp(2.1rem,1.4rem+3.4vw,3.7rem);max-width:26ch}
+h2{font-size:clamp(1.6rem,1.2rem+1.6vw,2.4rem);max-width:34ch}
+h3{font-size:1.1rem}p{margin:0}a{color:inherit}
+.wrap{width:100%;max-width:1024px;margin:0 auto;padding:0 clamp(18px,5vw,40px)}
+.view[hidden]{display:none!important}
+.sec{padding:var(--pad-sec) 0;border-top:1px solid var(--line)}
+.view .sec:first-child{border-top:0}
+.lede{margin-top:14px;max-width:54ch;color:var(--muted);font-size:1.02rem}
+.body{margin-top:12px;max-width:62ch;color:var(--muted);font-size:.95rem}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;padding:11px 18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);color:inherit;font:inherit;font-size:.9rem;font-weight:600;cursor:pointer;text-decoration:none}
+.btn-solid{background:var(--accent);border-color:var(--accent);color:var(--ai)}
+.head{position:sticky;top:0;z-index:9;background:var(--head-bg);color:var(--head-ink);border-bottom:1px solid var(--line)}
+.head-in{display:flex;align-items:center;gap:12px;max-width:1024px;min-height:64px;margin:0 auto;padding:8px clamp(18px,5vw,40px)}
+.brand{margin-right:auto;font-family:var(--display);font-weight:var(--dw);letter-spacing:var(--dt);font-size:1rem;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.head-call{display:inline-flex;align-items:center;height:34px;padding:0 13px;border:1px solid var(--accent);border-radius:var(--radius);color:var(--accent);font-size:.8rem;font-weight:600;text-decoration:none;white-space:nowrap}
+.nav{display:flex;flex-wrap:wrap;gap:2px}
+.nav button{border:0;background:none;font:inherit;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:inherit;opacity:.72;padding:8px 10px;border-radius:var(--radius);cursor:pointer}
+.nav button.is-active{opacity:1;color:var(--active-ink);background:var(--active-bg)}
+.grid{display:grid;gap:1px;margin-top:28px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.grid article{background:var(--surface);padding:22px}
+.num{font-size:.64rem;letter-spacing:.2em;color:var(--accent);font-weight:700}
+.grid h3{margin-top:9px}
+.grid p{margin-top:6px;color:var(--muted);font-size:.9rem}
+.split{display:grid;gap:clamp(18px,4vw,40px);grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+.split .lead{color:var(--ink);font-size:1.04rem;max-width:46ch}
+.faq{margin-top:24px;border-top:1px solid var(--line)}
+.faq>div{padding:16px 0;border-bottom:1px solid var(--line)}
+.faq h3{font-size:1rem}
+.faq p{margin-top:6px;max-width:72ch;color:var(--muted);font-size:.92rem}
+.cta{background:var(--accent);color:var(--ai);padding:clamp(32px,5vw,52px) 0}
+.cta-in{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
+.cta h2{color:var(--ai);max-width:32ch}
+.cta p{margin-top:8px;font-size:.93rem;opacity:.88}
+.cta .actions{margin-top:0}
+.cta .btn-ink{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.cta .btn-ghost{background:transparent;color:inherit}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:clamp(18px,3vw,26px)}
+.details{display:grid;gap:12px;margin-top:22px}
+.details dt{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.details dd{margin:3px 0 0;font-size:.95rem}
+.foot{border-top:1px solid var(--line);padding:30px 0 36px;color:var(--muted);font-size:.84rem}
+.foot-in{display:grid;gap:4px}
+.foot-brand{font-family:var(--display);font-weight:var(--dw);color:var(--ink);font-size:.96rem}
+@media(max-width:860px){.split{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:640px){.head-in{flex-wrap:wrap;min-height:0;padding:8px clamp(18px,5vw,40px) 0}.nav{order:3;flex-basis:100%;justify-content:space-between;gap:0;border-top:1px solid var(--line);margin-top:6px}.nav button{padding:9px 0;font-size:.68rem}}
+
+.hero h1{max-width:18ch;font-size:clamp(2.6rem,1.2rem+7vw,5.2rem);line-height:1;font-weight:400}.head{border-bottom:1px solid var(--ink)}.head-call{border:0;border-bottom:1px solid var(--ink);border-radius:0;color:var(--ink);height:auto;padding:0 0 2px;font-weight:400}.nav button{text-transform:none;letter-spacing:.02em;font-family:var(--display);font-size:.88rem}.grid{display:block;background:none;border:0;border-radius:0;overflow:visible}.grid article{border-top:1px solid var(--line);border-radius:0;background:none;padding:18px 0;display:grid;grid-template-columns:2.5rem minmax(0,1fr);column-gap:12px}.grid article .num{grid-row:1/span 2}.grid article h3{margin-top:0}.grid article p{grid-column:2;max-width:70ch}.card,.btn,.faq>div{border-radius:0}.cta{background:var(--ink);color:#faf6ee}.cta h2{color:#faf6ee}.cta .btn-ink{background:#faf6ee;border-color:#faf6ee;color:#1b1715}
+.revs{display:grid;gap:12px;margin-top:26px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.revs article{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:18px}
+.revs .stars{margin:0 0 8px;color:var(--accent);font-size:.95rem;letter-spacing:.14em}
+.revs p{margin:0;color:var(--muted);font-size:.92rem}
+.revs .rev-by{margin-top:10px;color:var(--ink);font-size:.85rem;font-weight:600}
+.revs .rev-src{margin-top:3px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase}</style>
+</head>
+<body data-design="editorial">
+<header class="head"><div class="head-in">
+<a class="brand" href="#home" data-view="home">Curtis Morgan&#39;s Garage Inc.</a>
+<a class="head-call" href="tel:8509972798">Call</a>
+<nav class="nav" aria-label="Pages"><button type="button" data-view="home">Home</button><button type="button" data-view="services">Services</button><button type="button" data-view="about">About</button><button type="button" data-view="contact">Contact</button></nav>
+</div></header>
+<main>
+<div class="view" data-view="home" data-title="Auto Repair in Monticello | Curtis Morgan&#39;s Garage Inc." hidden>
+<section class="sec hero hero-left"><div class="wrap">
+<h1>Expert Auto Repair in Monticello FL</h1>
+<p class="lede">Quality mechanical services for your vehicle in Jefferson County.</p>
+<p class="body">Curtis Morgan&#39;s Garage provides honest, professional vehicle maintenance and repairs. Whether you need a simple oil change or complex engine work, our team is ready to get you back on the road.</p>
+<div class="actions"><a class="btn btn-solid" href="tel:8509972798">Call (850) 997-2798</a><button class="btn btn-ghost" type="button" data-view="contact">Send an enquiry</button></div>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>Why choose our local garage?</h2>
+<p class="lede">We prioritize clear communication and quality workmanship on every vehicle.</p>
+<p class="body">Your vehicle is essential to your daily routine. We provide thorough diagnostics and transparent service reports to ensure you understand exactly what work is being performed before we begin any repairs.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>What services do we offer?</h2>
+<p class="lede">Essential maintenance and repair services for drivers in Monticello.</p>
+<div class="grid"><article><span class="num">01</span><h3>Engine Diagnostics</h3><p>We scan your vehicle to identify hidden engine issues and provide accurate repairs.</p></article><article><span class="num">02</span><h3>Routine Oil Changes</h3><p>Regular maintenance keeps your engine lubricated and prevents costly damage over the long term.</p></article><article><span class="num">03</span><h3>Brake System Repair</h3><p>Our team inspects and replaces worn brake pads to keep you safe when stopping.</p></article><article><span class="num">04</span><h3>Suspension Maintenance</h3><p>We check your vehicle suspension to ensure a smooth ride on bumpy local roads.</p></article></div>
+<p class="body">We handle a wide range of automotive needs, keeping your vehicle running smoothly. From routine maintenance to more detailed mechanical inspections, we ensure your car meets safety and performance standards.</p>
+</div></section>
+<section class="cta"><div class="wrap cta-in">
+<div><h2>Ready to schedule your repair?</h2><p>Contact us today to discuss your vehicle and book an appointment.</p></div>
+<div class="actions"><a class="btn btn-ink" href="tel:8509972798">Call (850) 997-2798</a><button class="btn btn-ghost" type="button" data-view="contact">Send an enquiry</button></div>
+</div></section>
+</div>
+<div class="view" data-view="services" data-title="Car Repair Services in Monticello | Curtis Morgan&#39;s Garage" hidden>
+<section class="sec"><div class="wrap">
+<h2>Mechanical repairs for Jefferson County drivers</h2>
+<p class="lede">We provide comprehensive mechanical services for all major vehicle makes and models.</p>
+<p class="body">Our garage is fully equipped to handle your vehicle needs efficiently. We emphasize precision and care, ensuring that every bolt is tightened and every component functions as the manufacturer intended today.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>Which repairs can we manage?</h2>
+<p class="lede">Professional mechanical assistance for various vehicle components and systems.</p>
+<div class="grid"><article><span class="num">01</span><h3>Steering and Alignment</h3><p>We adjust your alignment to keep your vehicle driving straight and save your tires.</p></article><article><span class="num">02</span><h3>Cooling System Care</h3><p>Prevent your engine from overheating with our thorough cooling system inspection and repair service.</p></article><article><span class="num">03</span><h3>Battery and Electrical</h3><p>We test your battery and electrical systems to ensure reliable starting in all weather.</p></article><article><span class="num">04</span><h3>Exhaust System Repairs</h3><p>We identify leaks and replace components to keep your exhaust quiet and emissions low.</p></article></div>
+<p class="body">Our technicians utilize modern tools to address specific vehicle malfunctions. Whether it is a warning light on your dashboard or a strange noise, we provide the insights and repairs you need.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>What is our repair process?</h2>
+<p class="lede">We follow a structured approach to every vehicle that enters our garage.</p>
+<div class="grid"><article><span class="num">01</span><h3>Initial Inspection</h3><p>Every vehicle undergoes a detailed visual and mechanical check to assess current repair needs.</p></article><article><span class="num">02</span><h3>Clear Reporting</h3><p>We provide a concise report detailing necessary repairs and recommended timing for each service.</p></article><article><span class="num">03</span><h3>Quality Components</h3><p>We use reliable replacement parts that meet or exceed industry standards for your vehicle.</p></article><article><span class="num">04</span><h3>Post-Repair Test</h3><p>Before handover, we conduct a final test to ensure the repair resolves your issue.</p></article></div>
+<p class="body">Our process is designed to eliminate uncertainty. We perform an initial inspection, document our findings, and provide a clear plan of action so you can make the best choice for yourself.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>Frequently asked repair questions</h2>
+<p class="lede">Common concerns answered regarding our local repair services.</p>
+<div class="faq"><div><h3>How long will repairs take?</h3><p>We provide estimated completion times after diagnosing the specific issue with your vehicle today.</p></div><div><h3>Do you provide estimates?</h3><p>Yes, we offer clear service estimates once we have identified the cause of the problem.</p></div><div><h3>What should I bring?</h3><p>Bring your vehicle keys and any service records that might help us understand the history.</p></div></div>
+<p class="body">We want to ensure your experience at our garage is as stress-free as possible.</p>
+</div></section>
+<section class="cta"><div class="wrap cta-in">
+<div><h2>Schedule your service appointment</h2><p>Speak with us today about your vehicle repair requirements.</p></div>
+<div class="actions"><a class="btn btn-ink" href="tel:8509972798">Call (850) 997-2798</a><button class="btn btn-ghost" type="button" data-view="contact">Send an enquiry</button></div>
+</div></section>
+</div>
+<div class="view" data-view="about" data-title="About Curtis Morgan&#39;s Garage in Monticello" hidden>
+<section class="sec sec-muted"><div class="wrap split">
+<h2>Your local mechanic in Monticello</h2>
+<div><p class="lead">Dedicated to serving the community of Jefferson County with honesty.</p><p class="body">Curtis Morgan&#39;s Garage was founded on the principle of providing dependable vehicle care to our neighbors. We believe that your car should be safe, reliable, and well-maintained throughout the entire year.</p></div>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>What sets us apart?</h2>
+<p class="lede">Focusing on local needs and consistent communication.</p>
+<div class="grid"><article><span class="num">01</span><h3>Community Focused</h3><p>We are proud to serve the families and businesses throughout Monticello and Jefferson County.</p></article><article><span class="num">02</span><h3>Direct Communication</h3><p>You will always speak with a team member who understands your specific vehicle history.</p></article><article><span class="num">03</span><h3>Professional Standards</h3><p>We apply technical knowledge to every job, ensuring consistent quality in all we do.</p></article><article><span class="num">04</span><h3>Practical Advice</h3><p>We advise you on which repairs are critical and which can wait until later.</p></article></div>
+<p class="body">We operate with a commitment to our town and its residents. Our garage is designed to provide you with the professional help you need without the unnecessary complications found elsewhere.</p>
+</div></section>
+<section class="cta"><div class="wrap cta-in">
+<div><h2>Visit us in Monticello</h2><p>We look forward to helping you with your vehicle.</p></div>
+<div class="actions"><a class="btn btn-ink" href="tel:8509972798">Call (850) 997-2798</a><button class="btn btn-ghost" type="button" data-view="contact">Send an enquiry</button></div>
+</div></section>
+</div>
+<div class="view" data-view="contact" data-title="Contact Curtis Morgan&#39;s Garage in Monticello" hidden>
+<section class="sec"><div class="wrap">
+<h2>How can we assist you?</h2>
+<p class="lede">Reach out to discuss your car&#39;s repair needs today.</p>
+<p class="body">Our team is here to answer your questions and help you schedule a service. Whether you need a quote or a diagnosis, we are ready to assist you right away.</p>
+</div></section>
+<section class="sec"><div class="wrap split">
+<div>
+<h2>Send us a message</h2>
+<p class="lede">Provide your details and we will respond shortly.</p>
+<p class="body">We typically reply to all messages within one business day. Please provide your name, phone number or email, and a brief note about the repair or service you need today.</p>
+<dl class="details"><div><dt>Phone</dt><dd><a href="tel:8509972798">(850) 997-2798</a></dd></div><div><dt>Where to find us</dt><dd>1538 N Jefferson St, Monticello, FL 32344</dd></div><div><dt>Service area</dt><dd>Monticello and Jefferson County</dd></div></dl>
+</div>
+<aside class="card">
+<h3>Talk to us</h3>
+<p class="body">Call us and we will talk through what you need.</p>
+<div class="actions"><a class="btn btn-solid" href="tel:8509972798">Call (850) 997-2798</a></div>
+</aside>
+</div></section>
+<section class="sec"><div class="wrap">
+<h2>Common questions about visiting us</h2>
+<p class="lede">Everything you need to know before your first visit.</p>
+<div class="faq"><div><h3>Where are you located?</h3><p>We are situated at 1538 N Jefferson St in Monticello, easily accessible for local drivers.</p></div><div><h3>How fast is a reply?</h3><p>We respond to all online enquiries within one business day to discuss your repair needs.</p></div><div><h3>Can I call ahead?</h3><p>Yes, we encourage you to call (850) 997-2798 to ensure we have space for you.</p></div></div>
+<p class="body">We make sure our contact process is simple for every new and returning customer.</p>
+</div></section>
+</div>
+</main>
+<footer class="foot"><div class="wrap foot-in">
+<p class="foot-brand">Curtis Morgan&#39;s Garage Inc.</p>
+<p>auto mechanic · Monticello · Monticello and Jefferson County</p>
+<p>(850) 997-2798</p>
+</div></footer>
+<script>(function(){
+var views=[].slice.call(document.querySelectorAll(".view")),titles={};
+views.forEach(function(v){titles[v.dataset.view]=v.dataset.title||document.title});
+function show(key,push){
+if(!titles[key])key=Object.keys(titles)[0];
+views.forEach(function(v){v.hidden=v.dataset.view!==key});
+var links=document.querySelectorAll("[data-view]");
+for(var i=0;i<links.length;i++){var on=links[i].dataset.view===key;links[i].classList.toggle("is-active",on);if(links[i].tagName==="BUTTON")links[i].setAttribute("aria-current",on?"page":"false")}
+document.title=titles[key];
+if(push){if(location.hash.slice(1)!==key)history.pushState({view:key},"","#"+key);window.scrollTo(0,0)}
+}
+document.addEventListener("click",function(e){var el=e.target.closest?e.target.closest("[data-view]"):null;if(!el)return;e.preventDefault();show(el.dataset.view,true)});
+window.addEventListener("popstate",function(){show(location.hash.slice(1)||"home",false)});
+show(location.hash.slice(1)||"home",false)})();</script>
+</body>
+</html>
