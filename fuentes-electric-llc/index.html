@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuentes Electric LLC | Electrician in Orlando, FL</title>
+<meta name="description" content="Fuentes Electric LLC, owner-operator Orlando Fuentes. Electrical work across Orlando and Central Florida. Call or text (352) 325-1715.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&display=swap">
+<style>
+*{box-sizing:border-box}
+:root{
+  --bg:#111315;--panel:#191C1F;--panel2:#1F2327;--ink:#F2F4F2;--muted:#98A0A4;
+  --line:#2C3135;--volt:#E8F32C;--volt-dim:#C8D120;--display:"Archivo Black",Impact,sans-serif;--sans:"Archivo",system-ui,sans-serif;
+}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;line-height:1.02;font-weight:400}
+h1,h2{font-family:var(--display);text-transform:uppercase;letter-spacing:-.02em}
+h3{font-family:var(--sans);font-weight:700;letter-spacing:-.01em;line-height:1.2}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+ul{margin:0;padding:0;list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(18px,4.5vw,52px)}
+
+/* top rail */
+.rail{position:sticky;top:0;z-index:30;background:rgba(17,19,21,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.rail-in{display:flex;align-items:center;gap:clamp(10px,2.4vw,28px);min-height:72px}
+.logo{margin-right:auto;display:flex;align-items:center;gap:12px}
+.bolt{width:34px;height:34px;background:var(--volt);display:grid;place-items:center;flex:none}
+.bolt svg{width:17px;height:17px}
+.logo b{font-family:var(--display);font-size:clamp(.95rem,1.8vw,1.15rem);text-transform:uppercase;letter-spacing:.01em;display:block}
+.logo span{font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);display:block}
+.links{display:flex;gap:clamp(8px,1.8vw,22px)}
+.links button{background:none;border:0;font:inherit;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);cursor:pointer;padding:6px 0}
+.links button:hover{color:var(--ink)}
+.tel{display:inline-flex;align-items:center;gap:9px;background:var(--volt);color:#101208;font-weight:700;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;padding:12px 18px;white-space:nowrap}
+.tel:hover{background:#fff}
+
+/* hero */
+.hero{position:relative;padding:clamp(48px,8vw,104px) 0 clamp(40px,6vw,76px);overflow:hidden}
+.hero::after{content:"";position:absolute;right:-12%;top:-20%;width:min(620px,70vw);height:min(620px,70vw);border:1px solid var(--line);border-radius:50%;pointer-events:none}
+.hero .in{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(26px,5vw,64px);align-items:end}
+.tag{display:inline-flex;align-items:center;gap:9px;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--volt);margin-bottom:22px}
+.tag i{width:7px;height:7px;background:var(--volt);display:block}
+h1{font-size:clamp(2.5rem,7.6vw,5.6rem)}
+h1 mark{background:none;color:var(--volt)}
+.hero p.lede{color:var(--muted);font-size:clamp(1rem,1.7vw,1.16rem);max-width:44ch;margin-top:24px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 24px;background:var(--volt);color:#101208;font-weight:700;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase}
+.btn:hover{background:#fff}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line);font-weight:600}
+.btn.alt:hover{border-color:var(--volt);color:var(--volt)}
+.spec{background:var(--panel);border:1px solid var(--line)}
+.spec .hd{padding:16px 20px;border-bottom:1px solid var(--line);font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.spec ul li{display:flex;justify-content:space-between;gap:14px;padding:15px 20px;border-bottom:1px solid var(--line);font-size:.94rem}
+.spec ul li:last-child{border-bottom:0}
+.spec ul li span{color:var(--muted);flex:none}
+.spec ul li b{text-align:right;font-weight:600}
+
+/* ticker */
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel);overflow:hidden}
+.ticker .in{display:flex;gap:clamp(18px,4vw,48px);padding:13px clamp(18px,4.5vw,52px);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);white-space:nowrap;overflow-x:auto}
+.ticker b{color:var(--volt);font-weight:600}
+
+section{padding:clamp(46px,7vw,92px) 0}
+.sec-head{display:grid;gap:14px;max-width:58ch;margin-bottom:clamp(26px,4vw,46px)}
+.sec-head .num{font-size:.66rem;letter-spacing:.24em;color:var(--volt)}
+.sec-head h2{font-size:clamp(1.8rem,4.4vw,3rem)}
+.sec-head p{color:var(--muted)}
+
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.cell{background:var(--bg);padding:clamp(22px,3vw,30px)}
+.cell .k{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--volt);margin-bottom:12px}
+.cell h3{font-size:1.12rem;margin-bottom:8px}
+.cell p{color:var(--muted);font-size:.94rem}
+.cell:hover{background:var(--panel)}
+
+.wide{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:start}
+.rows li{padding:20px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:baseline}
+.rows li:last-child{border-bottom:1px solid var(--line)}
+.rows b{font-family:var(--display);font-size:1.5rem;color:var(--volt);line-height:1}
+.rows p{color:var(--muted);font-size:.96rem}
+.rows strong{display:block;color:var(--ink);font-size:1.02rem;font-weight:600;margin-bottom:2px}
+
+.owner{background:var(--panel);border-left:3px solid var(--volt);padding:clamp(24px,3.4vw,38px)}
+.owner .nm{font-family:var(--display);font-size:clamp(1.5rem,3vw,2.1rem);text-transform:uppercase;margin-bottom:6px}
+.owner .rl{font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--volt);margin-bottom:18px}
+.owner p{color:var(--muted)}
+
+.contact{background:var(--panel);border-top:1px solid var(--line)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px)}
+.big-tel{font-family:var(--display);font-size:clamp(1.7rem,4.6vw,3rem);color:var(--volt);letter-spacing:-.01em;display:inline-block;margin:6px 0 20px}
+.big-tel:hover{color:#fff}
+form{display:grid;gap:13px}
+label{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:5px}
+input,textarea{width:100%;font:inherit;font-size:1rem;padding:12px 14px;background:var(--bg);border:1px solid var(--line);color:var(--ink)}
+input:focus,textarea:focus{outline:0;border-color:var(--volt)}
+textarea{min-height:104px;resize:vertical}
+button.send{font:inherit;font-weight:700;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;background:var(--volt);color:#101208;border:0;padding:15px 24px;cursor:pointer}
+button.send:hover{background:#fff}
+.fnote{font-size:.82rem;color:var(--muted)}
+.meta{display:grid;gap:16px;margin-top:26px}
+.meta div{border-top:1px solid var(--line);padding-top:14px}
+.meta span{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:4px}
+
+footer{border-top:1px solid var(--line);padding:clamp(28px,4vw,44px) 0;font-size:.82rem;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+@media(max-width:900px){
+  .hero .in,.wide,.contact-grid{grid-template-columns:1fr}
+  .links{display:none}
+  .hero::after{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="rail">
+  <div class="wrap rail-in">
+    <a class="logo" href="#top">
+      <span class="bolt"><svg viewBox="0 0 24 24" fill="#101208"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></span>
+      <span><b>Fuentes Electric</b><span>Orlando · Central Florida</span></span>
+    </a>
+    <div class="links">
+      <button data-jump="work">Work</button>
+      <button data-jump="why">Why us</button>
+      <button data-jump="owner">Owner</button>
+      <button data-jump="contact">Contact</button>
+    </div>
+    <a class="tel" href="tel:+13523251715">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 3h4l2 5-3 2a13 13 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 2 5a2 2 0 0 1 2-2z"/></svg>
+      (352) 325-1715
+    </a>
+  </div>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap in">
+      <div>
+        <div class="tag"><i></i>Owner-operated · Licensed &amp; insured</div>
+        <h1>Electrical work<br>done <mark>right</mark><br>the first time.</h1>
+        <p class="lede">Fuentes Electric LLC is Orlando Fuentes, working across Orlando and Central Florida. Call or text and speak to the person who will be on the job.</p>
+        <div class="cta">
+          <a class="btn" href="tel:+13523251715">Call or text</a>
+          <a class="btn alt" href="mailto:Fuenteselectric.florida@gmail.com">Email us</a>
+        </div>
+      </div>
+      <aside class="spec">
+        <div class="hd">Direct contact</div>
+        <ul>
+          <li><span>Phone</span><b>(352) 325-1715</b></li>
+          <li><span>Email</span><b style="font-size:.86rem;word-break:break-word">Fuenteselectric.florida@gmail.com</b></li>
+          <li><span>Owner</span><b>Orlando Fuentes</b></li>
+          <li><span>Area</span><b>Orlando &amp; Central Florida</b></li>
+          <li><span>Jobs</span><b>Residential &amp; small commercial</b></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <div class="ticker">
+    <div class="in">
+      <span>Call or text <b>(352) 325-1715</b></span>
+      <span>·</span>
+      <span>Orlando <b>&amp;</b> Central Florida</span>
+      <span>·</span>
+      <span>Licensed <b>&amp;</b> insured</span>
+      <span>·</span>
+      <span>Free estimate <b>on request</b></span>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num">01 / What we take on</div>
+        <h2>The jobs that need doing</h2>
+        <p>No job is too small to be worth a phone call. If you are not sure whether it is an electrician's job, call and ask, and you will get a straight answer.</p>
+      </div>
+      <div class="grid3">
+        <div class="cell"><div class="k">Repairs</div><h3>Dead outlets &amp; switches</h3><p>Outlets that have stopped working, switches that buzz, lights that flicker. Diagnosed and fixed rather than covered over.</p></div>
+        <div class="cell"><div class="k">Panels</div><h3>Breaker &amp; panel work</h3><p>Tripping breakers, overloaded panels and upgrades, done to code with the circuit load actually worked out.</p></div>
+        <div class="cell"><div class="k">Lighting</div><h3>Fixtures &amp; fans</h3><p>Ceiling fans, recessed lights, exterior and security lighting fitted and wired properly.</p></div>
+        <div class="cell"><div class="k">Wiring</div><h3>New circuits &amp; rewires</h3><p>Adding a circuit for an appliance, a workshop, or replacing old wiring that has reached the end of its life.</p></div>
+        <div class="cell"><div class="k">Remodels</div><h3>Kitchen &amp; bath electrics</h3><p>Outlets, GFCI protection and lighting for a renovation, coordinated around the other trades on site.</p></div>
+        <div class="cell"><div class="k">Troubleshooting</div><h3>Fault finding</h3><p>Power loss, warm outlets or a breaker that will not stay on. Traced to the actual cause instead of guessed at.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" style="padding-top:0">
+    <div class="wrap wide">
+      <div>
+        <div class="sec-head">
+          <div class="num">02 / Why hire the owner</div>
+          <h2>One electrician, start to finish</h2>
+          <p>With an owner-operator there is no crew you have not met, no dispatcher relaying messages, and nobody else to blame if something is not right.</p>
+        </div>
+        <ul class="rows">
+          <li><b>01</b><div><strong>The same person throughout</strong><p>Orlando quotes the work, does the work, and answers the phone if you have a question afterwards.</p></div></li>
+          <li><b>02</b><div><strong>Straight about the job</strong><p>You hear what needs doing and why, in plain language, before anything is opened up.</p></div></li>
+          <li><b>03</b><div><strong>Small jobs welcome</strong><p>A single outlet is a legitimate call. Plenty of electricians will not bother with them.</p></div></li>
+        </ul>
+      </div>
+      <div id="owner">
+        <div class="owner">
+          <div class="nm">Orlando Fuentes</div>
+          <div class="rl">Owner · Fuentes Electric LLC</div>
+          <p>Fuentes Electric is run by Orlando Fuentes, who works across Orlando and Central Florida. The business is licensed and insured, and takes on residential and small commercial electrical work: repairs, panels, lighting, new circuits and fault finding.</p>
+          <p style="margin-top:14px">Because it is a one-man operation, the person you speak to on the phone is the person who turns up. That keeps the quote and the job in the same hands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <div class="sec-head" style="margin-bottom:20px">
+          <div class="num">03 / Get in touch</div>
+          <h2>Call or text</h2>
+        </div>
+        <a class="big-tel" href="tel:+13523251715">(352) 325-1715</a>
+        <p style="color:var(--muted);max-width:40ch">Describe what is happening and you will get an honest answer about whether it needs a visit, and what it is likely to involve.</p>
+        <div class="meta">
+          <div><span>Email</span><a href="mailto:Fuenteselectric.florida@gmail.com" style="word-break:break-word">Fuenteselectric.florida@gmail.com</a></div>
+          <div><span>Service area</span>Orlando and Central Florida</div>
+          <div><span>Licensed &amp; insured</span>Residential and small commercial</div>
+        </div>
+      </div>
+      <form onsubmit="event.preventDefault();this.querySelector('.fnote').textContent='Thanks, your details are ready to send. We will reply to the number or email you gave us.';this.reset();">
+        <div><label for="nm">Name</label><input id="nm" name="name" autocomplete="name" required></div>
+        <div><label for="ph">Phone</label><input id="ph" name="phone" autocomplete="tel" required></div>
+        <div><label for="em">Email</label><input id="em" name="email" type="email" autocomplete="email"></div>
+        <div><label for="jb">What needs doing?</label><textarea id="jb" name="job" required></textarea></div>
+        <button class="send" type="submit">Request a call back</button>
+        <p class="fnote">Prefer to talk? Call (352) 325-1715.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>Fuentes Electric LLC · Orlando Fuentes · Orlando &amp; Central Florida · (352) 325-1715</span>
+    <span>Concept site prepared by LSDigitalsAI</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.querySelectorAll('[data-jump]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var el=document.getElementById(b.getAttribute('data-jump'));
+      if(el)el.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+})();
+</script>
+</body>
+</html>
