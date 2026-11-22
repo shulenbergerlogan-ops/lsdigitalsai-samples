@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bella Capelli Studio | Hair Studio in Waterford Lakes, Orlando</title>
+<meta name="description" content="Bella Capelli Studio is a hair studio in Waterford Lakes, east Orlando. Call (407) 286-4599 to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400;500;600&display=swap">
+<style>
+*{box-sizing:border-box}
+:root{
+  --paper:#FBF7F2;--ink:#221C1A;--muted:#6F625C;--line:#E3D8CD;
+  --rose:#B07C6A;--rose-deep:#8E5F4F;--cream:#F3EAE0;
+  --serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost",system-ui,sans-serif;
+}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.1;margin:0;letter-spacing:-.01em}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
+.eyebrow{font-family:var(--sans);font-size:.68rem;letter-spacing:.34em;text-transform:uppercase;color:var(--rose-deep);font-weight:500}
+
+header{position:sticky;top:0;z-index:20;background:rgba(251,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:clamp(12px,3vw,34px);min-height:78px}
+.brand{margin-right:auto;display:flex;flex-direction:column;gap:2px}
+.brand b{font-family:var(--serif);font-size:clamp(1.22rem,2.4vw,1.6rem);font-weight:600;letter-spacing:.02em}
+.brand span{font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+nav{display:flex;gap:clamp(10px,2vw,26px)}
+nav button{background:none;border:0;font:inherit;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);cursor:pointer;padding:6px 0;position:relative}
+nav button.on{color:var(--ink)}
+nav button.on::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--rose)}
+.call{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border:1px solid var(--rose);color:var(--rose-deep);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap}
+.call:hover{background:var(--rose);color:#fff;border-color:var(--rose)}
+
+.view[hidden]{display:none!important}
+
+.hero{padding:clamp(56px,9vw,120px) 0 clamp(48px,7vw,88px);position:relative;overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center}
+.hero h1{font-size:clamp(2.9rem,7.4vw,5.6rem);font-weight:300;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--rose-deep)}
+.hero .lede{color:var(--muted);font-size:clamp(1rem,1.7vw,1.14rem);max-width:38ch;margin-top:22px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;padding:14px 26px;background:var(--ink);color:var(--paper);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase}
+.btn:hover{background:var(--rose-deep)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--rose);color:var(--rose-deep)}
+.plaque{background:var(--cream);padding:clamp(26px,3.6vw,42px);border:1px solid var(--line)}
+.plaque .eyebrow{margin-bottom:16px}
+.plaque dl{margin:0;display:grid;gap:16px}
+.plaque dt{font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+.plaque dd{margin:3px 0 0;font-family:var(--serif);font-size:1.14rem}
+
+.rule{height:1px;background:var(--line)}
+section{padding:clamp(48px,7vw,88px) 0}
+.head{display:grid;gap:14px;max-width:54ch;margin-bottom:clamp(28px,4vw,48px)}
+.head h2{font-size:clamp(2rem,4.4vw,3.1rem);font-weight:300}
+.head p{color:var(--muted)}
+
+.list{border-top:1px solid var(--line)}
+.list div{display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,4vw,44px);padding:clamp(20px,3vw,30px) 0;border-bottom:1px solid var(--line);align-items:baseline}
+.list b{font-family:var(--serif);font-size:1.36rem;font-weight:600}
+.list p{color:var(--muted);font-size:.98rem}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);align-items:start}
+.quote{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.34;font-weight:300;border-left:2px solid var(--rose);padding-left:clamp(20px,3vw,32px)}
+.note{font-size:.9rem;color:var(--muted);margin-top:18px}
+
+.steps{display:grid;gap:clamp(18px,2.6vw,26px);counter-reset:s}
+.steps li{list-style:none;counter-increment:s;padding-left:44px;position:relative}
+.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:2px;font-size:.72rem;letter-spacing:.16em;color:var(--rose)}
+.steps b{display:block;font-family:var(--serif);font-size:1.2rem;font-weight:600;margin-bottom:2px}
+.steps span{color:var(--muted);font-size:.96rem}
+
+.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,64px)}
+.card{background:var(--cream);border:1px solid var(--line);padding:clamp(24px,3.4vw,38px)}
+.card h3{font-size:1.6rem;margin-bottom:6px}
+.card .sub{color:var(--muted);font-size:.94rem;margin-bottom:22px}
+.card dl{margin:0;display:grid;gap:15px}
+.card dt{font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+.card dd{margin:2px 0 0;font-family:var(--serif);font-size:1.1rem}
+form{display:grid;gap:14px}
+label{font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:5px}
+input,textarea{width:100%;font:inherit;font-size:1rem;padding:12px 14px;background:var(--paper);border:1px solid var(--line);color:var(--ink)}
+textarea{min-height:104px;resize:vertical}
+button.submit{font:inherit;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;background:var(--ink);color:var(--paper);border:0;padding:15px 26px;cursor:pointer}
+button.submit:hover{background:var(--rose-deep)}
+.formnote{font-size:.82rem;color:var(--muted)}
+
+.band{background:var(--ink);color:var(--paper);padding:clamp(46px,6vw,76px) 0}
+.band h2{font-size:clamp(1.9rem,4vw,2.9rem);font-weight:300;color:var(--paper)}
+.band p{color:#C9BDB5;margin-top:10px}
+.band .btn{background:var(--paper);color:var(--ink)}
+.band .btn:hover{background:var(--rose);color:#fff}
+
+footer{padding:clamp(34px,5vw,56px) 0;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;align-items:baseline}
+
+@media(max-width:880px){
+  .hero .grid,.split,.contact-grid{grid-template-columns:1fr}
+  nav{display:none}
+  .list div{grid-template-columns:1fr;gap:6px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#" data-go="home"><b>Bella Capelli</b><span>Studio · Orlando</span></a>
+    <nav>
+      <button class="on" data-go="home">Home</button>
+      <button data-go="services">Services</button>
+      <button data-go="studio">The Studio</button>
+      <button data-go="contact">Contact</button>
+    </nav>
+    <a class="call" href="tel:+14072864599">(407) 286-4599</a>
+  </div>
+</header>
+
+<!-- HOME -->
+<main class="view" data-view="home">
+  <section class="hero">
+    <div class="wrap grid">
+      <div>
+        <div class="eyebrow">Waterford Lakes · East Orlando</div>
+        <h1>Hair, done with <em>care</em>.</h1>
+        <p class="lede">Bella Capelli Studio is a hair studio on Lake Underhill Road. Cuts, colour and styling, one client at a time.</p>
+        <div class="hero-actions">
+          <a class="btn" href="tel:+14072864599">Call to book</a>
+          <a class="btn ghost" href="#" data-go="services">See services</a>
+        </div>
+      </div>
+      <aside class="plaque">
+        <div class="eyebrow">The studio</div>
+        <dl>
+          <dt>Address</dt>
+          <dd>12478 Lake Underhill Rd<br>Orlando, FL 32828</dd>
+          <dt>Phone</dt>
+          <dd>(407) 286-4599</dd>
+          <dt>Email</dt>
+          <dd style="font-family:var(--sans);font-size:.94rem;word-break:break-word">bellacapellistudiowaterford@gmail.com</dd>
+          <dt>Booking</dt>
+          <dd style="font-family:var(--sans);font-size:.94rem">Call or message to arrange a time</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="rule"></div></div>
+
+  <section>
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow">What we do</div>
+        <h2>A studio built around the appointment, not the queue.</h2>
+        <p>You sit down with the person cutting your hair, talk through what you want, and leave with something you can manage at home the next morning.</p>
+      </div>
+      <div class="list">
+        <div><b>Cuts</b><p>Precision cutting for short, mid-length and long hair, shaped to how it falls day to day.</p></div>
+        <div><b>Colour</b><p>Full colour, root touch-ups and lightening, matched to your skin tone rather than a swatch book.</p></div>
+        <div><b>Styling</b><p>Blow-dries and finishing for an occasion, or a lesson in how to get the same result yourself.</p></div>
+        <div><b>Consultation</b><p>Not sure what suits you? Start with a conversation before anything is cut or coloured.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap split">
+      <div>
+        <div class="eyebrow" style="margin-bottom:16px">The difference</div>
+        <p class="quote">A small studio means the person who answers the phone is the person doing your hair.</p>
+      </div>
+      <div>
+        <p style="color:var(--muted)">That is the whole idea. There is no front desk passing messages, no rotating chair, and no pressure to add something you did not ask for. You get a clear price and an honest opinion about what will work with your hair.</p>
+        <p class="note">Appointments are by arrangement, so call ahead rather than dropping in.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="band">
+    <div class="wrap">
+      <h2>Book your appointment.</h2>
+      <p>Call (407) 286-4599 and we will find a time that suits you.</p>
+      <div style="margin-top:26px"><a class="btn" href="tel:+14072864599">Call the studio</a></div>
+    </div>
+  </div>
+</main>
+
+<!-- SERVICES -->
+<main class="view" data-view="services" hidden>
+  <section>
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow">Services</div>
+        <h2>What you can book.</h2>
+        <p>Every service starts with a short conversation about your hair, so the result suits you and holds up between visits.</p>
+      </div>
+      <div class="list">
+        <div><b>Cut &amp; finish</b><p>A cut shaped to your hair and routine, finished and styled so you can see how it sits. We will show you what to do at home.</p></div>
+        <div><b>Colour</b><p>Full colour, root retouch or lightening. We talk through the upkeep and the cost before we start, because colour is a commitment, not a one-off.</p></div>
+        <div><b>Highlights</b><p>Foil work for brightness and dimension, placed to grow out well rather than leaving a hard line.</p></div>
+        <div><b>Blow-dry &amp; styling</b><p>Smooth, volume or waves, for a wedding, a shoot or a night out.</p></div>
+        <div><b>Consultation</b><p>A proper look at your hair and an honest recommendation. Useful before a big change, or if a previous colour needs correcting.</p></div>
+      </div>
+      <p class="note">Prices depend on hair length, density and the amount of product needed, so they are confirmed with you before any work begins.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap split">
+      <div>
+        <div class="eyebrow" style="margin-bottom:18px">How a visit runs</div>
+        <ol class="steps">
+          <li><b>You call or message</b><span>Tell us roughly what you are after and we will arrange a time.</span></li>
+          <li><b>We talk it through</b><span>Hair history, what you like, what you do not want to deal with each morning.</span></li>
+          <li><b>Price agreed</b><span>You hear the cost before we start, including anything the colour needs.</span></li>
+          <li><b>Cut, colour, finish</b><span>And a straightforward explanation of how to keep it looking right.</span></li>
+        </ol>
+      </div>
+      <aside class="card">
+        <h3>Booking</h3>
+        <p class="sub">Call or email to arrange an appointment.</p>
+        <dl>
+          <dt>Phone</dt><dd>(407) 286-4599</dd>
+          <dt>Email</dt><dd style="font-family:var(--sans);font-size:.92rem;word-break:break-word">bellacapellistudiowaterford@gmail.com</dd>
+          <dt>Studio</dt><dd>12478 Lake Underhill Rd, Orlando, FL 32828</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<!-- STUDIO -->
+<main class="view" data-view="studio" hidden>
+  <section>
+    <div class="wrap split">
+      <div>
+        <div class="eyebrow" style="margin-bottom:16px">The studio</div>
+        <h2 style="font-size:clamp(2rem,4.4vw,3rem);font-weight:300">A chair in Waterford Lakes, not a chain.</h2>
+        <p style="color:var(--muted);margin-top:20px">Bella Capelli Studio works out of 12478 Lake Underhill Road in east Orlando. It is a small operation, which is exactly the point: the person you speak to on the phone is the person who does your hair, and they remember how you like it.</p>
+        <p style="color:var(--muted);margin-top:16px">The studio keeps its appointments personal rather than stacking clients on top of each other. If you have had a colour go wrong somewhere else, or you have never really known what suits you, that is a normal place to start.</p>
+      </div>
+      <aside class="card">
+        <h3>Find us</h3>
+        <p class="sub">Waterford Lakes, east Orlando.</p>
+        <dl>
+          <dt>Address</dt><dd>12478 Lake Underhill Rd<br>Orlando, FL 32828</dd>
+          <dt>Phone</dt><dd>(407) 286-4599</dd>
+          <dt>Appointments</dt><dd style="font-family:var(--sans);font-size:.94rem">By arrangement. Please call ahead.</dd>
+        </dl>
+        <div style="margin-top:24px"><a class="btn" href="tel:+14072864599" style="width:100%;justify-content:center">Call the studio</a></div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<!-- CONTACT -->
+<main class="view" data-view="contact" hidden>
+  <section>
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow">Contact</div>
+        <h2>Get in touch.</h2>
+        <p>The quickest way to book is a phone call. If you would rather write, email or send a message below.</p>
+      </div>
+      <div class="contact-grid">
+        <form onsubmit="event.preventDefault();this.querySelector('.formnote').textContent='Thanks, your message is ready to send. We will reply to the address you gave us.';this.reset();">
+          <div><label for="n">Name</label><input id="n" name="name" autocomplete="name" required></div>
+          <div><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required></div>
+          <div><label for="p">Phone</label><input id="p" name="phone" autocomplete="tel"></div>
+          <div><label for="m">What would you like done?</label><textarea id="m" name="message" required></textarea></div>
+          <button class="submit" type="submit">Send message</button>
+          <p class="formnote">Or call (407) 286-4599.</p>
+        </form>
+        <aside class="card">
+          <h3>Studio details</h3>
+          <p class="sub">Bella Capelli Studio, Orlando.</p>
+          <dl>
+            <dt>Phone</dt><dd><a href="tel:+14072864599">(407) 286-4599</a></dd>
+            <dt>Email</dt><dd style="font-family:var(--sans);font-size:.92rem;word-break:break-word"><a href="mailto:bellacapellistudiowaterford@gmail.com">bellacapellistudiowaterford@gmail.com</a></dd>
+            <dt>Address</dt><dd>12478 Lake Underhill Rd<br>Orlando, FL 32828</dd>
+            <dt>Booking</dt><dd style="font-family:var(--sans);font-size:.94rem">Call or message to arrange a time</dd>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>Bella Capelli Studio · 12478 Lake Underhill Rd, Orlando, FL 32828 · (407) 286-4599</span>
+    <span>Concept site prepared by LSDigitalsAI</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var views=document.querySelectorAll('.view'),navs=document.querySelectorAll('[data-go]');
+  var titles={home:'Bella Capelli Studio | Hair Studio in Waterford Lakes, Orlando',services:'Services | Bella Capelli Studio',studio:'The Studio | Bella Capelli Studio',contact:'Contact | Bella Capelli Studio'};
+  function go(k){
+    views.forEach(function(v){v.hidden=v.getAttribute('data-view')!==k;});
+    document.querySelectorAll('nav button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-go')===k);});
+    if(titles[k])document.title=titles[k];
+    window.scrollTo(0,0);
+  }
+  navs.forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();go(b.getAttribute('data-go'));});});
+})();
+</script>
+</body>
+</html>
