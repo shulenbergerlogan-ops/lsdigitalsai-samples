@@ -1,96 +1,349 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Campbell&#x27;s Plumbing | Plumber in Monticello, FL</title>
-<meta name="description" content="Plumbing repairs in Monticello and Jefferson County. Call (850) 556-1476.">
+<title>Campbell's Plumbing | Plumber in Monticello</title>
+<meta name="description" content="Campbell's Plumbing — plumber in Monticello. Local plumbing repairs, drains and water heaters across Monticello and Jefferson County. Call (850) 556-1476.">
 <style>
-:root{--deep:#0F3D3E;--teal:#14595B;--cream:#FBF7EF;--sand:#EDE3D2;--rust:#B4562F;--ink:#1D2A2A}
-*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-.w{max-width:1000px;margin:0 auto;padding:0 24px}
-nav{background:var(--deep);color:#E7F0EF;font-size:14px}
-nav .w{display:flex;justify-content:space-between;gap:14px;min-height:44px;align-items:center;flex-wrap:wrap}
-nav a{color:#fff;text-decoration:none;font-weight:700}
-header{padding:26px 0 0}
-header .w{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--sand)}
-.brand{font-size:26px;font-weight:800;letter-spacing:-.03em;line-height:1}
-.brand em{display:block;font:italic 15px Georgia,serif;color:var(--teal);letter-spacing:0;margin-top:8px}
-.cta{display:inline-block;background:var(--rust);color:#fff;text-decoration:none;font-weight:800;padding:14px 22px;border-radius:999px}
-.hero{padding:58px 0 52px}
-.hero h1{font:400 clamp(32px,5vw,54px)/1.08 Georgia,serif;margin:0;max-width:20ch;letter-spacing:-.02em}
-.hero p{max-width:54ch;color:#40504F;font-size:19px;margin:20px 0 0}
-.strip{background:var(--sand)}
-.strip .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px;padding:26px 24px}
-.strip b{display:block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#7A6A55}
-.strip span{font-weight:700;font-size:16px}
-section.blk{padding:56px 0;border-bottom:1px solid var(--sand)}
-h2{font:400 clamp(24px,3.4vw,34px)/1.15 Georgia,serif;margin:0 0 8px;letter-spacing:-.02em}
-.lead{color:#4B5A59;max-width:62ch;margin:0 0 26px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.card{background:#fff;border:1px solid var(--sand);border-radius:14px;padding:22px}
-.card h3{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--deep)}
-.card p{margin:0;color:#4B5A59;font-size:15.5px}
-.split{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
-.quote{font:italic 21px/1.5 Georgia,serif;color:var(--deep);border-left:4px solid var(--rust);padding-left:20px;margin:0}
-.contact{background:var(--deep);color:#DCE9E8;padding:56px 0}
-.contact h2{color:#fff}
-.contact .cards{gap:26px;margin-top:24px}
-.contact .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);color:#DCE9E8}
-.contact .card h3{color:#fff}
-.contact a{color:#fff}
-footer{background:#0A2C2D;color:#9FB5B3;font-size:13.5px;padding:26px 0}
-footer .w{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
-@media(max-width:820px){.split{grid-template-columns:1fr}}
-</style></head><body>
+  :root{--navy:#12395C;--navy-deep:#0C2A45;--accent:#E08A2E;--accent-dark:#B77125;--ink:#16202B;--muted:#5A6B7B;--line:#E2E8EE;--paper:#FFFFFF;--wash:#F5F8FB;--radius:10px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--display:var(--sans);--accent-ink:#20160A}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6;font-size:17px}
+  h1,h2,h3,h4{margin:0;line-height:1.15;letter-spacing:-0.02em;color:var(--navy);font-family:var(--display)}
+  p{margin:0 0 1em} a{color:var(--navy)} .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .topbar{background:var(--navy-deep);color:#DCE6EF;font-size:14px}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:42px;flex-wrap:wrap}
+  .topbar span{opacity:.85} .topbar a{color:#fff;text-decoration:none;font-weight:600}
+  header.site{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:76px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
+  .mark{width:42px;height:42px;border-radius:9px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800;font-size:17px}
+  .brand b{display:block;font-size:18px;letter-spacing:-0.01em}
+  .brand small{display:block;font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+  nav.pages{display:flex;gap:4px;flex-wrap:wrap}
+  nav.pages button{font:inherit;font-size:15px;font-weight:600;color:var(--navy);background:none;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
+  nav.pages button:hover{background:var(--wash)}
+  nav.pages button[aria-current="page"]{background:var(--wash);box-shadow:inset 0 -3px 0 var(--accent)}
+  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:800;padding:12px 18px;border-radius:8px;white-space:nowrap;border-bottom:2px solid var(--accent-dark)}
+  .callbtn:hover{filter:brightness(1.05)}
+  .callbtn small{display:block;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
+  .page[hidden]{display:none}
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-deep) 100%);color:#EAF1F7;padding:76px 0 68px}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
+  .hero h1{color:#fff;font-size:clamp(32px,4.4vw,54px);max-width:16ch}
+  .hero p{color:#C6D5E3;font-size:18px;max-width:46ch}
+  .creds{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 0;padding:0;list-style:none}
+  .creds li{font-size:13px;font-weight:600;color:#D9E5F0;border:1px solid rgba(255,255,255,.25);padding:7px 12px;border-radius:999px}
+  .hero .actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:28px}
+  .hero .actions .ghost{color:#fff;border-color:rgba(255,255,255,.4)}
+  .card-quick{background:#fff;color:var(--ink);border-radius:var(--radius);padding:26px;box-shadow:0 18px 40px rgba(4,18,32,.28)}
+  .card-quick h3{font-size:16px;letter-spacing:.02em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+  .card-quick dl{margin:0;display:grid;gap:12px}
+  .card-quick dt{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+  .card-quick dd{margin:2px 0 0;font-weight:600}
+  .card-quick a{text-decoration:none;font-weight:700}
+  section.block{padding:64px 0} section.block.alt{background:var(--wash)}
+  .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-dark);font-weight:800;margin-bottom:12px}
+  h2.sec{font-size:clamp(24px,3vw,34px);max-width:26ch}
+  .lede{color:var(--muted);max-width:60ch;margin-top:14px}
+  .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:38px}
+  .svc article{background:#fff;padding:26px}
+  .svc article h3{font-size:18px;margin-bottom:8px}
+  .svc article p{margin:0;color:var(--muted);font-size:15.5px}
+  .svc .num{font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--accent-dark);display:block;margin-bottom:10px}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:34px}
+  .facts{margin:0;padding:0;list-style:none;display:grid;gap:16px}
+  .facts li{padding-left:18px;border-left:3px solid var(--accent);font-size:15.5px;color:var(--muted)}
+  .facts b{display:block;color:var(--ink);font-size:16px}
+  details.faq{border-top:1px solid var(--line);padding:18px 0}
+  details.faq summary{cursor:pointer;font-weight:700;color:var(--navy);font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center}
+  details.faq summary::-webkit-details-marker{display:none}
+  details.faq summary:after{content:"+";font-size:22px;color:var(--accent);font-weight:400;line-height:1}
+  details.faq[open] summary:after{content:"–"}
+  details.faq p{margin:12px 0 0;color:var(--muted);max-width:70ch}
+  .band{background:var(--navy);color:#fff;padding:54px 0}
+  .band .wrap{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+  .band h2{color:#fff;font-size:clamp(22px,2.8vw,30px);max-width:22ch}
+  .band p{color:#C6D5E3;margin:8px 0 0}
+  .ghost{display:inline-flex;align-items:center;border:1.5px solid var(--navy);color:var(--navy);text-decoration:none;font-weight:700;padding:11px 18px;border-radius:8px}
+  .contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:34px}
+  .form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .form label{display:block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+  .form input,.form textarea{width:100%;font:inherit;font-size:16px;padding:11px 13px;border:1px solid #CBD6E1;border-radius:8px;margin-bottom:16px;background:#fff;color:var(--ink)}
+  .form textarea{min-height:110px;resize:vertical}
+  .form button{font:inherit;font-weight:800;background:var(--accent);color:var(--accent-ink);border:0;border-bottom:2px solid var(--accent-dark);padding:13px 20px;border-radius:8px;cursor:pointer;width:100%}
+  .form .note{font-size:13px;color:var(--muted);margin:12px 0 0}
+  .steps{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:22px}
+  .steps li{counter-increment:s;position:relative;padding-left:44px;color:var(--muted);font-size:15.5px}
+  .steps li:before{content:counter(s);position:absolute;left:0;top:-2px;width:30px;height:30px;border-radius:50%;background:var(--wash);color:var(--navy);display:grid;place-items:center;font-weight:800;font-size:14px}
+  .steps b{display:block;color:var(--ink);font-size:16.5px}
+  footer.site{background:var(--navy-deep);color:#B9C9D8;padding:48px 0 34px;font-size:14.5px}
+  footer.site .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+  footer.site h4{color:#fff;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+  footer.site a{color:#DCE6EF;text-decoration:none;display:block;padding:3px 0}
+  footer.site a:hover{color:var(--accent)}
+  footer.site .bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;padding-top:18px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;opacity:.75}
+  @media (max-width:900px){
+    .hero .wrap,.cols,.contactgrid,footer.site .wrap{grid-template-columns:1fr}
+    .hero{padding:52px 0 46px}
+    nav.pages{order:3;width:100%;overflow-x:auto;padding-bottom:6px}
+    header.site .wrap{flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+    section.block{padding:48px 0}
+  }
+</style>
+<style>body.th-sand{--navy:#3A2A20;--navy-deep:#2A1C14;--accent:#C97B4A;--accent-dark:#A85F32;--ink:#2A211B;--muted:#7C6A5C;--line:#E9DCCE;--paper:#FDF9F3;--wash:#F5EADD;--radius:22px;--accent-ink:#2A1F17;--display:Palatino,"Book Antiqua",Georgia,serif}
+body.th-sand .hero h1{color:var(--ink)}
+body.th-sand .hero p{color:var(--muted)}
+body.th-sand .creds li{color:var(--ink);border-color:var(--line)}
+body.th-sand .hero .actions .ghost{color:var(--ink);border-color:var(--ink)}
 
-<nav><div class="w"><span>Monticello, Jefferson County · Florida</span><a href="tel:+18505561476">Call (850) 556-1476</a></div></nav>
-<header><div class="w">
-  <div class="brand">Campbell's Plumbing<em>Monticello, Florida</em></div>
-  <a class="cta" href="tel:+18505561476">(850) 556-1476</a>
-</div></header>
+body.th-sand .hero{background:radial-gradient(120% 100% at 50% 0,#FDF9F3 0%,#F5EADD 100%);padding:78px 0 72px}
+body.th-sand .hero .wrap{grid-template-columns:1fr;justify-items:center;text-align:center;gap:38px}
+body.th-sand .hero h1{max-width:24ch;font-weight:600}
+body.th-sand .hero p{margin-inline:auto}
+body.th-sand .creds{justify-content:center}
+body.th-sand .card-quick{max-width:640px;width:100%;text-align:left;box-shadow:0 16px 38px rgba(58,42,32,0.10);border:1px solid var(--line)}
+body.th-sand nav.pages button{border-radius:999px}
+body.th-sand nav.pages button[aria-current="page"]{background:var(--accent);color:var(--accent-ink);box-shadow:none}
+body.th-sand .svc{background:none;border:0;gap:20px;overflow:visible}
+body.th-sand .svc article{background:var(--paper);border:1px solid var(--line)}
+body.th-sand .eyebrow{color:var(--accent-dark)}
+</style>
+</head>
+<body class="th-sand">
 
-<section class="hero"><div class="w">
-  <h1>Plumbing repairs for Monticello homes.</h1>
-  <p>Campbell's Plumbing works on the plumbing in and around Monticello, in Jefferson County. Call and tell us what is going wrong, and we will tell you what it takes to fix it.</p>
-</div></section>
-
-<div class="strip"><div class="w">
-  <div><b>Phone</b><span>(850) 556-1476</span></div>
-  <div><b>Address</b><span>19 N Olive Street</span></div>
-  <div><b>Town</b><span>Monticello, FL 32344</span></div>
-  <div><b>Area</b><span>Jefferson County</span></div>
-</div></div>
-
-<section class="blk"><div class="w">
-  <h2>What we take on</h2>
-  <p class="lead">Most of the work is on occupied homes, which means the job has to be done properly and the house left the way we found it.</p>
-  <div class="cards">
-    <div class="card"><h3>Leaks and burst pipes</h3><p>Finding where the water is actually coming from, stopping the damage and repairing the cause.</p></div>
-    <div class="card"><h3>Drains and blockages</h3><p>Slow sinks, backed-up tubs and recurring blockages, cleared with a look at why they keep happening.</p></div>
-    <div class="card"><h3>Water heaters</h3><p>No hot water or a unit on its way out. We repair where it makes sense and replace where it does not.</p></div>
-    <div class="card"><h3>Taps, toilets and fixtures</h3><p>Replacements and repairs, plus connections for bathroom or kitchen work you are having done.</p></div>
+<div class="topbar">
+  <div class="wrap">
+    <span>Monticello and Jefferson County</span>
+    <span>Plumbing · <a href="tel:+18505561476">(850) 556-1476</a></span>
   </div>
-</div></section>
+</div>
 
-<section class="blk"><div class="w split">
-  <div>
-    <h2>A local plumber, not a call centre.</h2>
-    <p class="lead">Campbell's Plumbing is on North Olive Street in Monticello and is listed with the Monticello &amp; Jefferson County Chamber of Commerce. When you phone, you are speaking to the people who will be doing the work, so the answer you get is about your job rather than a script.</p>
-    <p class="lead">Plumbing problems get worse the longer they sit. A slow leak under a sink is a small repair today and a flooring job next week, which is why it is worth a phone call early.</p>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#" data-nav="home">
+      <span class="mark">CP</span>
+      <span><b>Campbell's Plumbing</b><small>Monticello</small></span>
+    </a>
+    <nav class="pages" aria-label="Pages">
+      <button type="button" data-nav="home" aria-current="page">Home</button>
+      <button type="button" data-nav="services">Services</button>
+      <button type="button" data-nav="about">About</button>
+      <button type="button" data-nav="contact">Contact</button>
+    </nav>
+    <a class="callbtn" href="tel:+18505561476"><span><small>Call now</small>(850) 556-1476</span></a>
   </div>
-  <div>
-    <p class="quote">If a repair will hold, we repair it. If it will not, we say so and price the replacement instead.</p>
+</header>
+
+<div class="page" data-page="home">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Plumbing repairs in Monticello, done properly.</h1>
+        <p>Local plumbing repairs, drains and water heaters across Monticello and Jefferson County. Call and describe the problem, and we will tell you what it takes to fix it.</p>
+        <div class="actions">
+          <a class="callbtn" href="tel:+18505561476"><span><small>Call now</small>(850) 556-1476</span></a>
+          <a class="ghost" href="#" data-nav="contact">Send a message</a>
+        </div>
+        <ul class="creds">
+          <li>Locally owned</li><li>Price before work</li><li>Monticello based</li>
+        </ul>
+      </div>
+      <aside class="card-quick">
+        <h3>Get in touch</h3>
+        <dl>
+          <dt>Phone</dt><dd><a href="tel:+18505561476">(850) 556-1476</a></dd>
+          <dt>Address</dt><dd>19 N Olive Street, Monticello, FL 32344</dd>
+          
+          <dt>Service area</dt>
+          <dd>Monticello and Jefferson County</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="eyebrow">Why call us</div>
+      <h2 class="sec">You get someone who can be at your door quickly, and a straight answer about the job.</h2>
+      <p class="lede">Plumbing problems get more expensive the longer they sit. A slow leak under a sink or a water heater that has stopped heating is a small repair today and a flooring or ceiling job next week. We work in the same neighbourhoods every day, so we can tell you honestly what a job needs before anyone picks up a tool.</p>
+    </div>
+  </section>
+
+  <section class="block alt">
+    <div class="wrap">
+      <div class="eyebrow">What we take on</div>
+      <h2 class="sec">Plumbing work for houses and small rental properties.</h2>
+      <div class="svc"><article><span class="num">01</span><h3>Emergency repair</h3><p>Burst pipes, overflowing fixtures and sudden leaks. Call and describe what is happening.</p></article><article><span class="num">02</span><h3>Drain cleaning</h3><p>Slow sinks, backed-up tubs and recurring blockages cleared, with a look at why it keeps happening.</p></article><article><span class="num">03</span><h3>Water heaters</h3><p>No hot water, inconsistent temperature, or a unit at the end of its life. Repair first where it makes sense.</p></article><article><span class="num">04</span><h3>Leak detection</h3><p>Finding the source behind a wall, under a slab or around a fixture before it damages more of the house.</p></article><article><span class="num">05</span><h3>Repiping</h3><p>Failing galvanised or corroded runs replaced, planned to keep the water off for as short a time as possible.</p></article><article><span class="num">06</span><h3>Kitchen &amp; bathroom</h3><p>Fixture swaps, new taps and toilets, and plumbing for work you are having done.</p></article></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="eyebrow">Questions we get asked</div>
+      <h2 class="sec">Straight answers before you book anything.</h2>
+      <div style="margin-top:26px;max-width:820px"><details class="faq" open><summary>How quickly can you get out?</summary><p>Call us and we will tell you honestly what the day looks like. Water going where it should not is treated as a priority.</p></details><details class="faq"><summary>Will you tell me the price first?</summary><p>Yes. We look at the job, explain what needs doing and give you the price before the work starts.</p></details><details class="faq"><summary>What areas do you cover?</summary><p>Monticello and Jefferson County.</p></details></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div><h2>Need a plumber in Monticello today?</h2><p>Call and tell us what the problem is. We will tell you what it takes to fix it.</p></div>
+      <a class="callbtn" href="tel:+18505561476"><span><small>Call now</small>(850) 556-1476</span></a>
+    </div>
+  </section>
+</div>
+
+<div class="page" data-page="services" hidden>
+  <section class="block">
+    <div class="wrap">
+      <div class="eyebrow">Services</div>
+      <h2 class="sec">Plumbing services in Monticello.</h2>
+      <p class="lede">Plumbing problems get more expensive the longer they sit. A slow leak under a sink or a water heater that has stopped heating is a small repair today and a flooring or ceiling job next week. We work in the same neighbourhoods every day, so we can tell you honestly what a job needs before anyone picks up a tool.</p>
+      <div class="svc"><article><span class="num">01</span><h3>Emergency repair</h3><p>Burst pipes, overflowing fixtures and sudden leaks. Call and describe what is happening.</p></article><article><span class="num">02</span><h3>Drain cleaning</h3><p>Slow sinks, backed-up tubs and recurring blockages cleared, with a look at why it keeps happening.</p></article><article><span class="num">03</span><h3>Water heaters</h3><p>No hot water, inconsistent temperature, or a unit at the end of its life. Repair first where it makes sense.</p></article><article><span class="num">04</span><h3>Leak detection</h3><p>Finding the source behind a wall, under a slab or around a fixture before it damages more of the house.</p></article><article><span class="num">05</span><h3>Repiping</h3><p>Failing galvanised or corroded runs replaced, planned to keep the water off for as short a time as possible.</p></article><article><span class="num">06</span><h3>Kitchen &amp; bathroom</h3><p>Fixture swaps, new taps and toilets, and plumbing for work you are having done.</p></article></div>
+    </div>
+  </section>
+
+  <section class="block alt">
+    <div class="wrap cols">
+      <div>
+        <div class="eyebrow">How we work</div>
+        <h2 class="sec">You get someone who can be at your door quickly, and a straight answer about the job.</h2>
+        <p class="lede">Call and tell us what the problem is. We will tell you what it takes to fix it.</p>
+      </div>
+      <ul class="facts"><li><b>Price before work</b>You hear the cost before anything is taken apart, so there is no surprise at the end.</li><li><b>Local to Monticello</b>We work in the city and across the county, so travel time is short and we know what local homes are built with.</li><li><b>Straight answers</b>If a repair is not worth doing, we say so rather than billing for a fix that will not hold.</li><li><b>Left tidy</b>Work areas covered and cleaned up, with the old parts taken away.</li></ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="eyebrow">Frequently asked</div>
+      <h2 class="sec">The things people want to know before they call.</h2>
+      <div style="margin-top:26px;max-width:820px"><details class="faq" open><summary>How quickly can you get out?</summary><p>Call us and we will tell you honestly what the day looks like. Water going where it should not is treated as a priority.</p></details><details class="faq"><summary>Will you tell me the price first?</summary><p>Yes. We look at the job, explain what needs doing and give you the price before the work starts.</p></details><details class="faq"><summary>What areas do you cover?</summary><p>Monticello and Jefferson County.</p></details></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div><h2>Tell us what needs doing.</h2><p>Call for a straight answer and a price.</p></div>
+      <a class="callbtn" href="tel:+18505561476"><span><small>Call now</small>(850) 556-1476</span></a>
+    </div>
+  </section>
+</div>
+
+<div class="page" data-page="about" hidden>
+  <section class="block">
+    <div class="wrap cols">
+      <div>
+        <div class="eyebrow">About us</div>
+        <h2 class="sec">A Monticello plumbing company, not a call centre.</h2>
+        <p class="lede">Campbell's Plumbing is a plumber based in Monticello, working across Monticello and Jefferson County.</p>
+        <p class="lede">When you call, you are speaking to the people who will be doing the work, which is why the answers you get are about your actual job rather than a script. Most of our work comes from homeowners and landlords who want a repair done once, properly, and who would rather have a clear price than an open-ended hourly bill.</p>
+      </div>
+      <ul class="facts"><li><b>The real cause</b>We would rather spend longer finding why something failed than replace the same part twice.</li><li><b>Honest recommendations</b>If a repair will hold, we repair it. If it will not, we say so and price the replacement instead.</li><li><b>Your home respected</b>Floors covered, work area cleaned, old parts taken away.</li><li><b>Reachable by phone</b>You can call and speak to us about a job in progress, not wait on an email reply.</li></ul>
+    </div>
+  </section>
+
+  <section class="block alt">
+    <div class="wrap">
+      <div class="eyebrow">Where we work</div>
+      <h2 class="sec">Monticello and Jefferson County.</h2>
+      <p class="lede">19 N Olive Street, Monticello, FL 32344</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div><h2>Talk to someone local.</h2><p>No call centre, no script.</p></div>
+      <a class="callbtn" href="tel:+18505561476"><span><small>Call now</small>(850) 556-1476</span></a>
+    </div>
+  </section>
+</div>
+
+<div class="page" data-page="contact" hidden>
+  <section class="block">
+    <div class="wrap">
+      <div class="eyebrow">Contact</div>
+      <h2 class="sec">Get in touch.</h2>
+      <p class="lede">The fastest way to reach us is the phone.</p>
+      <div class="contactgrid">
+        <form class="form" onsubmit="event.preventDefault();this.querySelector('.note').textContent='Thanks — your message is on its way. We will call you back on the number you gave us.';this.reset();">
+          <label for="n">Your name</label>
+          <input id="n" name="name" autocomplete="name" required>
+          <label for="p">Best number to call</label>
+          <input id="p" name="phone" inputmode="tel" autocomplete="tel" required>
+          <label for="m">What needs doing?</label>
+          <textarea id="m" name="message" required></textarea>
+          <button type="submit">Send message</button>
+          <p class="note">We reply the same working day.</p>
+        </form>
+        <div>
+          <ul class="steps"><li><b>You describe the job</b>We ask what you are seeing and when it started, so we can tell you how urgent it is.</li><li><b>We look at it</b>We come out, find the cause and explain what needs doing.</li><li><b>You get a price first</b>The cost is agreed before any work starts, and the work is done to fix the cause.</li></ul>
+          <ul class="facts" style="margin-top:32px">
+            <li><b>Phone</b><a href="tel:+18505561476">(850) 556-1476</a></li>
+            <li><b>Address</b>19 N Olive Street, Monticello, FL 32344</li>
+            
+            <li><b>Service area</b>Monticello and Jefferson County</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div><h2>(850) 556-1476</h2><p>Call and tell us what the problem is. We will tell you what it takes to fix it.</p></div>
+      <a class="callbtn" href="tel:+18505561476"><span><small>Call now</small>(850) 556-1476</span></a>
+    </div>
+  </section>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h4>Campbell's Plumbing</h4>
+      <p style="margin:0 0 10px;color:#B9C9D8">Local plumbing repairs, drains and water heaters across Monticello and Jefferson County.</p>
+      <a href="tel:+18505561476">(850) 556-1476</a>
+      <span style="display:block;padding:3px 0">19 N Olive Street, Monticello, FL 32344</span>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <a href="#" data-nav="home">Home</a>
+      <a href="#" data-nav="services">Services</a>
+      <a href="#" data-nav="about">About</a>
+      <a href="#" data-nav="contact">Contact</a>
+    </div>
+    <div><h4>Service area</h4><span style="display:block;padding:3px 0">Monticello and Jefferson County</span></div>
   </div>
-</div></section>
+  <div class="wrap"><div class="bottom"><span>© 2026 Campbell's Plumbing · Monticello</span><span>Concept site prepared by LSDigitalsAI</span></div></div>
+</footer>
 
-<section class="contact"><div class="w">
-  <h2>Get in touch</h2>
-  <div class="cards">
-    <div class="card"><h3>Phone</h3><p><a href="tel:+18505561476">(850) 556-1476</a></p></div>
-    <div class="card"><h3>Address</h3><p>19 N Olive Street<br>Monticello, FL 32344</p></div>
-    <div class="card"><h3>Email</h3><p><a href="mailto:campbellsplumbing@live.com">campbellsplumbing@live.com</a></p></div>
-  </div>
-</div></section>
-
-<footer><div class="w"><span>Campbell's Plumbing · Monticello, FL</span><span>Concept site prepared by LSDigitalsAI</span></div></footer>
-
-</body></html>
+<script>
+  (function(){
+    var pages = document.querySelectorAll('.page');
+    var navBtns = document.querySelectorAll('[data-nav]');
+    var name = "Campbell's Plumbing";
+    var city = "Monticello";
+    var titles = {
+      home: name + ' | ' + city,
+      services: 'Services | ' + name,
+      about: 'About | ' + name,
+      contact: 'Contact | ' + name
+    };
+    function show(key){
+      pages.forEach(function(p){ p.hidden = p.getAttribute('data-page') !== key; });
+      navBtns.forEach(function(b){
+        if(b.tagName === 'BUTTON'){
+          if(b.getAttribute('data-nav') === key) b.setAttribute('aria-current','page');
+          else b.removeAttribute('aria-current');
+        }
+      });
+      if(titles[key]) document.title = titles[key];
+      window.scrollTo({top:0,behavior:'instant'});
+    }
+    navBtns.forEach(function(b){ b.addEventListener('click', function(e){ e.preventDefault(); show(b.getAttribute('data-nav')); }); });
+  })();
+</script>
+</body>
+</html>
