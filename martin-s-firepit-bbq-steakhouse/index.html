@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Martin's Firepit BBQ &amp; Steakhouse | Restaurant in Perry</title>
+<meta name="description" content="Martin's Firepit BBQ &amp; Steakhouse — restaurant in Perry. A local kitchen serving Perry and Taylor County. Call (850) 371-5297.">
+<style>
+  :root{--navy:#3A2317;--navy-deep:#0C2A45;--accent:#C8963E;--accent-dark:#A47A32;--ink:#16202B;--muted:#5A6B7B;--line:#E2E8EE;--paper:#FFFFFF;--wash:#F5F8FB;--radius:10px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--display:var(--sans);--accent-ink:#20160A}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6;font-size:17px}
+  h1,h2,h3,h4{margin:0;line-height:1.15;letter-spacing:-0.02em;color:var(--navy);font-family:var(--display)}
+  p{margin:0 0 1em} a{color:var(--navy)} .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .topbar{background:var(--navy-deep);color:#DCE6EF;font-size:14px}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:42px;flex-wrap:wrap}
+  .topbar span{opacity:.85} .topbar a{color:#fff;text-decoration:none;font-weight:600}
+  header.site{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:76px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
+  .mark{width:42px;height:42px;border-radius:9px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800;font-size:17px}
+  .brand b{display:block;font-size:18px;letter-spacing:-0.01em}
+  .brand small{display:block;font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+  nav.pages{display:flex;gap:4px;flex-wrap:wrap}
+  nav.pages button{font:inherit;font-size:15px;font-weight:600;color:var(--navy);background:none;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
+  nav.pages button:hover{background:var(--wash)}
+  nav.pages button[aria-current="page"]{background:var(--wash);box-shadow:inset 0 -3px 0 var(--accent)}
+  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:800;padding:12px 18px;border-radius:8px;white-space:nowrap;border-bottom:2px solid var(--accent-dark)}
+  .callbtn:hover{filter:brightness(1.05)}
+  .callbtn small{display:block;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
+  .page[hidden]{display:none}
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-deep) 100%);color:#EAF1F7;padding:76px 0 68px}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
+  .hero h1{color:#fff;font-size:clamp(32px,4.4vw,54px);max-width:16ch}
+  .hero p{color:#C6D5E3;font-size:18px;max-width:46ch}
+  .creds{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 0;padding:0;list-style:none}
+  .creds li{font-size:13px;font-weight:600;color:#D9E5F0;border:1px solid rgba(255,255,255,.25);padding:7px 12px;border-radius:999px}
+  .hero .actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:28px}
+  .hero .actions .ghost{color:#fff;border-color:rgba(255,255,255,.4)}
+  .card-quick{background:#fff;color:var(--ink);border-radius:var(--radius);padding:26px;box-shadow:0 18px 40px rgba(4,18,32,.28)}
+  .card-quick h3{font-size:16px;letter-spacing:.02em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+  .card-quick dl{margin:0;display:grid;gap:12px}
+  .card-quick dt{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+  .card-quick dd{margin:2px 0 0;font-weight:600}
+  .card-quick a{text-decoration:none;font-weight:700}
+  section.block{padding:64px 0} section.block.alt{background:var(--wash)}
+  .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-dark);font-weight:800;margin-bottom:12px}
+  h2.sec{font-size:clamp(24px,3vw,34px);max-width:26ch}
+  .lede{color:var(--muted);max-width:60ch;margin-top:14px}
+  .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:38px}
+  .svc article{background:#fff;padding:26px}
+  .svc article h3{font-size:18px;margin-bottom:8px}
+  .svc article p{margin:0;color:var(--muted);font-size:15.5px}
+  .svc .num{font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--accent-dark);display:block;margin-bottom:10px}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:34px}
+  .facts{margin:0;padding:0;list-style:none;display:grid;gap:16px}
+  .facts li{padding-left:18px;border-left:3px solid var(--accent);font-size:15.5px;color:var(--muted)}
+  .facts b{display:block;color:var(--ink);font-size:16px}
+  details.faq{border-top:1px solid var(--line);padding:18px 0}
+  details.faq summary{cursor:pointer;font-weight:700;color:var(--navy);font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center}
+  details.faq summary::-webkit-details-marker{display:none}
+  details.faq summary:after{content:"+";font-size:22px;color:var(--accent);font-weight:400;line-height:1}
+  details.faq[open] summary:after{content:"–"}
+  details.faq p{margin:12px 0 0;color:var(--muted);max-width:70ch}
+  .band{background:var(--navy);color:#fff;padding:54px 0}
+  .band .wrap{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+  .band h2{color:#fff;font-size:clamp(22px,2.8vw,30px);max-width:22ch}
+  .band p{color:#C6D5E3;margin:8px 0 0}
+  .ghost{display:inline-flex;align-items:center;border:1.5px solid var(--navy);color:var(--navy);text-decoration:none;font-weight:700;padding:11px 18px;border-radius:8px}
+  .contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:34px}
+  .form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .form label{display:block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+  .form input,.form textarea{width:100%;font:inherit;font-size:16px;padding:11px 13px;border:1px solid #CBD6E1;border-radius:8px;margin-bottom:16px;background:#fff;color:var(--ink)}
+  .form textarea{min-height:110px;resize:vertical}
+  .form button{font:inherit;font-weight:800;background:var(--accent);color:var(--accent-ink);border:0;border-bottom:2px solid var(--accent-dark);padding:13px 20px;border-radius:8px;cursor:pointer;width:100%}
+  .form .note{font-size:13px;color:var(--muted);margin:12px 0 0}
+  .steps{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:22px}
+  .steps li{counter-increment:s;position:relative;padding-left:44px;color:var(--muted);font-size:15.5px}
+  .steps li:before{content:counter(s);position:absolute;left:0;top:-2px;width:30px;height:30px;border-radius:50%;background:var(--wash);color:var(--navy);display:grid;place-items:center;font-weight:800;font-size:14px}
+  .steps b{display:block;color:var(--ink);font-size:16.5px}
+  footer.site{background:var(--navy-deep);color:#B9C9D8;padding:48px 0 34px;font-size:14.5px}
+  footer.site .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+  footer.site h4{color:#fff;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+  footer.site a{color:#DCE6EF;text-decoration:none;display:block;padding:3px 0}
+  footer.site a:hover{color:var(--accent)}
+  footer.site .bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;padding-top:18px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;opacity:.75}
+  @media (max-width:900px){
+    .hero .wrap,.cols,.contactgrid,footer.site .wrap{grid-template-columns:1fr}
+    .hero{padding:52px 0 46px}
+    nav.pages{order:3;width:100%;overflow-x:auto;padding-bottom:6px}
+    header.site .wrap{flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+    section.block{padding:48px 0}
+  }
+</style>
+<style>body.th-editorial{--navy:#1A1A14;--navy-deep:#111110;--accent:#C4462B;--accent-dark:#9E3520;--ink:#171712;--muted:#6B6A5E;--line:#DEDACE;--paper:#F8F6EF;--wash:#F1EDE2;--radius:0px;--accent-ink:#FFF8F3;--sans:Georgia,"Times New Roman",serif;--display:Georgia,"Times New Roman",serif}
+body.th-editorial .hero h1{color:var(--ink)}
+body.th-editorial .hero p{color:var(--muted)}
+body.th-editorial .creds li{color:var(--ink);border-color:var(--line)}
+body.th-editorial .hero .actions .ghost{color:var(--ink);border-color:var(--ink)}
+
+body.th-editorial h1,body.th-editorial h2,body.th-editorial h3,body.th-editorial h4{font-weight:400;letter-spacing:-0.025em}
+body.th-editorial .hero{background:var(--paper);padding:98px 0 86px}
+body.th-editorial .hero h1{font-size:clamp(40px,6vw,74px);letter-spacing:-0.035em;max-width:18ch;font-weight:400;line-height:1.02}
+body.th-editorial .creds li{border-color:var(--line);color:var(--ink)}
+body.th-editorial .card-quick{box-shadow:none;border:1px solid var(--line);border-radius:0;background:transparent}
+body.th-editorial .mark{background:var(--ink);color:var(--paper)}
+body.th-editorial nav.pages button{border-radius:0;padding:10px 0 8px;margin-right:24px;background:none;box-shadow:none;border-bottom:2px solid transparent}
+body.th-editorial nav.pages button[aria-current="page"]{background:none;box-shadow:none;border-bottom-color:var(--accent)}
+body.th-editorial .eyebrow{letter-spacing:0.2em;color:var(--accent);font-size:11px}
+body.th-editorial .svc{background:none;border:0;border-radius:0;gap:36px;overflow:visible}
+body.th-editorial .svc article{padding:20px 0 0;border-top:2px solid var(--ink);background:transparent}
+body.th-editorial .svc .num{color:var(--accent)}
+body.th-editorial .band{background:var(--ink)}
+body.th-editorial .callbtn{border-radius:0;border-bottom-width:0}
+body.th-editorial .ghost,body.th-editorial .form{border-radius:0}
+body.th-editorial footer.site{background:#111110}
+</style>
+</head>
+<body class="th-editorial">
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Perry and Taylor County</span>
+    <span>Southern cooking · <a href="tel:+18503715297">(850) 371-5297</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#" data-nav="home">
+      <span class="mark">MF</span>
+      <span><b>Martin's Firepit BBQ &amp; Steakhouse</b><small>Perry</small></span>
+    </a>
+    <nav class="pages" aria-label="Pages">
+      <button type="button" data-nav="home" aria-current="page">Home</button>
+      <button type="button" data-nav="services">Services</button>
+      <button type="button" data-nav="about">About</button>
+      <button type="button" data-nav="contact">Contact</button>
+    </nav>
+    <a class="callbtn" href="tel:+18503715297"><span><small>Call now</small>(850) 371-5297</span></a>
+  </div>
+</header>
+
+<div class="page" data-page="home">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Home cooking in Perry, served the way it should be.</h1>
+        <p>A local kitchen in Perry and Taylor County. Call for hours, takeout or a table, and we will tell you what is on today.</p>
+        <div class="actions">
+          <a class="callbtn" href="tel:+18503715297"><span><small>Call now</small>(850) 371-5297</span></a>
+          <a class="ghost" href="#" data-nav="contact">Send a message</a>
+        </div>
+        <ul class="creds">
+          <li>Locally owned</li><li>Price before work</li><li>Perry based</li>
+        </ul>
+      </div>
+      <aside class="card-quick">
+        <h3>Get in touch</h3>
+        <dl>
+          <dt>Phone</dt><dd><a href="tel:+18503715297">(850) 371-5297</a></dd>
+          <dt>Address</dt><dd>2281 W US 98, Perry, FL 32347</dd>
+          
+          <dt>Service area</dt>
+          <dd>Perry and Taylor County</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="eyebrow">Why call us</div>
+      <h2 class="sec">Somewhere local, where the food is cooked rather than assembled.</h2>
+      <p class="lede">A good local restaurant is part of the town's routine: the same faces, the same dishes done properly, and someone who knows your order. We cook for the people who live here rather than for a passing crowd, which is why the menu stays honest and the prices stay sensible.</p>
+    </div>
+  </section>
+
+  <section class="block alt">
+    <div class="wrap">
+      <div class="eyebrow">What we serve</div>
+      <h2 class="sec">A menu built around what people actually order.</h2>
+      <div class="svc"><article><span class="num">01</span><h3>Dine in</h3><p>Tables for couples, families and the after-church crowd. Call ahead for a larger group.</p></article><article><span class="num">02</span><h3>Takeout</h3><p>Call your order through and collect it. The full menu is available to go.</p></article><article><span class="num">03</span><h3>Daily plates</h3><p>Hot plates cooked through the day, with the sides that go with them.</p></article><article><span class="num">04</span><h3>Lunch</h3><p>A quick, filling lunch for people working in and around town.</p></article><article><span class="num">05</span><h3>Family and group orders</h3><p>Larger orders for gatherings, phoned in ahead so everything is ready together.</p></article><article><span class="num">06</span><h3>Local catering enquiries</h3><p>Ask us about feeding a group and we will tell you what is possible.</p></article></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="eyebrow">Questions we get asked</div>
+      <h2 class="sec">Straight answers before you book anything.</h2>
+      <div style="margin-top:26px;max-width:820px"><details class="faq" open><summary>Do you take reservations?</summary><p>Call us and we will tell you what is available for the day you have in mind.</p></details><details class="faq"><summary>Can I order takeout?</summary><p>Yes. Phone your order through and we will have it ready to collect.</p></details><details class="faq"><summary>What area do you serve?</summary><p>Perry and Taylor County.</p></details></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div><h2>Hungry in Perry?</h2><p>Call us for hours, takeout or a table.</p></div>
+      <a class="callbtn" href="tel:+18503715297"><span><small>Call now</small>(850) 371-5297</span></a>
+    </div>
+  </section>
+</div>
+
+<div class="page" data-page="services" hidden>
+  <section class="block">
+    <div class="wrap">
+      <div class="eyebrow">Services</div>
+      <h2 class="sec">Restaurant in Perry.</h2>
+      <p class="lede">A good local restaurant is part of the town's routine: the same faces, the same dishes done properly, and someone who knows your order. We cook for the people who live here rather than for a passing crowd, which is why the menu stays honest and the prices stay sensible.</p>
+      <div class="svc"><article><span class="num">01</span><h3>Dine in</h3><p>Tables for couples, families and the after-church crowd. Call ahead for a larger group.</p></article><article><span class="num">02</span><h3>Takeout</h3><p>Call your order through and collect it. The full menu is available to go.</p></article><article><span class="num">03</span><h3>Daily plates</h3><p>Hot plates cooked through the day, with the sides that go with them.</p></article><article><span class="num">04</span><h3>Lunch</h3><p>A quick, filling lunch for people working in and around town.</p></article><article><span class="num">05</span><h3>Family and group orders</h3><p>Larger orders for gatherings, phoned in ahead so everything is ready together.</p></article><article><span class="num">06</span><h3>Local catering enquiries</h3><p>Ask us about feeding a group and we will tell you what is possible.</p></article></div>
+    </div>
+  </section>
+
+  <section class="block alt">
+    <div class="wrap cols">
+      <div>
+        <div class="eyebrow">How we work</div>
+        <h2 class="sec">Somewhere local, where the food is cooked rather than assembled.</h2>
+        <p class="lede">Call us for hours, takeout or a table.</p>
+      </div>
+      <ul class="facts"><li><b>Cooked to order</b>Dishes are made in the kitchen, not reheated from a box.</li><li><b>Local to Perry</b>We cook for the town we are in, so the menu reflects what people here ask for.</li><li><b>Call ahead</b>Phone for hours, takeout or a table, and speak to someone who works here.</li><li><b>Fair prices</b>Portions and prices that make sense for a local lunch or dinner.</li></ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="eyebrow">Frequently asked</div>
+      <h2 class="sec">The things people want to know before they call.</h2>
+      <div style="margin-top:26px;max-width:820px"><details class="faq" open><summary>Do you take reservations?</summary><p>Call us and we will tell you what is available for the day you have in mind.</p></details><details class="faq"><summary>Can I order takeout?</summary><p>Yes. Phone your order through and we will have it ready to collect.</p></details><details class="faq"><summary>What area do you serve?</summary><p>Perry and Taylor County.</p></details></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div><h2>Tell us what needs doing.</h2><p>Call for a straight answer and a price.</p></div>
+      <a class="callbtn" href="tel:+18503715297"><span><small>Call now</small>(850) 371-5297</span></a>
+    </div>
+  </section>
+</div>
+
+<div class="page" data-page="about" hidden>
+  <section class="block">
+    <div class="wrap cols">
+      <div>
+        <div class="eyebrow">About us</div>
+        <h2 class="sec">A Perry kitchen, run by people who live here.</h2>
+        <p class="lede">Martin's Firepit BBQ &amp; Steakhouse is a restaurant based in Perry, working across Perry and Taylor County.</p>
+        <p class="lede">We are a local restaurant rather than part of a chain, which means the person who answers the phone can tell you what is good today. Most of our trade comes from regulars in town, and the menu is built around what they keep ordering.</p>
+      </div>
+      <ul class="facts"><li><b>Cooked properly</b>Real cooking, done in-house, every service.</li><li><b>Regulars first</b>The people who eat here every week shape what we serve.</li><li><b>Straight answers</b>If we are full or out of something, we tell you on the phone.</li><li><b>Easy to reach</b>One local number for hours, takeout and questions.</li></ul>
+    </div>
+  </section>
+
+  <section class="block alt">
+    <div class="wrap">
+      <div class="eyebrow">Where we work</div>
+      <h2 class="sec">Perry and Taylor County.</h2>
+      <p class="lede">2281 W US 98, Perry, FL 32347</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div><h2>Talk to someone local.</h2><p>No call centre, no script.</p></div>
+      <a class="callbtn" href="tel:+18503715297"><span><small>Call now</small>(850) 371-5297</span></a>
+    </div>
+  </section>
+</div>
+
+<div class="page" data-page="contact" hidden>
+  <section class="block">
+    <div class="wrap">
+      <div class="eyebrow">Contact</div>
+      <h2 class="sec">Get in touch.</h2>
+      <p class="lede">The fastest way to reach us is the phone.</p>
+      <div class="contactgrid">
+        <form class="form" onsubmit="event.preventDefault();this.querySelector('.note').textContent='Thanks — your message is on its way. We will call you back on the number you gave us.';this.reset();">
+          <label for="n">Your name</label>
+          <input id="n" name="name" autocomplete="name" required>
+          <label for="p">Best number to call</label>
+          <input id="p" name="phone" inputmode="tel" autocomplete="tel" required>
+          <label for="m">What needs doing?</label>
+          <textarea id="m" name="message" required></textarea>
+          <button type="submit">Send message</button>
+          <p class="note">We reply the same working day.</p>
+        </form>
+        <div>
+          <ul class="steps"><li><b>You describe the job</b>We ask what you are seeing and when it started, so we can tell you how urgent it is.</li><li><b>We look at it</b>We come out, find the cause and explain what needs doing.</li><li><b>You get a price first</b>The cost is agreed before any work starts, and the work is done to fix the cause.</li></ul>
+          <ul class="facts" style="margin-top:32px">
+            <li><b>Phone</b><a href="tel:+18503715297">(850) 371-5297</a></li>
+            <li><b>Address</b>2281 W US 98, Perry, FL 32347</li>
+            
+            <li><b>Service area</b>Perry and Taylor County</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div><h2>(850) 371-5297</h2><p>Call us for hours, takeout or a table.</p></div>
+      <a class="callbtn" href="tel:+18503715297"><span><small>Call now</small>(850) 371-5297</span></a>
+    </div>
+  </section>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h4>Martin's Firepit BBQ &amp; Steakhouse</h4>
+      <p style="margin:0 0 10px;color:#B9C9D8">A local kitchen serving Perry and Taylor County.</p>
+      <a href="tel:+18503715297">(850) 371-5297</a>
+      <span style="display:block;padding:3px 0">2281 W US 98, Perry, FL 32347</span>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <a href="#" data-nav="home">Home</a>
+      <a href="#" data-nav="services">Services</a>
+      <a href="#" data-nav="about">About</a>
+      <a href="#" data-nav="contact">Contact</a>
+    </div>
+    <div><h4>Service area</h4><span style="display:block;padding:3px 0">Perry and Taylor County</span></div>
+  </div>
+  <div class="wrap"><div class="bottom"><span>© 2026 Martin's Firepit BBQ &amp; Steakhouse · Perry</span><span>Concept site prepared by LSDigitalsAI</span></div></div>
+</footer>
+
+<script>
+  (function(){
+    var pages = document.querySelectorAll('.page');
+    var navBtns = document.querySelectorAll('[data-nav]');
+    var name = "Martin's Firepit BBQ & Steakhouse";
+    var city = "Perry";
+    var titles = {
+      home: name + ' | ' + city,
+      services: 'Services | ' + name,
+      about: 'About | ' + name,
+      contact: 'Contact | ' + name
+    };
+    function show(key){
+      pages.forEach(function(p){ p.hidden = p.getAttribute('data-page') !== key; });
+      navBtns.forEach(function(b){
+        if(b.tagName === 'BUTTON'){
+          if(b.getAttribute('data-nav') === key) b.setAttribute('aria-current','page');
+          else b.removeAttribute('aria-current');
+        }
+      });
+      if(titles[key]) document.title = titles[key];
+      window.scrollTo({top:0,behavior:'instant'});
+    }
+    navBtns.forEach(function(b){ b.addEventListener('click', function(e){ e.preventDefault(); show(b.getAttribute('data-nav')); }); });
+  })();
+</script>
+</body>
+</html>
