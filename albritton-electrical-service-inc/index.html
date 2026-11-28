@@ -92,24 +92,31 @@
     section.block{padding:48px 0}
   }
 </style>
-<style>body.th-forest{--navy:#1F3D2B;--navy-deep:#152A1E;--accent:#6E8B3D;--accent-dark:#54702A;--ink:#1B2A20;--muted:#5F7264;--line:#DDE4D6;--paper:#F7F8F2;--wash:#EDF1E4;--radius:6px;--accent-ink:#12200F;--display:Georgia,"Times New Roman",serif}
-body.th-forest .hero h1{color:var(--ink)}
-body.th-forest .hero p{color:var(--muted)}
-body.th-forest .creds li{color:var(--ink);border-color:var(--line)}
-body.th-forest .hero .actions .ghost{color:var(--ink);border-color:var(--ink)}
+<style>body.th-slate{--navy:#1C2024;--navy-deep:#111417;--accent:#F0B429;--accent-dark:#C98F12;--ink:#1C2024;--muted:#64707A;--line:#DCE2E7;--paper:#FFFFFF;--wash:#F2F5F7;--radius:0px;--accent-ink:#16181A;--display:Arial,Helvetica,sans-serif}
 
-body.th-forest .hero{background:linear-gradient(160deg,#F7F8F2 0%,#EDF1E4 100%);padding:84px 0 78px}
-body.th-forest .hero h1{font-weight:400;font-size:clamp(34px,4.6vw,58px)}
-body.th-forest .creds li{border-color:#C9D4BE;color:var(--ink)}
-body.th-forest .card-quick{box-shadow:0 14px 34px rgba(31,61,43,0.10);border:1px solid var(--line)}
-body.th-forest .svc{background:none;border:0;gap:2px;overflow:visible}
-body.th-forest .svc article{border-top:3px solid var(--accent);border-radius:0;background:var(--paper);box-shadow:0 1px 0 var(--line)}
-body.th-forest nav.pages button{border-radius:0}
-body.th-forest nav.pages button[aria-current="page"]{background:var(--wash);box-shadow:inset 0 -3px 0 var(--accent)}
-body.th-forest .eyebrow{color:var(--accent-dark)}
+body.th-slate h1,body.th-slate h2,body.th-slate h3,body.th-slate h4{text-transform:uppercase;letter-spacing:0;font-weight:800}
+body.th-slate .hero{padding:64px 0 58px;border-bottom:6px solid var(--accent)}
+body.th-slate .hero h1{font-size:clamp(30px,4vw,52px);max-width:20ch}
+body.th-slate .card-quick{border-radius:0;box-shadow:0 0 0 1px rgba(255,255,255,0.18)}
+body.th-slate .mark{border-radius:0}
+body.th-slate nav.pages button{text-transform:uppercase;letter-spacing:0.1em;font-size:12.5px;border-radius:0}
+body.th-slate .svc{border-radius:0}
+body.th-slate .svc article{border-radius:0}
+body.th-slate .callbtn{border-radius:0;border-bottom-width:3px}
+body.th-slate .ghost,body.th-slate .form{border-radius:0}
+body.th-slate .eyebrow{color:#8A6A10;letter-spacing:0.16em}
+
+
+body.th-slate.var-b .hero .wrap{grid-template-columns:1fr;justify-items:start;text-align:left;gap:34px}
+body.th-slate.var-b .hero h1{max-width:28ch}
+body.th-slate.var-b .creds{justify-content:flex-start}
+body.th-slate.var-b .card-quick{max-width:760px;width:100%;text-align:left}
+body.th-slate.var-b nav.pages button{text-transform:uppercase;letter-spacing:0.09em;font-size:12.5px;border-radius:0}
+body.th-slate.var-b .svc{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px;background:none;border:0;overflow:visible}
+body.th-slate.var-b .svc article{border-left:3px solid var(--accent);padding-left:20px}
 </style>
 </head>
-<body class="th-forest">
+<body class="th-slate var-b">
 
 <div class="topbar">
   <div class="wrap">
@@ -181,7 +188,7 @@ body.th-forest .eyebrow{color:var(--accent-dark)}
     <div class="wrap">
       <div class="eyebrow">Questions we get asked</div>
       <h2 class="sec">Straight answers before you book anything.</h2>
-      <div style="margin-top:26px;max-width:820px"><details class="faq" open><summary>Are you licensed and insured?</summary><p>Yes. We are a certified electrical contractor, and we will show our licence details when we quote.</p></details><details class="faq"><summary>Will you give me a price first?</summary><p>Yes. We test and inspect, explain the fault, and give you the price before starting work.</p></details><details class="faq"><summary>Do you handle commercial jobs?</summary><p>We take on small commercial work as well as residential, including shop fit-outs and maintenance.</p></details></div>
+      <div style="margin-top:26px;max-width:820px"><details class="faq" open><summary>Are you licensed and insured?</summary><p>Ask us for our licence and insurance details and we will send them over with the quote.</p></details><details class="faq"><summary>Will you give me a price first?</summary><p>Yes. We test and inspect, explain the fault, and give you the price before starting work.</p></details><details class="faq"><summary>Do you handle commercial jobs?</summary><p>We take on small commercial work as well as residential, including shop fit-outs and maintenance.</p></details></div>
     </div>
   </section>
 
@@ -218,7 +225,7 @@ body.th-forest .eyebrow{color:var(--accent-dark)}
     <div class="wrap">
       <div class="eyebrow">Frequently asked</div>
       <h2 class="sec">The things people want to know before they call.</h2>
-      <div style="margin-top:26px;max-width:820px"><details class="faq" open><summary>Are you licensed and insured?</summary><p>Yes. We are a certified electrical contractor, and we will show our licence details when we quote.</p></details><details class="faq"><summary>Will you give me a price first?</summary><p>Yes. We test and inspect, explain the fault, and give you the price before starting work.</p></details><details class="faq"><summary>Do you handle commercial jobs?</summary><p>We take on small commercial work as well as residential, including shop fit-outs and maintenance.</p></details></div>
+      <div style="margin-top:26px;max-width:820px"><details class="faq" open><summary>Are you licensed and insured?</summary><p>Ask us for our licence and insurance details and we will send them over with the quote.</p></details><details class="faq"><summary>Will you give me a price first?</summary><p>Yes. We test and inspect, explain the fault, and give you the price before starting work.</p></details><details class="faq"><summary>Do you handle commercial jobs?</summary><p>We take on small commercial work as well as residential, including shop fit-outs and maintenance.</p></details></div>
     </div>
   </section>
 
@@ -235,7 +242,7 @@ body.th-forest .eyebrow{color:var(--accent-dark)}
     <div class="wrap cols">
       <div>
         <div class="eyebrow">About us</div>
-        <h2 class="sec">A certified electrical contractor based in Tallahassee.</h2>
+        <h2 class="sec">An electrical contractor based in Tallahassee.</h2>
         <p class="lede">Albritton Electrical Service Inc is a electrician based in Tallahassee, working across Tallahassee and the surrounding area.</p>
         <p class="lede">We work on homes, rentals and small commercial premises, from a single dead socket to a full panel replacement. The job starts with testing and a straight explanation, and it ends with work that is installed properly and signed off. No guesswork, no open-ended hourly billing.</p>
       </div>
